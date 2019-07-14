@@ -33,7 +33,10 @@
         box-sizing: border-box;
         position: absolute;
         top: -33px;
-        left: -33px; }
+        left: -33px;
+        width: 416px;
+        height: 93px;
+        overflow: hidden; }
         .main .LogoArea #AddMission #AddMissionMid #TwoBar {
           box-sizing: border-box;
           position: absolute;
@@ -97,13 +100,15 @@
       height: 0;
       width: 276px;
       border: 2px solid #EFEFEF; }
-    .main .TimeCountdownArea #TCAPlay {
+    .main .TimeCountdownArea .TCAPlay {
       padding: 0;
       margin: 0;
       box-sizing: border-box;
       position: absolute;
       top: 40px;
       left: 384px; }
+    .main .TimeCountdownArea .show {
+      src: "UIdata/Time button - stop.svg"; }
     .main .TimeCountdownArea #TCADot {
       padding: 0;
       margin: 0;
@@ -145,6 +150,9 @@
         display: inline-block;
         margin-right: 46px;
         padding: 0; }
+        .main .PageButtonArea .img img:hover {
+          transform: scale(1.1);
+          transition-duration: 0.3s; }
       .main .PageButtonArea .img #Ring {
         margin-right: 0px; }
   .main .ToDoArea {

@@ -44,6 +44,9 @@
                 position: absolute
                 top: -33px
                 left: -33px
+                width: 416px
+                height: 93px
+                overflow: hidden
                 #TwoBar
                     box-sizing: border-box
                     position: absolute
@@ -111,13 +114,17 @@
             width: 276px
             border: 2px solid #EFEFEF
 
-        #TCAPlay
+        .TCAPlay
             padding: 0
             margin: 0
             box-sizing: border-box
             position: absolute
             top: 40px
             left: 384px
+        .show
+            src: "UIdata/Time button - stop.svg"
+
+
         #TCADot
             @include blockcontrol
             top: 307px
@@ -156,6 +163,9 @@
                 display: inline-block
                 margin-right: 46px
                 padding: 0
+                &:hover
+                    transform: scale(1.1)
+                    transition-duration: 0.3s
             #Ring
                 margin-right: 0px
     .ToDoArea

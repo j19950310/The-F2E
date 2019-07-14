@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="272" height="272" viewBox="0 0 272 272">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="52" height="80" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Time_button_-_stop" data-name="Time button - stop" transform="translate(-456 -410)">
+    <g id="Time_circle" data-name="Time circle" transform="translate(456 410)" fill="none" stroke="#efefef" stroke-width="30">
+      <circle cx="136" cy="136" r="136" stroke="none"/>
+      <circle cx="136" cy="136" r="121" fill="none"/>
+    </g>
+    <g id="pause_button" data-name="pause button" transform="translate(566 506)" clip-path="url(#clip-path)">
+      <g id="pause_button-2" data-name="pause button" clip-path="url(#clip-path)">
+        <g transform="translate(-566 -509)">
+          <rect id="Rectangle_168" data-name="Rectangle 168" width="16" height="80" rx="2" transform="translate(566 509)" fill="#efefef" opacity="0.9"/>
+        </g>
+        <g transform="translate(-530 -509)">
+          <rect id="Rectangle_168-2" data-name="Rectangle 168" width="16" height="80" rx="2" transform="translate(566 509)" fill="#efefef" opacity="0.9"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

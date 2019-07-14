@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="383" height="63.73" viewBox="0 0 383 63.73">
+  <g id="AddMissionBot" transform="translate(-31.828 -31.828)">
+    <rect id="Rectangle_165" data-name="Rectangle 165" width="379" height="56" transform="translate(33.828 33.828)" stroke-width="4" stroke="#efefef" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect id="Rectangle_166" data-name="Rectangle 166" width="25" height="25" transform="translate(387.828 64.828)" stroke-width="4" stroke="#efefef" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text id="_" data-name="+" transform="translate(391.693 87.558)" fill="#efefef" font-size="30" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">+</tspan></text>
+  </g>
+</svg>

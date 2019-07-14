@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="50" height="50" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Ringtones_button" data-name="Ringtones button" clip-path="url(#clip-path)">
+    <path id="Path_742" data-name="Path 742" d="M1114.8,737.412a2.728,2.728,0,0,0,2.71-2.424h-5.42A2.728,2.728,0,0,0,1114.8,737.412Z" transform="translate(-1089.8 -700.008)" fill="#efefef"/>
+    <path id="Path_743" data-name="Path 743" d="M1129.58,736.4a2.723,2.723,0,0,1-2.725-2.726V726.4a9.39,9.39,0,1,0-18.781,0v7.27a2.727,2.727,0,0,1-2.725,2.726.909.909,0,1,0,.005,1.817h24.22a.909.909,0,1,0,.005-1.817Z" transform="translate(-1092.464 -705.015)" fill="#efefef"/>
+    <path id="Path_744" data-name="Path 744" d="M1138.878,706.9h-39.463a5.346,5.346,0,0,0-5.315,5.3v39.29a5.367,5.367,0,0,0,5.315,5.405h39.363a5.346,5.346,0,0,0,5.315-5.3v-39.39A5.135,5.135,0,0,0,1138.878,706.9Zm-8.551,35.11h-5.9a5.336,5.336,0,0,1-10.657,0h-5.9a3.651,3.651,0,0,1-.287-7.291v-6.47a11.515,11.515,0,0,1,23.03,0v6.47a3.651,3.651,0,0,1-.288,7.291Z" transform="translate(-1094.1 -706.9)" fill="#efefef"/>
+  </g>
+</svg>

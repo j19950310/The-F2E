@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="415.657" height="95.558" viewBox="0 0 415.657 95.558">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="415.657" height="95.558" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Add_a_new_mission" data-name="Add a new mission" clip-path="url(#clip-path)">
+    <path id="Path_745" data-name="Path 745" d="M0,0H379V56H0Z" transform="translate(2.328 2.828)" fill="#efefef" stroke="#efefef" stroke-linecap="round" stroke-width="4"/>
+    <rect id="Rectangle_165" data-name="Rectangle 165" width="379" height="56" transform="translate(33.828 33.828)" stroke-width="4" stroke="#efefef" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect id="Rectangle_166" data-name="Rectangle 166" width="25" height="25" transform="translate(387.828 64.828)" stroke-width="4" stroke="#efefef" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text id="_" data-name="+" transform="translate(391.693 87.558)" fill="#efefef" font-size="30" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">+</tspan></text>
+    <line id="Line_11" data-name="Line 11" x2="31" y2="31" transform="translate(381.828 2.828)" fill="none" stroke="#efefef" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <line id="Line_13" data-name="Line 13" x2="31" y2="31" transform="translate(2.828 58.828)" fill="none" stroke="#efefef" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <text id="Add_a_new_mission.._" data-name="Add a new mission..!" transform="translate(24.828 41.332)" font-size="30" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Add a new mission..!</tspan></text>
+  </g>
+</svg>

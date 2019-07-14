@@ -1,0 +1,284 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="800" viewBox="0 0 1280 800">
+  <defs>
+    <style>
+      .cls-1, .cls-14, .cls-20, .cls-25, .cls-27, .cls-3, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-Main);
+      }
+
+      .cls-14, .cls-19, .cls-20, .cls-25, .cls-26, .cls-27, .cls-3, .cls-5, .cls-6 {
+        stroke: #efefef;
+      }
+
+      .cls-14, .cls-19, .cls-26, .cls-27, .cls-3, .cls-5, .cls-6 {
+        stroke-width: 4px;
+      }
+
+      .cls-10, .cls-3 {
+        opacity: 0.95;
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-11, .cls-12, .cls-16, .cls-17, .cls-18, .cls-19, .cls-23, .cls-5, .cls-7 {
+        fill: #efefef;
+      }
+
+      .cls-26, .cls-27, .cls-5, .cls-6 {
+        stroke-linecap: round;
+      }
+
+      .cls-26, .cls-6 {
+        stroke-linejoin: round;
+      }
+
+      .cls-11, .cls-7, .cls-8 {
+        font-size: 30px;
+      }
+
+      .cls-11, .cls-17, .cls-18, .cls-23, .cls-7, .cls-8 {
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-9 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-11, .cls-17, .cls-18 {
+        letter-spacing: 0.1em;
+      }
+
+      .cls-13 {
+        clip-path: url(#clip-path-3);
+      }
+
+      .cls-15 {
+        clip-path: url(#clip-path-6);
+      }
+
+      .cls-16 {
+        opacity: 0.3;
+      }
+
+      .cls-17 {
+        font-size: 50px;
+      }
+
+      .cls-18, .cls-23 {
+        font-size: 18px;
+      }
+
+      .cls-20 {
+        stroke-width: 30px;
+      }
+
+      .cls-21 {
+        clip-path: url(#clip-path-7);
+      }
+
+      .cls-22 {
+        clip-path: url(#clip-path-8);
+      }
+
+      .cls-23 {
+        letter-spacing: 0.08em;
+      }
+
+      .cls-24 {
+        clip-path: url(#clip-path-9);
+      }
+
+      .cls-25 {
+        stroke-width: 2px;
+      }
+
+      .cls-27 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-28 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="415.657" height="95.558"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect class="cls-1" width="199.036" height="37"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect class="cls-1" width="50" height="50"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <rect class="cls-1" width="110" height="10"/>
+    </clipPath>
+    <clipPath id="clip-path-7">
+      <rect class="cls-1" width="66.867" height="77.067"/>
+    </clipPath>
+    <clipPath id="clip-path-8">
+      <rect class="cls-1" width="279" height="189"/>
+    </clipPath>
+    <clipPath id="clip-path-9">
+      <rect class="cls-1" width="25" height="195"/>
+    </clipPath>
+    <clipPath id="clip-Main">
+      <rect width="1280" height="800"/>
+    </clipPath>
+  </defs>
+  <g id="Main" class="cls-2">
+    <rect class="cls-12" width="1280" height="800"/>
+    <rect id="Background" width="1280" height="800"/>
+    <g id="Logo_area" data-name="Logo area">
+      <g id="Logo_area-2" data-name="Logo area" class="cls-3" transform="translate(72 50)">
+        <rect class="cls-28" width="710" height="350"/>
+        <rect class="cls-1" x="2" y="2" width="706" height="346"/>
+      </g>
+      <g id="Add_a_new_mission" data-name="Add a new mission" class="cls-4" transform="translate(219.172 194.172)">
+        <path id="Path_745" data-name="Path 745" class="cls-5" d="M0,0H379V56H0Z" transform="translate(2.328 2.828)"/>
+        <rect id="Rectangle_165" data-name="Rectangle 165" class="cls-6" width="379" height="56" transform="translate(33.828 33.828)"/>
+        <rect id="Rectangle_166" data-name="Rectangle 166" class="cls-6" width="25" height="25" transform="translate(387.828 64.828)"/>
+        <text id="_" data-name="+" class="cls-7" transform="translate(391.693 87.558)"><tspan x="0" y="0">+</tspan></text>
+        <line id="Line_11" data-name="Line 11" class="cls-6" x2="31" y2="31" transform="translate(381.828 2.828)"/>
+        <line id="Line_13" data-name="Line 13" class="cls-6" x2="31" y2="31" transform="translate(2.828 58.828)"/>
+        <text id="Add_a_new_mission.._" data-name="Add a new mission..!" class="cls-8" transform="translate(24.828 41.332)"><tspan x="0" y="0">Add a new mission..!</tspan></text>
+      </g>
+      <g id="Logo" class="cls-9" transform="translate(112 80)">
+        <g id="Logo-2" data-name="Logo" class="cls-10" transform="translate(-112 -80)">
+          <text id="Pomodoro" class="cls-11" transform="translate(112 109)"><tspan x="0" y="0">Pomodoro</tspan></text>
+          <rect id="Rectangle_167" data-name="Rectangle 167" class="cls-12" width="5" height="5" transform="translate(307.5 101.964) rotate(45)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Page_button_area" data-name="Page button area" transform="translate(706 -320)">
+      <g id="Page_button_area-2" data-name="Page button area" class="cls-3" transform="translate(72 370)">
+        <rect class="cls-28" width="430" height="203.567"/>
+        <rect class="cls-1" x="2" y="2" width="426" height="199.567"/>
+      </g>
+      <g id="To-do_button" data-name="To-do  button" class="cls-13" transform="translate(166 447)">
+        <path id="To-do_button-2" data-name="To-do  button" class="cls-12" d="M826.007,691.871V652.408a5.345,5.345,0,0,0-5.305-5.315H781.413a5.367,5.367,0,0,0-5.406,5.315v39.363a5.346,5.346,0,0,0,5.305,5.315H820.7A5.135,5.135,0,0,0,826.007,691.871Zm-31.281-30.487a1.809,1.809,0,0,1-1.752-1.755v-1.755a1.809,1.809,0,0,1,1.752-1.755h9.76a1.809,1.809,0,0,1,1.752,1.755v1.755a1.809,1.809,0,0,1-1.752,1.755Zm0,12.937a1.809,1.809,0,0,1-1.752-1.755v-1.755a1.809,1.809,0,0,1,1.752-1.755h22.523A1.809,1.809,0,0,1,819,670.811v1.755a1.809,1.809,0,0,1-1.752,1.755Zm0,13.89a1.809,1.809,0,0,1-1.752-1.755V684.7a1.809,1.809,0,0,1,1.752-1.755h17.017a1.809,1.809,0,0,1,1.752,1.755v1.755a1.809,1.809,0,0,1-1.752,1.755Zm-8.008-26.827a1.809,1.809,0,0,1-1.752-1.755v-1.755a1.809,1.809,0,0,1,1.752-1.755h1.752a1.81,1.81,0,0,1,1.752,1.755v1.755a1.809,1.809,0,0,1-1.752,1.755Zm0,13.037a1.809,1.809,0,0,1-1.752-1.755v-1.755a1.809,1.809,0,0,1,1.752-1.755h1.752a1.809,1.809,0,0,1,1.752,1.755v1.755a1.809,1.809,0,0,1-1.752,1.755Zm0,13.539a1.809,1.809,0,0,1-1.752-1.755V684.45a1.809,1.809,0,0,1,1.752-1.755h1.752a1.809,1.809,0,0,1,1.752,1.755v1.755a1.809,1.809,0,0,1-1.752,1.755Z" transform="translate(-776.007 -647.093)"/>
+      </g>
+      <g id="Analysis_button" data-name="Analysis button" class="cls-13" transform="translate(262 447)">
+        <path id="Analysis_button-2" data-name="Analysis button" class="cls-12" d="M54.878,10H15.415A5.345,5.345,0,0,0,10.1,15.305V54.595A5.367,5.367,0,0,0,15.415,60H54.778a5.345,5.345,0,0,0,5.315-5.305V15.305A5.135,5.135,0,0,0,54.878,10ZM24.391,49.289a1.809,1.809,0,0,1-1.755,1.752H20.881a1.809,1.809,0,0,1-1.755-1.752V39.53a1.809,1.809,0,0,1,1.755-1.752h1.755a1.809,1.809,0,0,1,1.755,1.752Zm8.976,0a1.809,1.809,0,0,1-1.755,1.752H29.857A1.809,1.809,0,0,1,28.1,49.289V26.066a1.809,1.809,0,0,1,1.755-1.752h1.755a1.809,1.809,0,0,1,1.755,1.752Zm8.976,0a1.809,1.809,0,0,1-1.755,1.752H38.832a1.809,1.809,0,0,1-1.755-1.752V20.761a1.809,1.809,0,0,1,1.755-1.752h1.755a1.809,1.809,0,0,1,1.755,1.752Zm8.875,0a1.809,1.809,0,0,1-1.755,1.752H47.708a1.809,1.809,0,0,1-1.755-1.752V32.272a1.809,1.809,0,0,1,1.755-1.752h1.755a1.809,1.809,0,0,1,1.755,1.752Z" transform="translate(-10.1 -10)"/>
+      </g>
+      <g id="Ringtones_button" data-name="Ringtones button" class="cls-13" transform="translate(358 447)">
+        <path id="Path_742" data-name="Path 742" class="cls-12" d="M1114.8,737.412a2.728,2.728,0,0,0,2.71-2.424h-5.42A2.728,2.728,0,0,0,1114.8,737.412Z" transform="translate(-1089.8 -700.008)"/>
+        <path id="Path_743" data-name="Path 743" class="cls-12" d="M1129.58,736.4a2.723,2.723,0,0,1-2.725-2.726V726.4a9.39,9.39,0,1,0-18.781,0v7.27a2.727,2.727,0,0,1-2.725,2.726.909.909,0,1,0,.005,1.817h24.22a.909.909,0,1,0,.005-1.817Z" transform="translate(-1092.464 -705.015)"/>
+        <path id="Path_744" data-name="Path 744" class="cls-12" d="M1138.878,706.9h-39.463a5.346,5.346,0,0,0-5.315,5.3v39.29a5.367,5.367,0,0,0,5.315,5.405h39.363a5.346,5.346,0,0,0,5.315-5.3v-39.39A5.135,5.135,0,0,0,1138.878,706.9Zm-8.551,35.11h-5.9a5.336,5.336,0,0,1-10.657,0h-5.9a3.651,3.651,0,0,1-.287-7.291v-6.47a11.515,11.515,0,0,1,23.03,0v6.47a3.651,3.651,0,0,1-.288,7.291Z" transform="translate(-1094.1 -706.9)"/>
+      </g>
+    </g>
+    <g id="Time_countdown_area" data-name="Time countdown area" transform="translate(0 26)">
+      <g id="Time_countdown_area-2" data-name="Time countdown area" class="cls-14" transform="translate(72 370)">
+        <rect class="cls-28" width="710" height="356"/>
+        <rect class="cls-1" x="2" y="2" width="706" height="352"/>
+      </g>
+      <g id="Tomatoes" class="cls-15" transform="translate(112 677)">
+        <g transform="translate(-112 -595)">
+          <circle id="Ellipse_35" data-name="Ellipse 35" class="cls-16" cx="5" cy="5" r="5" transform="translate(112 595)"/>
+        </g>
+        <g transform="translate(-87 -595)">
+          <circle id="Ellipse_35-2" data-name="Ellipse 35" class="cls-16" cx="5" cy="5" r="5" transform="translate(112 595)"/>
+        </g>
+        <g transform="translate(-62 -595)">
+          <circle id="Ellipse_35-3" data-name="Ellipse 35" class="cls-16" cx="5" cy="5" r="5" transform="translate(112 595)"/>
+        </g>
+        <g transform="translate(-37 -595)">
+          <circle id="Ellipse_35-4" data-name="Ellipse 35" class="cls-16" cx="5" cy="5" r="5" transform="translate(112 595)"/>
+        </g>
+        <g transform="translate(-12 -595)">
+          <circle id="Ellipse_35-5" data-name="Ellipse 35" class="cls-16" cx="5" cy="5" r="5" transform="translate(112 595)"/>
+        </g>
+      </g>
+      <text id="_25:00" data-name="25:00" class="cls-17" transform="translate(113 520)"><tspan x="0" y="0">25:00</tspan></text>
+      <g id="Doing" transform="translate(112 410)">
+        <text id="Prepare_the_presentation" data-name="Prepare the presentation" class="cls-18" transform="translate(0 17)"><tspan x="0" y="0">Prepare the presentation</tspan></text>
+        <path id="dash" class="cls-19" d="M0,0H276" transform="translate(0 42)"/>
+      </g>
+      <g id="Time_button_-_play" data-name="Time button - play">
+        <g id="Time_circle" data-name="Time circle" class="cls-20" transform="translate(456 410)">
+          <circle class="cls-28" cx="136" cy="136" r="136"/>
+          <circle class="cls-1" cx="136" cy="136" r="121"/>
+        </g>
+        <g id="Play_button" data-name="Play button" class="cls-21" transform="translate(565.134 507.467)">
+          <path id="Play_button-2" data-name="Play button" class="cls-12" d="M36.8,3.007a2,2,0,0,1,3.466,0L75.339,63.868a2,2,0,0,1-1.733,3H3.461a2,2,0,0,1-1.733-3Z" transform="translate(66.867) rotate(90)"/>
+        </g>
+      </g>
+    </g>
+    <g id="To-DO_area" data-name="To-DO area" transform="translate(706 -120)">
+      <g id="To_-_Do_area" data-name="To - Do area" class="cls-14" transform="translate(72 370)">
+        <rect class="cls-28" width="430" height="502"/>
+        <rect class="cls-1" x="2" y="2" width="426" height="498"/>
+      </g>
+      <g id="To-do_list" data-name="To-do list" transform="translate(41 2)">
+        <g id="Repeat_Grid_2" data-name="Repeat Grid 2" class="cls-22" transform="translate(111 458)">
+          <g transform="translate(-111 -458)">
+            <text id="Prepare_the_presentation-2" data-name="Prepare the presentation" class="cls-23" transform="translate(112 475)"><tspan x="0" y="0">Prepare the presentation</tspan></text>
+          </g>
+          <g transform="translate(-111 -416)">
+            <text id="Complete_the_keynote" data-name="Complete the keynote" class="cls-23" transform="translate(112 475)"><tspan x="0" y="0">Complete the keynote</tspan></text>
+          </g>
+          <g transform="translate(-111 -374)">
+            <text id="Complete_the_Studio_logo" data-name="Complete the Studio logo" class="cls-23" transform="translate(112 475)"><tspan x="0" y="0">Complete the Studio logo</tspan></text>
+          </g>
+          <g transform="translate(-111 -332)">
+            <text id="Learn_German_" data-name="Learn German " class="cls-23" transform="translate(112 475)"><tspan x="0" y="0">Learn German </tspan></text>
+          </g>
+          <g transform="translate(-111 -290)">
+            <text id="Learn_Adobe_XD_" data-name="Learn Adobe XD " class="cls-23" transform="translate(112 475)"><tspan x="0" y="0">Learn Adobe XD </tspan></text>
+          </g>
+        </g>
+      </g>
+      <g id="play_button-3" data-name="play button" class="cls-24" transform="translate(112 459)">
+        <g id="Group_14" data-name="Group 14" transform="translate(-112 -452)">
+          <g id="Ellipse_34" data-name="Ellipse 34" class="cls-25" transform="translate(112 452)">
+            <circle class="cls-28" cx="12.5" cy="12.5" r="12.5"/>
+            <circle class="cls-1" cx="12.5" cy="12.5" r="11.5"/>
+          </g>
+          <path id="Polygon_1" data-name="Polygon 1" class="cls-12" d="M5.6.787a.5.5,0,0,1,.874,0l5.184,9.337a.5.5,0,0,1-.437.743H.85a.5.5,0,0,1-.437-.743Z" transform="translate(131.867 458.5) rotate(90)"/>
+        </g>
+        <g id="Group_14-2" data-name="Group 14" transform="translate(-112 -410)">
+          <g id="Ellipse_34-2" data-name="Ellipse 34" class="cls-25" transform="translate(112 452)">
+            <circle class="cls-28" cx="12.5" cy="12.5" r="12.5"/>
+            <circle class="cls-1" cx="12.5" cy="12.5" r="11.5"/>
+          </g>
+          <path id="Polygon_1-2" data-name="Polygon 1" class="cls-12" d="M5.6.787a.5.5,0,0,1,.874,0l5.184,9.337a.5.5,0,0,1-.437.743H.85a.5.5,0,0,1-.437-.743Z" transform="translate(131.867 458.5) rotate(90)"/>
+        </g>
+        <g id="Group_14-3" data-name="Group 14" transform="translate(-112 -368)">
+          <g id="Ellipse_34-3" data-name="Ellipse 34" class="cls-25" transform="translate(112 452)">
+            <circle class="cls-28" cx="12.5" cy="12.5" r="12.5"/>
+            <circle class="cls-1" cx="12.5" cy="12.5" r="11.5"/>
+          </g>
+          <path id="Polygon_1-3" data-name="Polygon 1" class="cls-12" d="M5.6.787a.5.5,0,0,1,.874,0l5.184,9.337a.5.5,0,0,1-.437.743H.85a.5.5,0,0,1-.437-.743Z" transform="translate(131.867 458.5) rotate(90)"/>
+        </g>
+        <g id="Group_14-4" data-name="Group 14" transform="translate(-112 -326)">
+          <g id="Ellipse_34-4" data-name="Ellipse 34" class="cls-25" transform="translate(112 452)">
+            <circle class="cls-28" cx="12.5" cy="12.5" r="12.5"/>
+            <circle class="cls-1" cx="12.5" cy="12.5" r="11.5"/>
+          </g>
+          <path id="Polygon_1-4" data-name="Polygon 1" class="cls-12" d="M5.6.787a.5.5,0,0,1,.874,0l5.184,9.337a.5.5,0,0,1-.437.743H.85a.5.5,0,0,1-.437-.743Z" transform="translate(131.867 458.5) rotate(90)"/>
+        </g>
+        <g id="Group_14-5" data-name="Group 14" transform="translate(-112 -284)">
+          <g id="Ellipse_34-5" data-name="Ellipse 34" class="cls-25" transform="translate(112 452)">
+            <circle class="cls-28" cx="12.5" cy="12.5" r="12.5"/>
+            <circle class="cls-1" cx="12.5" cy="12.5" r="11.5"/>
+          </g>
+          <path id="Polygon_1-5" data-name="Polygon 1" class="cls-12" d="M5.6.787a.5.5,0,0,1,.874,0l5.184,9.337a.5.5,0,0,1-.437.743H.85a.5.5,0,0,1-.437-.743Z" transform="translate(131.867 458.5) rotate(90)"/>
+        </g>
+      </g>
+      <text id="_2019_07_10" data-name="2019 / 07 / 10" class="cls-18" transform="translate(112 417)"><tspan x="0" y="0">2019 / 07 / 10</tspan></text>
+      <g id="Title" transform="translate(-706 120)">
+        <g id="Title_Background" data-name="Title Background" transform="translate(287.5 -293)">
+          <rect id="Rectangle_161" data-name="Rectangle 161" class="cls-26" width="131" height="56" transform="translate(765 522)"/>
+          <path id="Path_737" data-name="Path 737" class="cls-6" d="M918.5,544.5v56h-131V578H896V544.5Z"/>
+          <line id="Line_9" data-name="Line 9" class="cls-27" x2="22" y2="22" transform="translate(765 578)"/>
+          <line id="Line_10" data-name="Line 10" class="cls-27" x2="22" y2="22" transform="translate(896 522)"/>
+        </g>
+        <text id="To-Do" class="cls-11" transform="translate(1065 267)"><tspan x="0" y="0">To-Do</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

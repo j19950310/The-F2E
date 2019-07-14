@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="158.657" height="83.657" viewBox="0 0 158.657 83.657">
+  <g id="Title" transform="translate(-1049.672 -226.172)">
+    <g id="Title_Background" data-name="Title Background" transform="translate(287.5 -293)">
+      <rect id="Rectangle_161" data-name="Rectangle 161" width="131" height="56" transform="translate(765 522)" stroke-width="4" stroke="#efefef" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="Path_737" data-name="Path 737" d="M918.5,544.5v56h-131V578H896V544.5Z" fill="none" stroke="#efefef" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      <line id="Line_9" data-name="Line 9" x2="22" y2="22" transform="translate(765 578)" fill="none" stroke="#efefef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+      <line id="Line_10" data-name="Line 10" x2="22" y2="22" transform="translate(896 522)" fill="none" stroke="#efefef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+    </g>
+    <text id="To-Do" transform="translate(1065 267)" fill="#efefef" font-size="30" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em"><tspan x="0" y="0">To-Do</tspan></text>
+  </g>
+</svg>

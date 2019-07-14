@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="272" height="272" viewBox="0 0 272 272">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="66.867" height="77.067" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Time_button_-_play" data-name="Time button - play" transform="translate(-456 -410)">
+    <g id="Time_circle" data-name="Time circle" transform="translate(456 410)" fill="none" stroke="#efefef" stroke-width="30">
+      <circle cx="136" cy="136" r="136" stroke="none"/>
+      <circle cx="136" cy="136" r="121" fill="none"/>
+    </g>
+    <g id="Play_button" data-name="Play button" transform="translate(565.134 507.467)" clip-path="url(#clip-path)">
+      <path id="Play_button-2" data-name="Play button" d="M36.8,3.007a2,2,0,0,1,3.466,0L75.339,63.868a2,2,0,0,1-1.733,3H3.461a2,2,0,0,1-1.733-3Z" transform="translate(66.867) rotate(90)" fill="#efefef"/>
+    </g>
+  </g>
+</svg>

@@ -6,8 +6,12 @@ $(document).ready(function() {
   StartOff = true;
 
 
+
+// TimeCountdownArea
+
 // 點擊開始
 $('.TCAPlay').click(function(event) {
+
 
 
   if ( StartOff ) {
@@ -64,19 +68,78 @@ $('.TCAPlay').click(function(event) {
   }
 
 
+// ToDoArea
+ToDate = new Date();
+
+Tyear =ToDate.getFullYear();
+Tdate = ToDate.getDate();
+Tmonth = ToDate.getMonth() + 1;
+
+if (Tdate < 10) {Tdate = "0" + Tdate}
+if (Tmonth < 10) {Tmonth = "0" + Tmonth}
+
+
+// 2019 / 07 / 10
+
+$(".Date").html(Tyear + " / " + Tmonth + " / " + Tdate);
+
+// 新增任務
+AddToDoList = function(text){
+
+    console.log(text)
+    var node = document.createElement("LI");
+    var textnode = document.createTextNode(text);
+    node.appendChild(textnode);
+    $("#ToDoForm")[0].appendChild(node);
+    $("li:last-child").prepend('<img class="selectMission">');
+
+}
+$('li').prepend('<img class="selectMission">')
+
+
+
+
+// 選擇任務
+// 建立圖案
+onlyoneselect = true;
+
+$(".selectMission").click(function(event) {
+  /* Act on the event */
+  if (onlyoneselect) {
+
+    $(this).css('content', "url('UIdata/pause button.svg')");
+    onlyoneselect = false;
+
+  }else if ( $(this)[0].style.content == 'url("UIdata/pause button.svg")' )
+  {
+    $(this).css('content', "url('UIdata/PlayButtonLittle.svg')");
+    onlyoneselect = true;
+  }
 
 
 
 
 
 
+});
+
+$("li").click(function(event) {
+  /* Act on the event */
+    console.log( $(this)[0].textContent);
+    if (onlyoneselect) {
+      $('#TCAText')[0].textContent =  $(this)[0].textContent;
+    }
+
+});
 
 
 
 
 
+PickMission = function(){
 
 
+}
 
 
 

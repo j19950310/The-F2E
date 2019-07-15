@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="235.433" height="83.657" viewBox="0 0 235.433 83.657">
+  <g id="Title" transform="translate(-1049.672 -226.172)">
+    <g id="Title_Background" data-name="Title Background" transform="translate(287.5 -293)">
+      <rect id="Rectangle_161" data-name="Rectangle 161" width="207.776" height="56" transform="translate(765 522)" stroke-width="4" stroke="#efefef" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="Path_737" data-name="Path 737" d="M995.276,544.5v56H787.5V578H972.742V544.5Z" fill="none" stroke="#efefef" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      <line id="Line_9" data-name="Line 9" x2="22" y2="22" transform="translate(765 578)" fill="none" stroke="#efefef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+      <line id="Line_10" data-name="Line 10" x2="22" y2="22" transform="translate(972.776 522)" fill="none" stroke="#efefef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+    </g>
+    <text id="Analytics" transform="translate(1067 267)" fill="#efefef" font-size="30" font-family="MontserratAlternates-ExtraBold, Montserrat Alternates" font-weight="800" letter-spacing="0.1em" opacity="0.9"><tspan x="0" y="0">Analytics</tspan></text>
+  </g>
+</svg>

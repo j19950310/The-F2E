@@ -15,6 +15,32 @@
     padding: 0
     background-color: #000000
 
+    .LA_ToDo
+        width: 710px !important
+        height: 204px !important
+        transition-delay: 0s !important
+        #AddMission
+            top: 109px !important
+            left: 287px !important
+            transition-delay: 0s !important
+    .LA_Ring
+        width: 710px !important
+        height: 204px !important
+        transition-delay: 0s !important
+        #AddMission
+            top: 109px !important
+            left: 287px !important
+            transition-delay: 0s !important
+    .LA_Anal
+        width: 710px !important
+        height: 204px !important
+        transition-delay: 0s !important
+        #AddMission
+            top: 109px !important
+            left: 287px !important
+            transition-delay: 0s !important
+
+
     .LogoArea
         width: 710px
         height: 350px
@@ -24,6 +50,10 @@
         left: 72px
         border: 4px solid #EFEFEF
         opacity: 0.95
+        transition-duration: 0.5s
+        transition-delay: 0.5s
+
+
 
         #logo
             position: absolute
@@ -38,6 +68,9 @@
             position: absolute
             top: 178px
             left: 181px
+            transition-duration: 0.5s
+            transition-delay: 0.5s
+
 
             #AddMissionMid
                 box-sizing: border-box
@@ -79,18 +112,65 @@
                             color: #000000
 
 
-
+    .TCA_ToDo
+        height: 502px !important
+        width: 372px !important
+        .TCAPlay
+            left: 40px !important
+            top: 188px !important
+        #TCADot
+            left: 205px !important
+            top: 113px !important
+            transition-duration: 0.5s
+            transition-delay: 0.1s
+        #TCACount
+            font-size: 30px !important
+            font-weight: 700 !important
+            font-family: Montserrat Alternates , Regular !important
+    .TCA_Anal
+        height: 502px !important
+        width: 372px !important
+        .TCAPlay
+            left: 40px !important
+            top: 188px !important
+        #TCADot
+            left: 205px !important
+            top: 113px !important
+            transition-duration: 0.5s
+            transition-delay: 0.1s
+        #TCACount
+            font-size: 30px !important
+            font-weight: 700 !important
+            font-family: Montserrat Alternates , Regular !important
+    .TCA_Ring
+        height: 502px !important
+        width: 372px !important
+        .TCAPlay
+            left: 40px !important
+            top: 188px !important
+        #TCADot
+            left: 205px !important
+            top: 113px !important
+            transition-duration: 0.5s
+            transition-delay: 0.1s
+        #TCACount
+            font-size: 30px !important
+            font-weight: 700 !important
+            font-family: Montserrat Alternates , Regular !important
     .TimeCountdownArea
         width: 710px
         height: 356px
         box-sizing: border-box
         position: absolute
-        top: 396px
         left: 72px
+        bottom: 48px
         border: 4px solid #EFEFEF
         opacity: 0.95
         padding: 0
         margin: 0
+        transition-duration: 0.5s
+
+
         #TCAText
             padding: 0
             margin: 0
@@ -121,6 +201,16 @@
             position: absolute
             top: 40px
             left: 384px
+            transition-duration: 0.5s
+            transform-origin: center
+            &:active
+                transition-duration: 0.02s
+                opacity: 0.6
+                transform: scale(1.05)
+            &:hover
+                opacity: 0.8
+
+
         .show
             src: "UIdata/Time button - stop.svg"
 
@@ -140,10 +230,12 @@
             position: absolute
             top: 102px
             left: 40px
-            font-family: Montserrat Alternates Black, Regular
+            font-family: Montserrat Alternates, Regular
             font-size: 50px
+            font-weight: 700
             letter-spacing: 2.5px
             color: #EFEFEF
+            transition-duration: 0.5s
     .PageButtonArea
         width: 430px
         height: 203.57px
@@ -163,20 +255,36 @@
                 display: inline-block
                 margin-right: 46px
                 padding: 0
+                &:active
+                    transform: scale(0.7)
+                    transition-duration: 0.05s
                 &:hover
-                    transform: scale(1.1)
+                    opacity: 0.9
                     transition-duration: 0.3s
             #Ring
                 margin-right: 0px
+    .TD_ToDo
+        width: 768px !important
+        transition-delay: 0.5s !important
+    .TD_Anal
+        width: 768px !important
+        transition-delay: 0.5s !important
+
+    .TD_Ring
+        width: 768px !important
+        transition-delay: 0.5s !important
+
     .ToDoArea
         width: 430px
         height: 502px
         box-sizing: border-box
         position: absolute
         top: 250px
-        left: 778px
+        right: 72px
         border: 4px solid #EFEFEF
         opacity: 0.95
+        transition-duration: 0.5s
+        transition-delay: 0s
         .Date
             @include blockcontrol
             top: 30px
@@ -201,11 +309,16 @@
                 font-weight: 400
                 letter-spacing: 2.5px
                 color: #EFEFEF
-                margin-left: 40px
                 margin-bottom: 20px
-                &:before
-                    @include blockcontrol
-                    content: url("../../UIdata/PlayButtonLittle.svg")
-                    left: 0px
+                text-align: left
+            .selectMission
+                display: inline-block
+                content: url("../../UIdata/PlayButtonLittle.svg")
+                left: 0px
+                margin-right: 16px
+                transform: translateY(6px)
+
+
+// todo change
 
 

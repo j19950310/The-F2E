@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240.809" height="83.657" viewBox="0 0 240.809 83.657">
+  <g id="Title" transform="translate(-1049.672 -226.172)">
+    <g id="Title_background" data-name="Title background" transform="translate(1052.5 229)">
+      <rect id="Rectangle_161" data-name="Rectangle 161" width="213.153" height="56" transform="translate(0)" stroke-width="4" stroke="#efefef" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="Path_737" data-name="Path 737" d="M1000.653,544.5v56H787.5V578l190.569-.119v-33.5Z" transform="translate(-765 -522)" fill="none" stroke="#efefef" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      <line id="Line_9" data-name="Line 9" x2="22" y2="22" transform="translate(0 56)" fill="none" stroke="#efefef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+      <line id="Line_10" data-name="Line 10" x2="22" y2="22" transform="translate(213.153)" fill="none" stroke="#efefef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+    </g>
+    <text id="Ringtones" transform="translate(1065 267)" fill="#efefef" font-size="30" font-family="MontserratAlternates-Bold, Montserrat Alternates" font-weight="700" letter-spacing="0.1em" opacity="0.9"><tspan x="0" y="0">Ringtones</tspan></text>
+  </g>
+</svg>

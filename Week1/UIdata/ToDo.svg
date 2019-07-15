@@ -6,6 +6,6 @@
       <line id="Line_9" data-name="Line 9" x2="22" y2="22" transform="translate(765 578)" fill="none" stroke="#efefef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
       <line id="Line_10" data-name="Line 10" x2="22" y2="22" transform="translate(896 522)" fill="none" stroke="#efefef" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
     </g>
-    <text id="To-Do" transform="translate(1065 267)" fill="#efefef" font-size="30" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em"><tspan x="0" y="0">To-Do</tspan></text>
+    <text id="To-Do" transform="translate(1065 267)" fill="#efefef" font-size="30" font-family="MontserratAlternates-Bold, Montserrat Alternates" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">To-Do</tspan></text>
   </g>
 </svg>

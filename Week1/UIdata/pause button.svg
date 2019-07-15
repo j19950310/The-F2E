@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="pause_button" data-name="pause button" transform="translate(-112 -452)">
+    <g id="Ellipse_34" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+      <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+      <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+    </g>
+    <rect id="Rectangle_169" data-name="Rectangle 169" width="3" height="10" transform="translate(120.5 459.5)" fill="#efefef"/>
+    <rect id="Rectangle_170" data-name="Rectangle 170" width="3" height="10" transform="translate(125.5 459.5)" fill="#efefef"/>
+  </g>
+</svg>

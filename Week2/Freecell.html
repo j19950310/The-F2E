@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The F2E Week2-Freecell</title>
+    <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+   <!-- jQueryUI -->
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- main -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/name.js"></script>
+    <script type="text/javascript" src="js/button.js"></script>
+
+
+    <script type="text/javascript" src="js/underscore-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="Main">
+    <a id="logo">Freecell</a>
+
+    <div class="TimeMove">
+        <span id="MoveCount">0</span>
+        <img src="UI/Main/Diamond.svg">
+        <span id="TimeCount">0:10</span>
+    </div>
+
+       <div id="MainMenu" class="MainButton">
+       <img src="UI/Main/Menu.png">
+       </div>
+       <div id="MainHint" class="MainButton">
+       <img src="UI/Main/Hint.png">
+       </div>
+       <div id="MainBack" class="MainButton">
+       <img src="UI/Main/Back.png">
+       </div>
+
+        <div class="FreeHold">
+            <div class="CardSize FirstHold" id="FreeHold_0"></div>
+            <div class="CardSize FirstHold" id="FreeHold_1"></div>
+            <div class="CardSize FirstHold" id="FreeHold_2"></div>
+            <div class="CardSize FirstHold" id="FreeHold_3"></div>
+        </div>
+
+        <div class="MainHold">
+            <div class="CardSize FirstHold" id="MainHold_0"></div>
+            <div class="CardSize FirstHold" id="MainHold_1"></div>
+            <div class="CardSize FirstHold" id="MainHold_2"></div>
+            <div class="CardSize FirstHold" id="MainHold_3"></div>
+        </div>
+
+        <div class="PlaceHold1">
+            <div class="CardSize FirstHold" id="PlaceHold_0"></div>
+            <div class="CardSize FirstHold" id="PlaceHold_1"></div>
+            <div class="CardSize FirstHold" id="PlaceHold_2"></div>
+            <div class="CardSize FirstHold" id="PlaceHold_3"></div>
+        </div>
+
+        <div class="PlaceHold2">
+            <div class="CardSize FirstHold" id="PlaceHold_4"></div>
+            <div class="CardSize FirstHold" id="PlaceHold_5"></div>
+            <div class="CardSize FirstHold" id="PlaceHold_6"></div>
+            <div class="CardSize FirstHold" id="PlaceHold_7"></div>
+        </div>
+</div>
+</body>
+</html>

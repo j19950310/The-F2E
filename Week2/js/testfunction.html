@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="underscore-min.js"></script>
+</head>
+<body>
+
+    <style type="text/css">
+    #Box1{
+        width:200px;
+        height:300px;
+        padding:10px;
+        border:1px #ccc dashed;
+        float:left;
+        margin-right:10px;
+    }
+    </style>
+
+    <script type="text/javascript">
+    function AllowDrop(event){
+        event.preventDefault();
+    }
+    function Drag(event){
+        event.dataTransfer.setData("text",event.currentTarget.id);
+    }
+    function Drop(event){
+        event.preventDefault();
+        var data=event.dataTransfer.getData("text");
+        event.currentTarget.appendChild(document.getElementById(data));
+    }
+    </script>
+
+    <div id="Box1" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+    <embed id='test1' type="image/svg+xml" src="../UI/Main/2_Diamonds.svg"  draggable="true" ondragstart="Drag(event)"></embed>
+    <img id="test2" src="../UI/Main/2_Diamonds.svg" draggable="true" ondragstart="Drag(event)">
+</div>
+
+
+    <script type="text/javascript" src="name.js"></script>
+</body>
+</html>

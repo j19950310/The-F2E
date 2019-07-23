@@ -1,0 +1,356 @@
+$CardR: #E8484F
+$CardB: #1B0708
+$BrandY: #FFAC4E
+$FF: 'Oleo Script', cursive
+
+@mixin TopLeft( $top, $left)
+    position: absolute
+    top: $top+px
+    left: $left+px
+
+#Card_red_12_Hearts
+#Card_black_1_Spades
+    z-index: 99
+#Card_black_2_Spades
+    z-index: 99
+
+body
+    background-color: #0A141D
+    overflow: hidden
+.Main
+    min-width: 1366px
+
+#logo
+    font-family: $FF
+    font-size: 24px
+    color: $BrandY
+    @include TopLeft(34,25)
+
+
+#MainMenu
+    position: absolute
+    top: 0px
+    right: 0px
+    border: 3px outset $BrandY
+    padding: 36.5px 22.5px 22px 32.5px
+    border-radius: 15px 0px 15px 15px
+    box-sizing: content-box
+    #Menu_button
+        transform: translateX(1px) translateY(1px)
+#MainHint
+    position: absolute
+    bottom: 0px
+    left: 0px
+    border: 3px outset $BrandY
+    padding: 31.75px 29px
+    border-radius: 15px 15px 15px 0px
+    box-sizing: content-box
+#MainBack
+    position: absolute
+    bottom: 0px
+    right: 0px
+    border: 3px outset $BrandY
+    padding: 31.75px 29px
+    border-radius: 15px 15px 0px 15px
+    box-sizing: content-box
+
+.hold
+    border: 1px outset $BrandY !important
+    border-radius: 6px 6px 6px 6px !important
+    box-sizing: border-box !important
+    margin: 10px !important
+
+.FreeHold
+    position: absolute
+    width: 41.875%
+    height: 25%
+    left: 7%
+    top: 7.5%
+
+    div
+        position: absolute
+        display: inline-block
+        box-sizing: content-box
+        background-image: url('../UI/Main/Hold.svg')
+        background-size: cover
+    div:nth-child(1)
+        left: 0px
+    div:nth-child(2)
+        left: 148px
+    div:nth-child(3)
+        left: 296px
+    div:nth-child(4)
+        left: 444px
+
+.MainHold
+    position: absolute
+    width: 41.875%
+    height: 25%
+    right: 7%
+    top: 7.5%
+
+    div
+        position: absolute
+        height: 93.3%
+        width: 20.2%
+        margin-right: 5%
+        display: inline-block
+        box-sizing: content-box
+        background-image: url('../UI/Main/Hold.svg')
+        background-size: cover
+        p
+            color: #FFFFFF
+            opacity: 0.3
+            font-family: $FF
+            font-size: 50px
+            text-align: center
+            margin-bottom: auto
+
+    div:nth-child(1)
+        left: 0px
+    div:nth-child(2)
+        left: 148px
+    div:nth-child(3)
+        left: 296px
+    div:nth-child(4)
+        left: 444px
+.PlaceHold1
+    position: absolute
+    width: 41.875%
+    height: 25%
+    left: 7%
+    top: 35%
+
+    div
+        position: absolute
+        height: 93.3%
+        width: 20.2%
+        margin-right: 5%
+        display: inline-block
+        box-sizing: content-box
+        background-image: url('../UI/Main/Hold.svg')
+        background-size: cover
+        // 放入的卡片
+    $j: 1
+    @while $j <= 4
+        div:nth-child(#{$j})
+            left: -148px + 148 * $j
+            $i: 1
+            @while $i < 20
+                .offset:nth-child(#{$i})
+                    top: -32px + 32 * $i !important
+                    left: 0px
+                $i: $i + 1
+        $j: $j + 1
+
+
+.PlaceHold2
+    position: absolute
+    width: 41.875%
+    height: 25%
+    right: 7%
+    top: 35%
+    div:last-child
+        margin: 0
+    div
+        position: absolute
+        height: 93.3%
+        width: 20.2%
+        margin-right: 5%
+        display: inline-block
+        box-sizing: content-box
+        background-image: url('../UI/Main/Hold.svg')
+        background-size: cover
+    $j: 1
+    @while $j <= 4
+        div:nth-child(#{$j})
+            left: -148px + 148 * $j
+            $i: 1
+            @while $i < 20
+                .offset:nth-child(#{$i})
+                    top: -32px + 32 * $i !important
+                    left: 0px
+                $i: $i + 1
+        $j: $j + 1
+
+.Card
+    position: absolute
+    img
+        position: absolute
+        width: 100%
+div.InvisDiv
+    top: 20px !important
+    left: 0 !important
+    background-image: none
+
+@media only screen and(max-width: 1366px)
+    .MainButton
+        width: 50px
+        height: 50px
+    .CardSize
+        height: 177.5px !important
+        width: 115px !important
+        margin-right: 48px
+    .HoldSize
+        height: 250px !important
+        width: 162px !important
+        margin-right: 48px !important
+
+    .MainHold,.PlaceHold2,.PlaceHold1,.FreeHold
+        div:last-child
+            margin: 0
+    .PlaceHold1,.PlaceHold2
+        top: 280px
+    .MainHold,.FreeHold
+        top: 75px
+
+    .TimeMove
+        position: absolute
+        top: 25px
+        left: 50%
+        height: 41px
+        width: 153px
+        transform: translateX(-50%)
+        span
+            height: 41px
+            color: white
+            position: absolute
+            font-family: $FF
+            font-size: 30px
+        #MoveCount
+            transform: translateX(-40px)
+            right: 50%
+            font-weight: 300
+            letter-spacing: 2.5px
+        #TimeCount
+            left: 50%
+            transform: translateX(35px)
+            font-weight: 300
+            letter-spacing: 2.5px
+
+
+        img
+            position: absolute
+            left: 50%
+            height: 25px
+            padding: 27px
+            padding-top: 8px
+            padding-bottom: 8px
+            transform: translateX(-50%)
+
+
+@media only screen and(min-width: 1366px)
+    .MainButton
+        width: 50px
+        height: 50px
+    .CardSize
+        height: 177.5px !important
+        width: 115px !important
+        margin-right: 48px
+    .HoldSize
+        height: 250px !important
+        width: 162px !important
+        margin-right: 48px !important
+
+    .MainHold,.PlaceHold2,.PlaceHold1,.FreeHold
+        div:last-child
+            margin: 0
+    .PlaceHold1,.PlaceHold2
+        top: 280px
+    .MainHold,.FreeHold
+        top: 75px
+
+    .TimeMove
+        position: absolute
+        top: 25px
+        left: 50%
+        height: 41px
+        width: 153px
+        transform: translateX(-50%)
+        span
+            height: 41px
+            color: white
+            position: absolute
+            font-family: $FF
+            font-size: 30px
+        #MoveCount
+            transform: translateX(-40px)
+            right: 50%
+            font-weight: 300
+            letter-spacing: 2.5px
+        #TimeCount
+            left: 50%
+            transform: translateX(35px)
+            font-weight: 300
+            letter-spacing: 2.5px
+
+
+        img
+            position: absolute
+            left: 50%
+            height: 25px
+            padding: 27px
+            padding-top: 8px
+            padding-bottom: 8px
+            transform: translateX(-50%)
+
+
+@media only screen and(min-width: 1920px)
+    .MainButton
+        width: auto
+        height: auto
+    .CardSize
+        height: 250px !important
+        width: 162px !important
+        margin-right: 48px
+    .HoldSize
+        height: 250px !important
+        width: 162px !important
+        margin-right: 48px !important
+
+    .MainHold,.PlaceHold2,.PlaceHold1,.FreeHold
+        height: 268px
+        width: 804px
+        div:last-child
+            margin: 0
+    .FreeHold,.MainHold
+        top: 10%
+    .PlaceHold1,.PlaceHold2
+        top: 38%
+    .MainHold,.PlaceHold2
+        right: 7%
+    .TimeMove
+        position: absolute
+        top: 25px
+        left: 50%
+        height: 41px
+        width: 153px
+        transform: translateX(-50%)
+        span
+            height: 41px
+            color: white
+            position: absolute
+            font-family: $FF
+            font-size: 30px
+        #MoveCount
+            transform: translateX(-40px)
+            right: 50%
+            font-weight: 300
+            letter-spacing: 2.5px
+        #TimeCount
+            left: 50%
+            transform: translateX(35px)
+            font-weight: 300
+            letter-spacing: 2.5px
+
+
+        img
+            position: absolute
+            left: 50%
+            height: 25px
+            padding: 27px
+            padding-top: 8px
+            padding-bottom: 8px
+            transform: translateX(-50%)
+
+

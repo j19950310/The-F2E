@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="162" height="250" viewBox="0 0 162 250">
+  <defs>
+    <filter id="Rectangle_3123" x="-9" y="-3" width="180" height="268" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_3125" x="1" y="7" width="160" height="248" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Hold">
+      <rect width="162" height="250"/>
+    </clipPath>
+  </defs>
+  <g id="Hold" clip-path="url(#clip-Hold)">
+    <g id="Hold-2" data-name="Hold" transform="translate(-140 -50)">
+      <g transform="matrix(1, 0, 0, 1, 140, 50)" filter="url(#Rectangle_3123)">
+        <g id="Rectangle_3123-2" data-name="Rectangle 3123" fill="none" stroke="#ffac4e" stroke-width="3">
+          <rect width="162" height="250" rx="15" stroke="none"/>
+          <rect x="1.5" y="1.5" width="159" height="247" rx="13.5" fill="none"/>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 140, 50)" filter="url(#Rectangle_3125)">
+        <g id="Rectangle_3125-2" data-name="Rectangle 3125" transform="translate(10 10)" fill="none" stroke="#ffac4e" stroke-width="1">
+          <rect width="142" height="230" rx="6" stroke="none"/>
+          <rect x="0.5" y="0.5" width="141" height="229" rx="5.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

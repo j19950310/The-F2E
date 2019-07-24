@@ -9,8 +9,12 @@ $(document).ready(function() {
     ColClass = [];
     // 設定卡片所在parent(debug)
     CardLocation = {};
+    // 步數
+    Count = 0;
+    NowCard = '';
+    NowPlace = '';
+    CanReverseCount = false;
 
-    //
     // IdText 設定ID名稱
         for (var i = 0; i < CardDeck.length; i++) {
 
@@ -45,10 +49,11 @@ $(document).ready(function() {
             }
     // 建立訊息快照，每個位置當下有哪些卡，用來回朔
     Location_Card = {};
-    for (var i = 0; i <= 4; i++) {
+    for (var i = 0; i < 4; i++) {
         Location_Card['#PlaceHold_'+i]
         = Location_Card['#FreeHold_'+i]
         = Location_Card['#MainHold'+i]
+        = Location_Card['#PlaceHold_'+(i+4)]
         =''
     }
 
@@ -64,6 +69,9 @@ CardDeckMatrix = [];
     for (var i = 0; i < 52; i++) {
         CardDeckMatrix.push([ IdText[i], ColClass[i], SrcText[i] ]);
     };
+
+// 開場設定
+
     // 洗牌
         CardDeckMatrix = _.shuffle(CardDeckMatrix);
 
@@ -115,6 +123,8 @@ $(document).ready(function() {
 
         RefreshMovable();
         PlaceHoldRefresh();
+        Location_snap();
+        This_Level_Location_snap();
 });
 
 
@@ -149,10 +159,10 @@ AcceptID = ''
 
         cursorAt: {top: 50,left: 50},
         start: function(){
-                // 照張相
-                Location_snap();
+                //計時開始
+                TimeCountStart();
+                JustOneCount = false;
                 // 清空紀錄
-                console.log("清空前Stat-DropContent="+DropContent);
                 DropContent = '';
                 FreeHoldHaveAnyCard();
 
@@ -206,13 +216,10 @@ AcceptID = ''
                 if (NuminMain == 1) {
                     LocationAccept[CardLocation[this.id]] =
                     "#Card_red_1_Hearts,#Card_red_1_Diamonds,#Card_black_1_Clubs,#Card_black_1_Spades";
-                    console.log("card=1")
 
                 }
                 else if( NuminMain > 1){
-                    console.log('card>1')
                     LocationAccept[CardLocation[this.id]] = '#' + this.id;
-                    console.log(CardLocation[this.id]);
                     RefreshDroppable();
 
                 }
@@ -220,16 +227,15 @@ AcceptID = ''
 
                 break;
             }
-            CardLocation[this.id] = '';
         },
 
 
         stop: function(){
 
+
             // 調整到框內
             RefreshDroppable();
             $(this).appendTo(DropContent).css({top: '0',left: '0'});
-            console.log("應該是放進這"+DropContent);
             // 如果是placehold，卡可以放入卡內，放入之後放到上一層
             if ( DropContent.split("_")[0] == "#Card") {
                $(this).appendTo($(DropContent).parent()).css({top: '0',left: '0'});
@@ -266,7 +272,6 @@ AcceptID = ''
                 case '#MainHold':
                 CalculateDroppable_MainHold(this.id);
                 LocationAccept[CardLocation[this.id]] = AcceptID;
-                console.log("程式內容器:"+DropContent+"  此時能接受的:" +AcceptID);
                 RefreshDroppable();
                 break;
 
@@ -275,9 +280,9 @@ AcceptID = ''
             // 更新可移動卡片
             RefreshMovable();
             PlaceHoldRefresh();
-            // // 放置的時候儲存可以放至的卡
-            // LocationAccept[DropContent] = AcceptID;
-
+            NowCard = this.id;
+            CountSteps(this.id);
+            NowCard = this.id;
         }
     });
 // 拖曳功能設定結束
@@ -285,11 +290,15 @@ AcceptID = ''
 //容器功能開始
     $('.FirstHold').droppable({
         drop: function(){
+            NowPlace = this.id;
+            // 記錄回朔
+            Location_snap();
+            // 記錄回朔
+            Location_snap();
             // 更新一下這個位置可以放卡的資訊
             RefreshDroppable();
             // 丟給物件自己ID，裝進去
             DropContent = '#' + this.id;
-            console.log("Drop內改dropContent="+DropContent);
                 },
 
         });
@@ -307,14 +316,15 @@ RefreshDroppable = function(){
 
         $('#FreeHold_'+i).droppable({
             drop: function(){
+                NowPlace = this.id;
+                // 記錄回朔
+                Location_snap();
 
                 // 更新一下這個位置可以放卡的資訊
                 RefreshDroppable();
                 // 丟給物件自己ID，裝進去
                 DropContent = '#' + this.id;
-                console.log("Drop內改dropContent="+DropContent);
                 // 丟給物件自己ID，裝進去
-                    console.log(   $("#"+$(this)[0].id + ">div") );
                     },
             accept: LocationAccept['#FreeHold_'+i],
             });
@@ -322,42 +332,45 @@ RefreshDroppable = function(){
         if ($('#PlaceHold_'+i+'>div').length == 0) {
                 $('#PlaceHold_'+i+',#PlaceHold_'+i+'>div:last-child').droppable({
                  drop: function(){
+                    NowPlace = this.id;
+                    // 記錄回朔
+                    Location_snap();
 
                      // 更新一下這個位置可以放卡的資訊
                      RefreshDroppable();
                      // 丟給物件自己ID，裝進去
                      DropContent = '#' + this.id;
-                     console.log("Drop內改dropContent="+DropContent);
                      // 丟給物件自己ID，裝進去
-                          console.log(   $("#"+$(this)[0].id + ">div:last-child") );
                          },
                  accept: "#" + IdText.join(',#')
                  });
             }else{
               $('#PlaceHold_'+i+',#PlaceHold_'+i+'>div:last-child').droppable({
                drop: function(){
+                NowPlace = this.id;
+                // 記錄回朔
+                Location_snap();
 
                    // 更新一下這個位置可以放卡的資訊
                    RefreshDroppable();
                    // 丟給物件自己ID，裝進去
                    DropContent = '#' + this.id;
-                   console.log("Drop內改dropContent="+DropContent);
                    // 丟給物件自己ID，裝進去
-                        console.log(   $("#"+$(this)[0].id + ">div:last-child") );
                        },
                accept: LocationAccept['#PlaceHold_'+i],
                });}
 
         $('#MainHold_'+i).droppable({
             drop: function(){
+                NowPlace = this.id;
+                // 記錄回朔
+                Location_snap();
 
                 // 更新一下這個位置可以放卡的資訊
                 RefreshDroppable();
                 // 丟給物件自己ID，裝進去
                 DropContent = '#' + this.id;
-                console.log("Drop內改dropContent="+DropContent);
                 // 丟給物件自己ID，裝進去
-                    console.log(   $("#"+$(this)[0].id + ">div") );
                     },
             accept: LocationAccept['#MainHold_'+i],
             });
@@ -368,41 +381,41 @@ RefreshDroppable = function(){
         if ($('#PlaceHold_'+i+'>div').length == 0) {
             $('#PlaceHold_'+i+',#PlaceHold_'+i+'>div:last-child').droppable({
              drop: function(){
+                NowPlace = this.id;
+                // 記錄回朔
+                Location_snap();
 
                  // 更新一下這個位置可以放卡的資訊
                  RefreshDroppable();
                  // 丟給物件自己ID，裝進去
                  DropContent = '#' + this.id;
-                 console.log("Drop內改dropContent="+DropContent);
                  // 丟給物件自己ID，裝進去
-                      console.log(   $("#"+$(this)[0].id + ">div:last-child") );
                      },
              accept: "#" + IdText.join(',#')
              });
         }else{
           $('#PlaceHold_'+i+',#PlaceHold_'+i+'>div:last-child').droppable({
            drop: function(){
+            NowPlace = this.id;
+            // 記錄回朔
+            Location_snap();
 
                // 更新一下這個位置可以放卡的資訊
                RefreshDroppable();
                // 丟給物件自己ID，裝進去
                DropContent = '#' + this.id;
-               console.log("Drop內改dropContent="+DropContent);
                // 丟給物件自己ID，裝進去
-                    console.log(   $("#"+$(this)[0].id + ">div:last-child") );
                    },
            accept: LocationAccept['#PlaceHold_'+i],
            });}
     }
 
-    console.log('刷新Accept');
 }
 
 
 
 // 用來計算可以放進的方程式,回傳可放置的ID選擇器
 CalculateDroppable_PlaceHold = function(id){
-    console.log(id)
     IdMatrix = id.split('_');
     Before = 0;
     ColorAccess ='';
@@ -479,7 +492,6 @@ RefreshMovable = function(){
 
 // 照相系統，紀錄每個位置當下有什麼牌
 Location_snap = function(){
-
     Keys = _.keys(Location_Card);
     Values = [];
 
@@ -497,6 +509,27 @@ Location_snap = function(){
 
         Location_Card[Keys[i]] = Values[i];
     }
+
+};
+
+This_Level_Location_snap = function(){
+    First_Keys = _.keys(Location_Card);
+    First_Values = [];
+
+    for (var i = 0; i < 16; i++) {
+        First_Values.push([]);
+    }
+
+    for (var i = 0; i < First_Keys.length; i++) {
+
+        j = $(First_Keys[i]+">div").length;
+
+        for (var k = 0; k < j; k++) {
+            First_Values[i].push( "#" + $(First_Keys[i]+">div")[k].id );
+        }
+
+        Location_Card[First_Keys[i]] = First_Values[i];
+    }
 };
 
 
@@ -504,13 +537,51 @@ Reverse = function(){
 
     for (var i = 0; i < Keys.length; i++) {
         for (var j = 0; j < Values[i].length; j++) {
-            $(Values[i][j]).appendTo( Keys[i] );
+            $(Values[i][j]).appendTo( Keys[i] ).css({top: j*33 + 'px',left: 0, zIndex: j});;
+
         }
     }
+    // 回朔步
+    if (CanReverseCount) {
+        CanReverseCount = false;
+        Count -=1;
+        $('#MoveCount').text(Count);}
 
 
 
 }
+
+Reverse_This_Level = function(){
+
+    for (var i = 0; i < First_Keys.length; i++) {
+        for (var j = 0; j < First_Values[i].length; j++) {
+            $(First_Values[i][j]).appendTo( First_Keys[i] ).css({top: j*33 + 'px',left: 0, zIndex: j});
+
+        }
+    }
+    // LocationAccept Reset
+    for (var i = 0; i < 4; i++) {
+
+                // 只能接受AAAA
+         LocationAccept['#MainHold_'+i] =
+         "#Card_red_1_Hearts,#Card_red_1_Diamonds,#Card_black_1_Clubs,#Card_black_1_Spades";
+
+        // 所有牌都可以放
+         LocationAccept['#FreeHold_'+i] = "#" + IdText.join(',#');
+
+         // 算一下
+         LocationAccept['#PlaceHold_'+i] =
+         CalculateDroppable_PlaceHold( $('#PlaceHold_'+i+' div:nth-last-child(1)')[0].id );
+         LocationAccept['#PlaceHold_'+(i+4)] =
+         CalculateDroppable_PlaceHold( $('#PlaceHold_'+(i+4)+' div:nth-last-child(1)')[0].id );
+
+    }
+
+}
+
+
+
+
 
 
 FreeHoldHaveAnyCard = function(){
@@ -519,11 +590,9 @@ FreeHoldHaveAnyCard = function(){
 
         if ($("#FreeHold_"+i+">div").length == 0) {
             LocationAccept["#FreeHold_" + i] = "#" + IdText.join(',#');
-            console.log(i+"v");
         }
         else{
             LocationAccept["#FreeHold_" + i] = "dis";
-            console.log(i+"x");
         }
 
          }
@@ -547,7 +616,18 @@ PlaceHoldRefresh = function(){
 }
 
 
+CountSteps = function(NowWhere){
 
+    // 非(同一張卡同一個位置)
+    if ( (NowCard == NowWhere)&(('#'+ NowPlace) == CardLocation[NowWhere]))
+     {
+
+            Count += 1;
+        $('#MoveCount').text(Count);}
+        CanReverseCount = true;
+
+
+        }
 
 
 

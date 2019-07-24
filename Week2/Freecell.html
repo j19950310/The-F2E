@@ -11,6 +11,7 @@
    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!-- main -->
+    <script type="text/javascript" src="js/TimeControl.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/name.js"></script>
     <script type="text/javascript" src="js/button.js"></script>
@@ -28,18 +29,23 @@
     <div class="TimeMove">
         <span id="MoveCount">0</span>
         <img src="UI/Main/Diamond.svg">
-        <span id="TimeCount">0:10</span>
+        <span id="TimeCount">00:00</span>
     </div>
 
-       <div id="MainMenu" class="MainButton">
-       <img src="UI/Main/Menu.png">
-       </div>
-       <div id="MainHint" class="MainButton">
-       <img src="UI/Main/Hint.png">
-       </div>
-       <div id="MainBack" class="MainButton">
-       <img src="UI/Main/Back.png">
-       </div>
+
+
+        <div id="MainMenu" class="MainButton">
+        <img id="ClickMenu" src="UI/Main/Menu.png">
+        <img id="Close" class="hide" src="UI/Main/Close.png">
+        </div>
+        <div id="MainHint" class="MainButton">
+        <img src="UI/Main/Hint.png">
+                </div>
+        <div id="MainBack" class="MainButton">
+        <img src="UI/Main/Back.png">
+        </div>
+
+
 
         <div class="FreeHold">
             <div class="CardSize FirstHold" id="FreeHold_0"></div>
@@ -69,5 +75,21 @@
             <div class="CardSize FirstHold" id="PlaceHold_7"></div>
         </div>
 </div>
+
+<div class="Menu Menu_hide">
+        <div class="Menu_inside">
+            <div class="Restart"><div class="Menu_margin">Restart this game</div>
+                <img id="reverse" src="UI/Main/Back.png">
+            </div>
+            <div class="Newgame"><div class="Menu_margin">Start a new game</div>
+                <img src="UI/Main/Close.png">
+            </div>
+            <div class="EndGame"><div class="Menu_margin">End game</div>
+                <img src="UI/Main/Correct.png">
+            </div>
+        </div>
+</div>
+
+
 </body>
 </html>

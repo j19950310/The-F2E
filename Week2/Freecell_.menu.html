@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The F2E Week2-Freecell</title>
+    <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+   <!-- jQueryUI -->
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- main -->
+    <script type="text/javascript" src="js/button.js"></script>
+
+    <script type="text/javascript" src="js/underscore-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="Main">
+    <a id="logo">Freecell</a>
+
+    <div class="TimeMove">
+        <span id="MoveCount">0</span>
+        <img src="UI/Main/Diamond.svg">
+        <span id="TimeCount">0:10</span>
+    </div>
+
+       <div id="MainMenu" class="MainButton">
+       <img id="ClickMenu" src="UI/Main/Menu.png">
+       <img id="Close" class="hide" src="UI/Main/Close.png">
+       </div>
+       <div id="MainHint" class="MainButton">
+       <img src="UI/Main/Hint.png">
+       </div>
+       <div id="MainBack" class="MainButton">
+       <img src="UI/Main/Back.png">
+       </div>
+
+
+</div>
+
+<div class="Menu">
+        <div class="Menu_inside">
+            <div class="Restart"><div class="Menu_margin">Restart this game</div>
+                <img id="reverse" src="UI/Main/Back.png">
+            </div>
+            <div class="Newgame"><div class="Menu_margin">Start a new game</div>
+                <img src="UI/Main/Close.png">
+            </div>
+            <div class="EndGame"><div class="Menu_margin">End game</div>
+                <img src="UI/Main/Correct.png">
+            </div>
+        </div>
+</div>
+
+
+
+
+</body>
+</html>

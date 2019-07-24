@@ -24,10 +24,12 @@ body
     font-family: $FF
     font-size: 24px
     color: $BrandY
+    z-index: 81
     @include TopLeft(34,25)
 
 
 #MainMenu
+    z-index: 81
     position: absolute
     top: 0px
     right: 0px
@@ -183,22 +185,180 @@ div.InvisDiv
     left: 0 !important
     background-image: none
 
+
+.Menu
+    position: absolute
+    top: -5px
+    left: 0
+    width: 100%
+    height: 90%
+    border: 3px solid #FFAC4E
+    border-radius: 0px 0px 45px 45px
+    background-color: #0A141D
+    z-index: 80
+    transition-duration: 0.3s
+    .Menu_inside
+        position: absolute
+        bottom: 20%
+        left: 50%
+        transform: translateX(-50%)
+        .Restart,.Newgame,.EndGame
+            border: 3px solid #FFAC4E
+            border-radius: 15px 15px 15px 15px
+            margin-top: 45px
+            width: fit-content
+            height: fit-content
+            margin-right: auto
+            margin-left: auto
+            &:hover
+                background-color: #FFAC4E
+                div.Menu_margin
+                    transform: translateX(45px)
+                    color: black
+            div.Menu_margin
+                font-size: 50px
+                color: #FFAC4E
+                font-family: $FF
+                font-weight: 300
+                letter-spacing: 4.75px
+                display: inline-block
+                margin: 17.25px 47.5px
+                transition-duration: 0.3s
+
+            img
+                margin-right: 55px
+                transform: translateY(4px)
+            #reverse
+                transform:  translateY(4px) scaleX(-1)
+
+
+.Menu_hide
+    transform: translateY(-100%)
+
+
+.End
+    position: absolute
+    bottom: 0px
+    left: 50%
+    width: 41.7%
+    height: 660px
+    border: 3px solid #FFAC4E
+    border-radius: 45px 45px 0px 0px
+    background-color: #0A141D
+    z-index: 80
+    transition-duration: 0.3s
+    transform: translateX(-50%)
+    .EndContent
+        margin-top: 38px
+        .Step
+            font-size: 100px
+            color: #FFFFFF
+            font-family: $FF
+            letter-spacing: 6.5px
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+        #deco
+            position: absolute
+            width: 100%
+            top: 81px
+    .TimeCost
+        margin-top: 187px
+        .TimeCost_inside
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            #TimeIcon
+                margin-right: 38.75px
+                display: inline-block
+            .TimeCost_time
+                display: inline-block
+                font-size: 50px
+                color: #FFFFFF
+                font-family: $FF
+                letter-spacing: 3.5px
+    .Restart,.Newgame
+        border: 3px solid #FFAC4E
+        border-radius: 15px 15px 15px 15px
+        margin-top: 290px
+        width: fit-content
+        height: fit-content
+        margin-right: auto
+        margin-left: auto
+        &:hover
+            background-color: #FFAC4E
+            div.Menu_margin
+                transform: translateX(45px)
+                color: black
+        div.Menu_margin
+            font-size: 50px
+            color: #FFAC4E
+            font-family: $FF
+            font-weight: 300
+            letter-spacing: 4.75px
+            display: inline-block
+            margin: 17.25px 47.5px
+            transition-duration: 0.3s
+    .Newgame
+        margin-top: 66px
+        img
+            margin-right: 55px
+            transform: translateY(4px)
+        #reverse
+            transform:  translateY(4px) scaleX(-1)
+
+
+
+
+
+
+
+.MainButton
+    &:hover
+        background-color: #FFAC4E
+        img
+            filter: grayscale(1)
+    #Close
+        transform: rotateZ(45deg)
+        z-index: 81
+
+.hide
+    display: none !important
+.noBorder
+    border: none !important
+    &:hover
+        background-color: #0A141D
+        img
+            transform: scale(1.3) rotateZ(45deg) !important
+            transition-duration: 0.2s
+            filter: none
+
+
+
 @media only screen and(max-width: 1366px)
     .MainButton
-        width: 50px
-        height: 50px
+        width: 25px
+        height: 25px
+        img
+            width: 100%
     .CardSize
         height: 177.5px !important
         width: 115px !important
-        margin-right: 48px
     .HoldSize
         height: 250px !important
         width: 162px !important
         margin-right: 48px !important
 
     .MainHold,.PlaceHold2,.PlaceHold1,.FreeHold
-        div:last-child
-            margin: 0
+        div:nth-child(1)
+            left: 0%
+        div:nth-child(2)
+            left: 25%
+        div:nth-child(3)
+            left: 50%
+        div:nth-child(4)
+            left: 75%
+    .PlaceHold1,.PlaceH
     .PlaceHold1,.PlaceHold2
         top: 280px
     .MainHold,.FreeHold
@@ -238,6 +398,31 @@ div.InvisDiv
             padding-bottom: 8px
             transform: translateX(-50%)
 
+@media only screen and(max-width: 1080px)
+    .MainButton
+        width: 20px
+        height: 20px
+        img
+            width: 100%
+    .CardSize
+        height: 145px !important
+        width: 95px !important
+    .HoldSize
+        height: 250px !important
+        width: 162px !important
+        margin-right: 48px !important
+
+    .MainHold,.PlaceHold2,.PlaceHold1,.FreeHold
+        div:nth-child(1)
+            left: 0%
+        div:nth-child(2)
+            left: 25%
+        div:nth-child(3)
+            left: 50%
+        div:nth-child(4)
+            left: 75%
+
+
 
 @media only screen and(min-width: 1366px)
     .MainButton
@@ -253,8 +438,14 @@ div.InvisDiv
         margin-right: 48px !important
 
     .MainHold,.PlaceHold2,.PlaceHold1,.FreeHold
-        div:last-child
-            margin: 0
+        div:nth-child(1)
+            left: 0%
+        div:nth-child(2)
+            left: 25%
+        div:nth-child(3)
+            left: 50%
+        div:nth-child(4)
+            left: 75%
     .PlaceHold1,.PlaceHold2
         top: 280px
     .MainHold,.FreeHold
@@ -302,7 +493,7 @@ div.InvisDiv
     .CardSize
         height: 250px !important
         width: 162px !important
-        margin-right: 48px
+
     .HoldSize
         height: 250px !important
         width: 162px !important
@@ -311,8 +502,14 @@ div.InvisDiv
     .MainHold,.PlaceHold2,.PlaceHold1,.FreeHold
         height: 268px
         width: 804px
-        div:last-child
-            margin: 0
+        div:nth-child(1)
+            left: 0px
+        div:nth-child(2)
+            left: 222px
+        div:nth-child(3)
+            left: 431px
+        div:nth-child(4)
+            left: 640px
     .FreeHold,.MainHold
         top: 10%
     .PlaceHold1,.PlaceHold2

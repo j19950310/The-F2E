@@ -283,6 +283,7 @@ AcceptID = ''
             NowCard = this.id;
             CountSteps(this.id);
             NowCard = this.id;
+            Check_Finish();
         }
     });
 // 拖曳功能設定結束
@@ -629,7 +630,25 @@ CountSteps = function(NowWhere){
 
         }
 
+Check_Finish = function(){
 
+    if (
+    ( $("#MainHold_0>div").length == 13 )&
+    ( $("#MainHold_1>div").length == 13 )&
+    ( $("#MainHold_2>div").length == 13 )&
+    ( $("#MainHold_3>div").length == 13 )
+     ) {Finish();}
+}
+
+
+Finish = function(){
+
+    TimeCountPlayAndStop();
+    $(".End").toggleClass('End_hide');
+    $(".TimeCost_time").text($("#TimeCount").text());
+    $(".Step").text($("#MoveCount").text());
+
+}
 
 
 

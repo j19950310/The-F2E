@@ -224,11 +224,13 @@ div.InvisDiv
                 display: inline-block
                 margin: 17.25px 47.5px
                 transition-duration: 0.3s
+            .short
+                display: inline
 
             img
                 margin-right: 55px
                 transform: translateY(4px)
-            #reverse
+            .reverse
                 transform:  translateY(4px) scaleX(-1)
 
 
@@ -299,14 +301,15 @@ div.InvisDiv
             display: inline-block
             margin: 17.25px 47.5px
             transition-duration: 0.3s
+        .reverse
+            transform:  translateY(4px) scaleX(-1)
+        img
+            margin-right: 40px
     .Newgame
         margin-top: 66px
-        img
-            margin-right: 55px
-            transform: translateY(4px)
-        #reverse
-            transform:  translateY(4px) scaleX(-1)
 
+.End_hide
+    transform: translateX(-50%) translateY(100%)
 
 
 
@@ -339,6 +342,7 @@ div.InvisDiv
     .MainButton
         width: 25px
         height: 25px
+        padding: 16px 16px !important
         img
             width: 100%
     .CardSize
@@ -397,11 +401,19 @@ div.InvisDiv
             padding-top: 8px
             padding-bottom: 8px
             transform: translateX(-50%)
+    .Menu_inside
+        img
+            display: none !important
+        .Menu_margin
+            font-size: 35px !important
+            .short
+                display: inline
 
 @media only screen and(max-width: 1080px)
     .MainButton
         width: 20px
         height: 20px
+        padding: 20px 20px !important
         img
             width: 100%
     .CardSize
@@ -421,13 +433,23 @@ div.InvisDiv
             left: 50%
         div:nth-child(4)
             left: 75%
-
+    .Menu_inside
+        img
+            display: none !important
+        .Menu_margin
+            font-size: 35px !important
+            .short
+                display: none
 
 
 @media only screen and(min-width: 1366px)
     .MainButton
-        width: 50px
-        height: 50px
+        width: 25px
+        height: 25px
+        padding: 20px 20px !important
+        img
+            width: 30px
+
     .CardSize
         height: 177.5px !important
         width: 115px !important
@@ -484,6 +506,7 @@ div.InvisDiv
             padding-top: 8px
             padding-bottom: 8px
             transform: translateX(-50%)
+
 
 
 @media only screen and(min-width: 1920px)

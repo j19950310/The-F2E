@@ -32,6 +32,30 @@ $(document).ready(function() {
 
     });
 
+    $(".EndGame").click(function(event) {
+
+        Menu_back_off();
+        TimeCountPlayAndStop();
+        $(".End").toggleClass('End_hide');
+        $(".TimeCost_time").text($("#TimeCount").text());
+        $(".Step").text($("#MoveCount").text());
+
+
+    });
+
+    $(".End_restart").click(function(event) {
+
+
+        Menu_back_off();
+        TimeCountPlayAndStop();
+        $(".End").toggleClass('End_hide');
+        TimeCountReset();
+        JustOneCount = true;
+
+    });
+
+
+
     $(".Newgame").click(function(event) {
         /* Act on the event */
         location.reload();

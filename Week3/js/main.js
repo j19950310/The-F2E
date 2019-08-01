@@ -1,3 +1,6 @@
+$(document).ready(function() {
+
+
 var mp3 = new Vue({
     el: ".mainPlay",
     data:{
@@ -357,3 +360,4 @@ AdRandom = function(){
 
 
 
+        });

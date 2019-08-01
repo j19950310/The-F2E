@@ -1,0 +1,322 @@
+*
+
+    box-sizing: border-box
+    -webkit-user-select: none
+    padding: 0
+    margin: 0
+    font-family: 'Poppins', sans-serif
+
+.mainPlay
+    display: inline-block
+    overflow: hidden
+    position: absolute
+    width: 100%
+    height: 100%
+    max-height: 800px
+    min-height: 600px
+    background-color: #1A1A1A
+    .main_song
+        position: absolute
+        height: 88%
+        width: 100%
+        white-space: nowrap
+        .photo
+            position: relative
+            display: inline-block
+            max-width: 460px
+            height: 100%
+            overflow: hidden
+            .more
+                position: absolute
+                width: 30px
+                height: 30px
+                top: 40px
+                right: 60px
+                .block
+                    background-color: #FFFFFF
+                    position: absolute
+                    width: 12px
+                    height: 12px
+                .b1
+                    top: 0
+                    right: 0
+                .b2
+                    top: 0
+                    left: 0
+                .b3
+                    bottom: 0
+                    right: 0
+                .b4
+                    bottom: 0
+                    left: 0
+
+            .photo_text
+                position: absolute
+                width: 100%
+                height: 250px
+                bottom: 0
+                background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,100))
+
+                .Artist_info
+                    .info
+                        position: absolute
+                        bottom: 0
+                        padding: 30px 60px
+                        .followers,button
+                            display: inline-block
+                            outline: none
+
+                        .followers
+                            font-size: 11px
+                            margin-right: 45px
+                            margin-top: 20px
+                        #following
+                            margin-right: 15px
+        .list
+            position: absolute
+            display: inline-block
+            width: 60%
+            height: 100%
+
+            .album
+                height: 220px
+                width: 100%
+                .album_info
+                    position: relative
+                    top: 90px
+                    margin: 0px 40px
+                    margin-right: 90px
+                    img
+                        display: inline-block
+                    .like
+                        display: block
+                        position: absolute
+                        bottom: 0
+                        right: 0
+                    .album_text
+                        position: absolute
+                        display: inline-block
+                        margin-left: 50px
+                        top: -15px
+
+
+            .song_list
+                width: 130%
+                height: 70%
+                overflow: scroll
+                &:-webkit-scrollbar
+                    width: 0 !important
+    .main_bar
+        position: absolute
+        bottom: 0
+        width: 92%
+        min-height: 100px
+        background: linear-gradient(#772020, #361024)
+        .load_bar
+            position: absolute
+            z-index: 1
+            top: 0
+            width: 100%
+            height: 13px
+            background-color: #FFFFFF
+            #load_bar_now
+                position: absolute
+                top: 1px
+                left: 1px
+                height: 11px
+                padding: 0.25px
+                background-color: #E5B4B7
+            #timeNow
+                position: absolute
+                top: 13px
+                left: 24px
+            #timeEnd
+                position: absolute
+                right: 24px
+                top: 13px
+        .bar_info
+            position: absolute
+            width: 100%
+            height: 100%
+            div
+                position: absolute
+                display: inline-block
+            #bar_info_song
+                top: 40px
+                left: 78px
+                width: 300px
+                height: 40px
+                #bar_info_img
+                    position: relative
+                    img
+                        margin-right: 20px
+                #bar_info_title
+                    position: absolute
+
+            #bar_info_shuffle
+                left: 500px
+                top: 50px
+            #bar_info_back
+                left: 550px
+                top: 50px
+            #bar_info_playAndpause
+                left: 590px
+                top: 30px
+            #bar_info_next
+                top: 51px
+                left: 660px
+            #bar_info_replayMode
+                top: 48px
+                left: 725px
+            #bar_info_voice
+                top: 46px
+                right: 0
+                width: 25%
+                #bar_info_voice_bar
+                    position: absolute
+                    left: 35px
+                    top: 9px
+                    height: 10px
+                    width: 50%
+                    border-radius: 3px
+                    background-color: #FFFFFF
+                    overflow: hidden
+                    #bar_info_voice_value
+                        background-color: #964A4D
+                        height: 10px
+                        width: 20%
+
+                #bar_info_like
+                    position: absolute
+                    right: 20%
+
+
+
+
+
+
+
+
+
+    .mainItem
+        position: absolute
+        z-index: 2
+        right: 0
+        height: 100%
+        width: 10%
+        max-width: 80px
+        max-height: 800px
+        display: inline-block
+        background-color: #4B3434
+        div
+            margin: 50px 20px
+        #Item_profile
+            img
+                width: 55px
+                transform: translateX(-15%)
+        #Item_zoom
+            position: absolute
+            bottom: 100px
+        #Item_gear
+            position: absolute
+            bottom: 0
+.PlayButton
+    width: 130px
+    height: 30px
+    border-radius: 17px
+    background-color: #964A4D
+    border: none
+    font-size: 14px
+    font-weight: 500
+    color: #FFFFFF
+    outline: none
+
+
+
+
+// text
+.LittleWord
+    color: #FFFFFF
+    font-size: 12px
+    font-weight: 200
+.MiddleWord
+    color: #FFFFFF
+    font-size: 20px
+    font-weight: 600
+    line-height: 22px
+.Number
+    color: #FFFFFF
+    font-size: 14px
+#editer
+    font-size: 14px
+    color: #E5B4B7
+    font-weight: 200
+#editer_name
+    font-size: 24px
+    color: #FFFFFF
+    font-weight: 500
+#album_name
+    font-size: 32px
+    color: #FFFFFF
+    font-weight: 500
+    margin-bottom: 10px
+#album_year
+    color: #707070
+
+// table
+table
+    width: 75%
+    th
+        color: #964A4D
+        font-size: 14px
+        font-weight: 500
+    tr
+        outline: 0.25px solid hsl(0, 0%, 15%)
+        height: 50px
+        &:nth-child(1)
+            outline: none
+            height: 0px
+    td
+        color: #FFFFFF
+        text-align: center
+        &:nth-child(1)
+            font-size: 18px
+            // 音符
+            img
+                transform: translate(-15px, 4px)
+        &:nth-child(2)
+            text-align: left
+        &:nth-child(3)
+            font-size: 14px
+            font-weight: 300
+        &:nth-child(4)
+            font-size: 14px
+            font-weight: 300
+
+
+    #list_title_num
+        padding-right: 70px
+    #list_title_title
+        text-align: left
+        padding-right: 200px
+        padding-bottom: 0px
+    #list_title_length
+        width: 7%
+    #list_title_like
+        width: 27%
+@media screen and (max-width: 1300px)
+    #bar_info_voice
+        right: -100px !important
+    #bar_info_voice_bar
+        width: 30% !important
+    #bar_info_like
+        visibility: hidden
+    .song_list
+        width: 100% !important
+    .album
+        width: 87% !important
+    #album_name
+        font-size: 24px!important
+@media screen and (min-width: 1080px)
+    .main_bar
+        width: 94% !important

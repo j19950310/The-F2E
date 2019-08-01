@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+</head>
+<body>
+
+    <!-- 主畫面 -->
+    <div class="mainPlay">
+        <!-- 左上大面控制區 -->
+        <div class="main_song">
+            <!-- 左邊照片大區 -->
+            <div class="photo">
+                <!-- 照片 -->
+                <img src="main/astist_photo.png">
+                <!-- 自製"更多" -->
+                <div class="more">
+                    <div class="block b1"></div>
+                    <div class="block b2"></div>
+                    <div class="block b3"></div>
+                    <div class="block b4"></div>
+                </div>
+                <!-- 照片下內容 -->
+                <div class="photo_text">
+                    <div class="Artist_info">
+                        <div class="info">
+                            <div class="Artist">
+                                <p id='editer'>ARTIST</p>
+                                <p id="editer_name">ED SHEERAN</p>
+                            </div>
+                            <div class="followers LittleWord">
+                                <p>123456</p>
+                                <p>Followers</p>
+                            </div>
+                            <button class="PlayButton"
+                             id="following"
+                            >FOLLOW</button>
+                            <button class="PlayButton"
+                            >PLAY</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- 相片結束 -->
+            <!-- 大區右側 -->
+            <div class="list">
+                <!-- 專輯控制在偏下側 -->
+                <div class="album">
+                    <!-- 專輯資訊 -->
+                    <div class="album_info">
+                        <img src="main/Ed_Sheeran_-_No._6_Collaborations_Project.png">
+                        <div class="album_text">
+                            <p id="album_year" class="LittleWord">2019</p>
+                            <p id="album_name">Youtube Audiolibrary</p>
+                            <button class="PlayButton"
+                            >PLAY</button>
+
+                        </div>
+                            <img class="like" src="main/heart-40x40.svg">
+
+                    </div>
+                </div>
+                <div class="song_list">
+                    <table>
+                        <tr>
+                            <th id="list_title_num">    </th>
+                            <th id="list_title_title">TITLE</th>
+                            <th id="list_title_length">LENGTH</th>
+                            <th id="list_title_like"><img src="main/heart-solid.svg"></th>
+                        </tr>
+                        <tr v-for="(test,index) in song" v-on:click="ClickSong(index+1)">
+                            <td >
+                                <img
+                                v-show="NowPlayingSong == (index+1)"
+                                src="main/ic_music_note_24px.svg">{{index+1}}
+                            </td>
+                            <td>{{test.name.replace('_',' ').replace('_',' ')}}</td>
+                            <td>{{TimeCount(test.long)}}</td>
+                            <td>
+                            {{random[index]}}&nbsp&nbsp&nbsp
+                            <img src="main/heart_no.svg">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div><!-- 專輯結束 -->
+        </div>
+
+        <!-- 主畫面右側工具列 -->
+        <div class="mainItem">
+            <div id="Item_profile">
+                <img src="main/profle.svg">
+            </div>
+            <div id="Item_home">
+                <img src="main/home-52.svg">
+            </div>
+            <div id="Item_library">
+                <img src="main/ic_library_music_48px.svg">
+            </div>
+            <div id="Item_file">
+                <img src="main/archive-2.svg">
+            </div>
+            <div id="Item_zoom">
+                <img src="main/zoom-2.svg"></div>
+            <div id="Item_gear">
+                <img src="main/settings-gear-63.svg">
+            </div>
+        </div><!-- 右側工具列結束 -->
+
+        <!-- 主畫面下側進度 -->
+        <div class="main_bar">
+            <div class="load_bar">
+                <div id="load_bar_now"
+                :style="{width: LoadBar + '%'}"
+                ></div>
+                <div id="timeNow" class="LittleWord">{{TimeCount(now)}}</div>
+                <div id="timeEnd" class="LittleWord">{{TimeCount(dura)}}</div>
+            </div>
+
+            <div class="bar_info">
+                <div id="bar_info_song">
+                    <div id="bar_info_img">
+                        <img src="main/Ed_Sheeran_-_No._6_Collaborations_Project-1.png">
+                    </div>
+                    <div id="bar_info_title">
+                        <p id="bar_song_name" class="MiddleWord">{{song[NowPlayingSong-1].name.replace("_"," ").replace("_"," ")}}</p>
+                        <p id="bar_song_editer" class="LittleWord">ED sheehan (with Justin)</p>
+                    </div>
+                </div>
+                <div id="bar_info_shuffle">
+                    <img :src="modeIconControl[mode].shuffle">
+                </div>
+                <div id="bar_info_back">
+                    <img src="main/Component 1.svg">
+                </div>
+                <div id="bar_info_playAndpause">
+                    <img src="main/Component.svg">
+                    <img src="main/Pause.svg" style="display: none;">
+                </div>
+                <div id="bar_info_next">
+                    <img src="main/Component (1).svg">
+                </div>
+                <div id="bar_info_replayMode">
+                    <img v-bind:src="modeIconControl[mode].repeat" v-bind:title="modeIconControl[mode].RepeatTittle">
+                </div>
+                <div id="bar_info_voice">
+                    <div id="bar_info_VoiceUp">
+                        <img src="main/ic_volume_up_24px.svg">
+                    </div>
+                    <div id="bar_info_voice_bar">
+                        <div id="bar_info_voice_value" :style="{width: Math.round(voNow*100) + 1 + '%'}"></div>
+                    </div>
+                    <div id="bar_info_like">
+                        <img src="main/heart-40x40.svg">
+                    </div>
+                </div>
+            </div>
+        </div><!-- 主畫面下側進度結束 -->
+
+    </div>
+
+
+    <!-- <script type="text/javascript" src="js/function.js"></script> -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

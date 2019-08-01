@@ -334,7 +334,6 @@ AdRandom = function(){
       $('#advertisement,#ad_backboard').show('300');
       mp3.Adshow = true;
       ad_random_risk = 0;
-      PPtoggle();
   }else{
     ad_random_risk += Math.random()*0.5;
 

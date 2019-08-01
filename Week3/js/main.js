@@ -89,7 +89,7 @@ var mp3 = new Vue({
           }
         },
         // 廣告
-        Adshow: true
+        Adshow: false,
 
 
 

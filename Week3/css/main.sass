@@ -6,6 +6,48 @@
     margin: 0
     font-family: 'Poppins', sans-serif
 
+#advertisement
+    position: absolute
+    z-index: 3
+    top: 50%
+    left: 50%
+    transform: translateX(-50%) translateY(-50%)
+
+    #ad_title
+        position: absolute
+        left: 20px
+        top: -30px
+        color: #707070
+
+    #ad_close
+        position: absolute
+        right: 10px
+        top: -30px
+    #ad_pic
+        img
+            border: 10px solid white
+#ad_backboard
+    background-color: #1A1A1A
+    width: 100%
+    height: 100%
+    z-index: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .mainPlay
     display: inline-block
     overflow: hidden
@@ -98,16 +140,13 @@
                         display: inline-block
                         margin-left: 50px
                         top: -15px
-
-
             .song_list
                 width: 130%
                 height: 70%
                 overflow: scroll
-                &:-webkit-scrollbar
-                    width: 0 !important
     .main_bar
         position: absolute
+        z-index: 1
         bottom: 0
         width: 92%
         min-height: 100px

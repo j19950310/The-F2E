@@ -13,6 +13,26 @@
 
     <!-- 主畫面 -->
     <div class="mainPlay">
+
+        <!-- 廣告頁面 -->
+        <div id="advertisement" v-show="Adshow">
+            <div id="ad_close" v-on:click="function(){Adshow = false}">
+                <img src="main/ic_close_48px.svg">
+            </div>
+            <p id="ad_title">ADVERTISEMENT</p>
+            <div id="id_main">
+
+                <div id="ad_pic">
+                    <a href="https://challenge.thef2e.com/user/3041">
+                    <img src="main/advertisement.png">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="ad_backboard" v-show="Adshow"></div>
+
         <!-- 左上大面控制區 -->
         <div class="main_song">
             <!-- 左邊照片大區 -->
@@ -114,7 +134,7 @@
         </div><!-- 右側工具列結束 -->
 
         <!-- 主畫面下側進度 -->
-        <div class="main_bar">
+        <div class="main_bar" v-show="!Adshow">
             <div class="load_bar">
                 <div id="load_bar_now"
                 :style="{width: LoadBar + '%'}"
@@ -163,7 +183,14 @@
             </div>
         </div><!-- 主畫面下側進度結束 -->
 
+
+
+
+
     </div>
+
+
+
 
 
     <!-- <script type="text/javascript" src="js/function.js"></script> -->

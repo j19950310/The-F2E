@@ -88,6 +88,8 @@ var mp3 = new Vue({
             this.sound.currentTime = sec;
           }
         },
+        // 廣告
+        Adshow: true
 
 
 
@@ -117,6 +119,7 @@ var mp3 = new Vue({
             // 單曲重複播放 / 隨機播放 / 重複播放
             // SingleRepeat,shuffle,repeat,NoRepeat
             // 筆記: 放在每10毫秒監測項目
+          AdRandom();
 
           switch (mp3.mode){
             case 'SingleRepeat':
@@ -322,7 +325,22 @@ $('#bar_info_shuffle').click(function(event) {
 
 
 
+// 廣告
 
+ad_random_risk = 0;
+AdRandom = function(){
+
+  if (ad_random_risk > 1) {
+      $('#advertisement,#ad_backboard').show('300');
+      mp3.Adshow = true;
+      ad_random_risk = 0;
+      PPtoggle();
+  }else{
+    ad_random_risk += Math.random()*0.5;
+
+  }
+
+}
 
 
 

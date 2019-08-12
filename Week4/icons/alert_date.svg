@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="196.741" height="23.828" viewBox="0 0 196.741 23.828">
+  <g id="alert_date" transform="translate(-619.871 -451.172)">
+    <path id="round-warning-24px" d="M70.734,133.691h21.1a2.8,2.8,0,0,0,2.424-4.2L83.708,111.26a2.8,2.8,0,0,0-4.848,0L68.31,129.488A2.8,2.8,0,0,0,70.734,133.691Zm10.55-9.807a1.405,1.405,0,0,1-1.4-1.4v-2.8a1.4,1.4,0,0,1,2.8,0v2.8A1.405,1.405,0,0,1,81.284,123.884Zm1.4,5.6h-2.8v-2.8h2.8Z" transform="translate(551.941 341.309)" fill="#bc200c"/>
+    <text id="請填妥有效的信用卡效期" transform="translate(655.612 469.24)" fill="#bc200c" font-size="14" font-family="YuGothicUI-Regular, Yu Gothic UI" letter-spacing="0.05em"><tspan x="0" y="0">請填妥有效的信用卡效期</tspan></text>
+  </g>
+</svg>

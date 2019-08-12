@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
 
 
 var mp3 = new Vue({

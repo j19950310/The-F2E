@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="891" height="486" viewBox="0 0 891 486">
+  <defs>
+    <filter id="Rectangle_6" x="0" y="0" width="891" height="486" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="OrderComplete" transform="translate(-195 -221)">
+    <g transform="matrix(1, 0, 0, 1, 195, 221)" filter="url(#Rectangle_6)">
+      <rect id="Rectangle_6-2" data-name="Rectangle 6" width="873" height="468" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <g id="Group_83" data-name="Group 83" transform="translate(-12 12)">
+      <text id="訂單編號" transform="translate(497 404)" fill="#707070" font-size="14" font-family="YuGothicUI-Regular, Yu Gothic UI" letter-spacing="0.05em"><tspan x="0" y="0">訂單編號</tspan></text>
+      <text id="訂購人" transform="translate(497 436)" fill="#707070" font-size="14" font-family="YuGothicUI-Regular, Yu Gothic UI" letter-spacing="0.05em"><tspan x="0" y="0">訂購人</tspan></text>
+      <text id="商品名稱" transform="translate(497 468)" fill="#707070" font-size="14" font-family="YuGothicUI-Regular, Yu Gothic UI" letter-spacing="0.05em"><tspan x="0" y="0">商品名稱</tspan></text>
+      <text id="實付金額" transform="translate(497 500)" fill="#707070" font-size="14" font-family="YuGothicUI-Regular, Yu Gothic UI" letter-spacing="0.05em"><tspan x="0" y="0">實付金額</tspan></text>
+      <text id="付款方式" transform="translate(497 532)" fill="#707070" font-size="14" font-family="YuGothicUI-Regular, Yu Gothic UI" letter-spacing="0.05em"><tspan x="0" y="0">付款方式</tspan></text>
+      <text id="運送方式" transform="translate(497 564)" fill="#707070" font-size="14" font-family="YuGothicUI-Regular, Yu Gothic UI" letter-spacing="0.05em"><tspan x="0" y="0">運送方式</tspan></text>
+      <text id="手持便攜風扇_1" data-name="手持便攜風扇*1" transform="translate(583 468)" fill="#707070" font-size="14" font-family="YuGothicUI-Regular, Yu Gothic UI" letter-spacing="0.05em"><tspan x="0" y="0">手持便攜風扇</tspan><tspan y="0" font-family="SegoeUI, Segoe UI">*1</tspan></text>
+      <text id="王小明" transform="translate(583 436)" fill="#707070" font-size="14" font-family="YuGothicUI-Regular, Yu Gothic UI" letter-spacing="0.05em"><tspan x="0" y="0">王小明</tspan></text>
+      <text id="超商取貨_" data-name="超商取貨 " transform="translate(583 564)" fill="#707070" font-size="14" font-family="YuGothicUI-Regular, Yu Gothic UI" letter-spacing="0.05em"><tspan x="0" y="0">超商取貨</tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan></text>
+      <text id="信用卡付款" transform="translate(583 532)" fill="#707070" font-size="14" font-family="YuGothicUI-Regular, Yu Gothic UI" letter-spacing="0.05em"><tspan x="0" y="0">信用卡付款</tspan></text>
+      <text id="_0643_2896_" data-name="0643 ****2896 ****" transform="translate(674 532)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="0.05em"><tspan x="0" y="0">0643 ****2896 ****</tspan></text>
+      <text id="NT.859" transform="translate(583 500)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="0.05em"><tspan x="0" y="0">NT.859</tspan></text>
+      <text id="No.00639" transform="translate(583 404)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="0.05em"><tspan x="0" y="0">No.00639</tspan></text>
+    </g>
+    <text id="付款完成" transform="translate(323 279)" fill="#22363f" font-size="30" font-family="YuGothicUI-Bold, Yu Gothic UI" font-weight="700" letter-spacing="0.07em"><tspan x="0" y="0">付款完成</tspan></text>
+    <text id="Order_Complete" data-name="Order Complete" transform="translate(323 312)" fill="#707070" font-size="24" font-family="MavenPro-Bold, Maven Pro" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="0">Order Complete</tspan></text>
+    <text id="我們將寄送完整訂購明細至您的E-mail" transform="translate(323 343.46)" fill="#707070" font-size="14" font-family="YuGothicUI-Regular, Yu Gothic UI" letter-spacing="0.05em"><tspan x="0" y="0">我們將寄送完整訂購明細至您的</tspan><tspan y="0" font-family="SegoeUI, Segoe UI">E-mail</tspan></text>
+    <g id="checked" transform="translate(242 253)">
+      <path id="Path_39" data-name="Path 39" d="M30,0A30,30,0,1,0,60,30,30,30,0,0,0,30,0Zm0,54.377A24.376,24.376,0,1,1,54.379,30,24.375,24.375,0,0,1,30,54.377ZM41.8,17.239a2.612,2.612,0,0,0-3.638,1.012L28.1,36.322,22.5,29.5c-1.014-1.168-2.362-1.774-3.636-1.012a2.773,2.773,0,0,0-.977,3.776l7.8,9.49A3.289,3.289,0,0,0,27.624,43.1l.006.011.071,0c.158.024,2.513.459,3.527-1.356l11.547-20.74A2.825,2.825,0,0,0,41.8,17.239Z" transform="translate(-0.004)" fill="#22363f"/>
+    </g>
+  </g>
+</svg>

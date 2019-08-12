@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Document
+            </title>
+            <link href="css/style.css" rel="stylesheet" type="text/css">
+            <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,700&display=swap" rel="stylesheet">
+            <script src="js/vue.js"></script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+            <script type="text/javascript" src="js/CreditCardRule.js"></script>
+
+        </meta>
+    </head>
+    <body>
+        <div id="main">
+            <div id="nav">
+                <div class="nav_icon_off" id="Shipping_icon">
+                    <div class="nav_icon_num">
+                        1
+                    </div>
+                    <div class="nav_icon_TextCH">
+                        選擇運送方式
+                    </div>
+                    <div class="nav_icon_TextEN">
+                        Shipping
+                    </div>
+                </div>
+                <div class="nav_icon_off" id="Payment_icon">
+                    <div class="nav_icon_num">
+                        2
+                    </div>
+                    <div class="nav_icon_TextCH">
+                        選擇付款方式
+                    </div>
+                    <div class="nav_icon_TextEN">
+                        Payment
+                    </div>
+                </div>
+                <div class="nav_icon_off" id="OrderComplete_icon">
+                    <div class="nav_icon_num">
+                        3
+                    </div>
+                    <div class="nav_icon_TextCH">
+                        付款完成
+                    </div>
+                    <div class="nav_icon_TextEN">
+                        Order Complete
+                    </div>
+                </div>
+            </div>
+            <div class="LoadPage">
+
+
+
+                <div id="Shipping_info"
+                v-show="(step=='shipping')|(step=='payment')"
+                v-bind:class="{info_PaymentState: step=='payment'}"
+                >
+                    <p class="CH_info">
+                        訂單資訊
+                    </p>
+                    <p class="EN_info">
+                        Order Information
+                    </p>
+                    <table id="info_good">
+                        <tr>
+                            <th>
+                                商品名稱
+                            </th>
+                            <th>
+                                單價
+                            </th>
+                            <th>
+                                數量
+                            </th>
+                            <th>
+                                小計
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                手持便攜風扇
+                            </td>
+                            <td>
+                                NT.799
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                NT.799
+                            </td>
+                        </tr>
+                    </table>
+                    <table id="info_money">
+                        <tr>
+                            <th>
+                                運送方式
+                            </th>
+                            <th>
+                                單價
+                            </th>
+                            <th>
+
+                            </th>
+                            <th>
+                                小計
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select id="how_send">
+                                  <option value="超商取貨">超商取貨</option>
+                                  <option value="宅配">宅配</option>
+                                  <option value="商店自取">商店自取</option>
+                                </select>
+                                <p id="how_send_text" v-show="step=='payment'">{{howSend}}</p>
+                            </td>
+                            <td>
+                                NT.60
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                NT.60
+                            </td>
+                        </tr>
+                    </table>
+                    <hr width="100%">
+                    <p id="tt_money">NT.859</p>
+                    <div id="next_step" class="button">下一步</div>
+                </div>
+
+                 <!-- 在進入到payment 時新增這個class -->
+<!--                 <div id="Shipping_info" class="info_PaymentState">
+                    <p id="Shipping_CH_info" class="CH_info">
+                        訂單資訊
+                    </p>
+                    <p id="Shipping_EN_info" class="EN_info">
+                        Order Information
+                    </p>
+                    <table id="info_good">
+                        <tr>
+                            <th>
+                                商品名稱
+                            </th>
+                            <th>
+                                單價
+                            </th>
+                            <th>
+                                數量
+                            </th>
+                            <th>
+                                小計
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                手持便攜風扇
+                            </td>
+                            <td>
+                                NT.799
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                NT.799
+                            </td>
+                        </tr>
+                    </table>
+                    <table id="info_money">
+                        <tr>
+                            <th>
+                                運送方式
+                            </th>
+                            <th>
+                                單價
+                            </th>
+                            <th>
+
+                            </th>
+                            <th>
+                                小計
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select id="how_send">
+                                  <option value="1">超商取貨</option>
+                                  <option value="2">宅配</option>
+                                  <option value="3">商店自取</option>
+                                </select>
+
+                            </td>
+                            <td>
+                                NT.60
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                NT.60
+                            </td>
+                        </tr>
+                    </table>
+                    <hr width="100%">
+                    <p id="tt_money">NT.859</p>
+                    <div id="next_step" class="button">下一步</div>
+                </div> -->
+
+                <div id="Payment_info" class="Payment_info_show"  v-show="step=='payment'">
+                    <div class="CH_info">付款資訊</div>
+                    <div class="EN_info">Payment</div>
+                    <div id="credit_input">
+
+                        <div class="input_block"><label id="card_num_text">卡號</label>
+                        <input v-model="inputNum[0]" type="text" size="4" maxlength="4" class="card_num" id="card_num1">
+                        <input v-model="inputNum[1]" type="text" size="4" maxlength="4" class="card_num" id="card_num2">
+                        <input v-model="inputNum[2]" type="text" size="4" maxlength="4" class="card_num" id="card_num3">
+                        <input v-model="inputNum[3]" type="text" size="4" maxlength="4" class="card_num" id="card_num4">
+                            <img v-show="!inputTest" class="alert_icon" src="icons/alert_num.svg">
+
+                        </div>
+
+                        <div class="input_block"><label for="" id="card_owner">持卡人</label>
+                        <input type="" id="card_owner_input">
+                            <img class="alert_icon" src="icons/alert_owner.svg">
+
+                        </div>
+                        <div class="input_block"><label for="" id="card_date">卡片效期(MM/YY)</label>
+                        <input type="text" class="input_time" size="2" maxlength="2">/ <input type="text" class="input_time" size="2" maxlength="2">
+                        <img class="alert_icon" src="icons/alert_date.svg">
+                        </div>
+
+                        <div class="input_block"><label for="" id="card_num_sc_text">安全碼</label>
+                        <input type="text" id="card_num_sc" class="card_num" size="3" maxlength="3">
+                        <img class="alert_icon" src="icons/alert_safe.svg">
+                        </div>
+                        <div class="input_block">
+                        <div class="checkbox"></div>
+                        <div class="input_text">儲存卡片資訊</div></div>
+                        <div class="input_block">
+                        <div class="checkbox"></div>
+                        <div class="input_text">我同意接受商家名稱服務條款及隱私權政策</div></div>
+
+                        <div id="ssl"><img id="icon_ssl" src="icons/SSL.svg">
+                            <div id="ssl_text">使用SSL 128 Bit 安全加密機制，保障個人及信用卡資料不外洩</div>
+                        </div>
+                    </div>
+                        <div id="how_pay_icon">
+                            <div class="how_pay_block">
+                                <img src="icons/how_pay_credit.svg" alt="">
+                                <p class="how_pay_text">使用信用卡付款</p>
+                            </div>
+                            <div class="how_pay_block">
+                                <img src="icons/how_pay_atm.svg" alt="">
+                                <p class="how_pay_text">使用ATM付款</p>
+                            </div>
+                            <div class="how_pay_block">
+                                <img src="icons/how_pay_shop.svg" alt="">
+                                <p class="how_pay_text">使用超商代碼付款</p>
+                            </div>
+                        </div>
+                        <div id="check_pay" class="button">確認付款</div>
+                        <div id='previous_pay'>上一步</div>
+
+                    </div>
+                </div>
+
+                <div class="Order_Complete"  v-show="step=='ordercomplete'">
+                    <embed src="icons/OrderComplete.svg"></embed>
+                    <div class="button" id="complete">完成</div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

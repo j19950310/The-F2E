@@ -1,0 +1,378 @@
+body {
+  width: 1280px;
+  height: 800px;
+  position: absolute; }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+#main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  #main #nav {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 172px;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F2F2; }
+    #main #nav .nav_icon_off {
+      width: 119px;
+      height: 110px;
+      margin-right: 200px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center; }
+      #main #nav .nav_icon_off .nav_icon_num {
+        border-radius: 22.5px;
+        width: 45px;
+        height: 45px;
+        font-size: 35px;
+        font-family: "Maven Pro";
+        font-weight: 700;
+        color: white;
+        background-color: #AAAFB3; }
+      #main #nav .nav_icon_off .nav_icon_TextCH {
+        margin-top: 15px;
+        font-family: "Noto Sans TC";
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        white-space: nowrap;
+        color: #AAAFB3; }
+      #main #nav .nav_icon_off .nav_icon_TextEN {
+        font-family: "Maven Pro";
+        font-size: 19px;
+        white-space: nowrap;
+        font-weight: 400;
+        color: #AAAFB3; }
+    #main #nav .nav_icon_active {
+      width: 119px;
+      height: 110px;
+      margin-right: 200px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center; }
+      #main #nav .nav_icon_active .nav_icon_num {
+        border-radius: 22.5px;
+        width: 45px;
+        height: 45px;
+        font-size: 35px;
+        font-family: "Maven Pro";
+        font-weight: 700;
+        color: white;
+        background-color: #22363F; }
+      #main #nav .nav_icon_active .nav_icon_TextCH {
+        margin-top: 15px;
+        font-family: "Noto Sans TC";
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        white-space: nowrap;
+        color: #22363F; }
+      #main #nav .nav_icon_active .nav_icon_TextEN {
+        font-family: "Maven Pro";
+        font-size: 19px;
+        white-space: nowrap;
+        font-weight: 400;
+        color: #22363F; }
+    #main #nav #OrderComplete_icon {
+      margin-right: 0; }
+  #main .LoadPage {
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+    #main .LoadPage .info_PaymentState {
+      transition-duration: 0.3s;
+      width: 270px !important;
+      height: 270px !important;
+      left: 50px !important;
+      top: 220px !important;
+      padding: 16px !important; }
+      #main .LoadPage .info_PaymentState .CH_info {
+        font-size: 23px !important;
+        font-weight: 400 !important; }
+      #main .LoadPage .info_PaymentState .EN_info {
+        font-size: 21px !important;
+        white-space: nowrap !important; }
+      #main .LoadPage .info_PaymentState table {
+        margin: 0 !important; }
+      #main .LoadPage .info_PaymentState tr {
+        height: 34px !important;
+        background-color: unset !important; }
+      #main .LoadPage .info_PaymentState th, #main .LoadPage .info_PaymentState td {
+        font-size: 17px !important;
+        padding: 0px !important; }
+        #main .LoadPage .info_PaymentState th:nth-child(1), #main .LoadPage .info_PaymentState td:nth-child(1) {
+          width: 25%; }
+        #main .LoadPage .info_PaymentState th:nth-child(2), #main .LoadPage .info_PaymentState td:nth-child(2) {
+          display: none; }
+        #main .LoadPage .info_PaymentState th:nth-child(3), #main .LoadPage .info_PaymentState td:nth-child(3) {
+          display: none; }
+        #main .LoadPage .info_PaymentState th:nth-child(4), #main .LoadPage .info_PaymentState td:nth-child(4) {
+          width: 30%; }
+      #main .LoadPage .info_PaymentState #info_good {
+        margin-top: 30px !important; }
+      #main .LoadPage .info_PaymentState #info_money tr:nth-child(1) {
+        display: none; }
+      #main .LoadPage .info_PaymentState #tt_money {
+        color: #22363F !important;
+        font-size: 20px !important; }
+      #main .LoadPage .info_PaymentState #how_send {
+        display: none !important; }
+      #main .LoadPage .info_PaymentState #how_send_text {
+        display: unset !important; }
+      #main .LoadPage .info_PaymentState hr {
+        margin: 10px 0px; }
+      #main .LoadPage .info_PaymentState #next_step {
+        display: none; }
+    #main .LoadPage #Shipping_info {
+      position: absolute;
+      width: 910px;
+      height: 470px;
+      top: 190px;
+      left: 183px;
+      padding: 40px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+      transition-duration: 0.3s; }
+      #main .LoadPage #Shipping_info .CH_info {
+        font-family: "Noto Sans TC";
+        font-size: 30px;
+        font-weight: bold;
+        color: #22363F; }
+      #main .LoadPage #Shipping_info .EN_info {
+        font-family: "Maven Pro";
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #707070; }
+      #main .LoadPage #Shipping_info #tt_money {
+        text-align: right;
+        font-family: "Noto Sans TC";
+        font-size: 35px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        color: #707070; }
+      #main .LoadPage #Shipping_info #how_send {
+        margin: 5px;
+        padding: 0px 10px;
+        color: #707070;
+        font-family: "Noto Sans TC";
+        font-size: 21px;
+        font-weight: 300;
+        width: 100%;
+        text-align: start;
+        box-sizing: border-box;
+        align-items: center;
+        background-color: white;
+        border-radius: 4px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #707070;
+        -webkit-appearance: none;
+        background: url("../icons/arrow.svg") no-repeat scroll right center transparent; }
+        #main .LoadPage #Shipping_info #how_send option {
+          font-family: "Noto Sans TC";
+          font-size: 21px;
+          font-weight: 300; }
+      #main .LoadPage #Shipping_info #how_send_text {
+        display: none; }
+      #main .LoadPage #Shipping_info #next_step {
+        position: absolute;
+        right: 45px;
+        bottom: -70px;
+        cursor: pointer; }
+    #main .LoadPage #info_money, #main .LoadPage #info_good {
+      width: 100%;
+      margin: 20px 0px;
+      border-collapse: collapse; }
+      #main .LoadPage #info_money tbody tr:nth-child(1), #main .LoadPage #info_good tbody tr:nth-child(1) {
+        background-color: #F4F2F2; }
+      #main .LoadPage #info_money tr th, #main .LoadPage #info_money tr td, #main .LoadPage #info_good tr th, #main .LoadPage #info_good tr td {
+        font-family: "Noto Sans TC";
+        font-size: 21px;
+        font-weight: 300;
+        color: #707070;
+        padding: 9px 15px; }
+        #main .LoadPage #info_money tr th:nth-child(1), #main .LoadPage #info_money tr td:nth-child(1), #main .LoadPage #info_good tr th:nth-child(1), #main .LoadPage #info_good tr td:nth-child(1) {
+          width: 25%;
+          text-align: left; }
+        #main .LoadPage #info_money tr th:nth-child(2), #main .LoadPage #info_money tr td:nth-child(2), #main .LoadPage #info_good tr th:nth-child(2), #main .LoadPage #info_good tr td:nth-child(2) {
+          width: 25%;
+          text-align: right; }
+        #main .LoadPage #info_money tr th:nth-child(3), #main .LoadPage #info_money tr td:nth-child(3), #main .LoadPage #info_good tr th:nth-child(3), #main .LoadPage #info_good tr td:nth-child(3) {
+          width: 20%;
+          text-align: right; }
+        #main .LoadPage #info_money tr th:nth-child(4), #main .LoadPage #info_money tr td:nth-child(4), #main .LoadPage #info_good tr th:nth-child(4), #main .LoadPage #info_good tr td:nth-child(4) {
+          width: 30%;
+          text-align: right; }
+    #main .LoadPage #Payment_info {
+      position: absolute;
+      top: 220px;
+      left: 357px;
+      width: 873px;
+      height: 468px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+      padding: 30px 40px; }
+      #main .LoadPage #Payment_info #credit_input {
+        padding: 30px 0; }
+        #main .LoadPage #Payment_info #credit_input .input_block {
+          margin: 12px 0; }
+      #main .LoadPage #Payment_info input {
+        border: none;
+        border-radius: 2px;
+        background-color: #F4F2F2; }
+      #main .LoadPage #Payment_info label {
+        font-family: "Noto Sans TC";
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: #707070; }
+      #main .LoadPage #Payment_info #card_num_text {
+        margin-right: 9px; }
+      #main .LoadPage #Payment_info #card_owner {
+        margin-right: 24px; }
+      #main .LoadPage #Payment_info #card_date {
+        margin-right: 5px; }
+      #main .LoadPage #Payment_info #card_num_sc_text {
+        margin-right: 5px; }
+      #main .LoadPage #Payment_info #card_owner_input {
+        width: 151px;
+        height: 20px;
+        padding: 0 8px;
+        font-family: "Noto Sans TC";
+        font-size: 18px;
+        letter-spacing: 1px;
+        overflow: hidden;
+        text-align: center; }
+      #main .LoadPage #Payment_info .card_num {
+        width: 54px;
+        height: 20px;
+        padding: 0 8px;
+        font-family: "Noto Sans TC";
+        font-size: 16px;
+        letter-spacing: 1px;
+        overflow: hidden; }
+      #main .LoadPage #Payment_info .input_time {
+        width: 34px;
+        height: 20px;
+        padding: 0 8px;
+        font-family: "Noto Sans TC";
+        font-size: 14px;
+        letter-spacing: 1px;
+        overflow: hidden; }
+      #main .LoadPage #Payment_info .checkbox {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        width: 22px;
+        height: 22px;
+        border-radius: 2px;
+        border: 1px solid #CECECE;
+        box-sizing: border-box; }
+      #main .LoadPage #Payment_info .input_text {
+        display: inline-block;
+        vertical-align: middle;
+        font-family: "Noto Sans TC";
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: #707070; }
+      #main .LoadPage #Payment_info .alert_icon {
+        margin-left: 20px; }
+      #main .LoadPage #Payment_info #ssl {
+        margin-top: 40px;
+        margin-left: 10px; }
+        #main .LoadPage #Payment_info #ssl #icon_ssl {
+          width: 30px;
+          height: 26px;
+          vertical-align: middle;
+          margin-right: 10px; }
+        #main .LoadPage #Payment_info #ssl #ssl_text {
+          display: inline-block;
+          vertical-align: middle;
+          font-family: "Noto Sans TC";
+          font-size: 13px;
+          font-weight: 100;
+          letter-spacing: 2px;
+          color: #707070; }
+      #main .LoadPage #Payment_info #how_pay_icon {
+        position: absolute;
+        display: flex;
+        top: 10px;
+        right: 30px;
+        width: 530px;
+        height: 100px;
+        justify-content: space-between; }
+        #main .LoadPage #Payment_info #how_pay_icon .how_pay_block {
+          display: flex;
+          background-color: #F4F2F2;
+          border-radius: 3px;
+          width: 162px;
+          height: 98px;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center; }
+          #main .LoadPage #Payment_info #how_pay_icon .how_pay_block .how_pay_text {
+            font-family: "Noto Sans TC";
+            font-size: 14px;
+            font-weight: 100;
+            letter-spacing: 2px; }
+          #main .LoadPage #Payment_info #how_pay_icon .how_pay_block img {
+            width: 72px;
+            height: 48px; }
+      #main .LoadPage #Payment_info #check_pay {
+        position: absolute;
+        right: 30px;
+        bottom: -65px; }
+      #main .LoadPage #Payment_info #previous_pay {
+        position: absolute;
+        left: 30px;
+        bottom: -50px;
+        font-family: "Noto Sans TC";
+        font-size: 17px;
+        font-weight: 100;
+        letter-spacing: 2px;
+        color: #22363F; }
+    #main .LoadPage .CH_info {
+      font-family: "Noto Sans TC";
+      font-size: 30px;
+      font-weight: bold;
+      color: #22363F; }
+    #main .LoadPage .EN_info {
+      font-family: "Maven Pro";
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #707070; }
+  #main .Order_Complete {
+    position: absolute;
+    top: 227px;
+    left: 204px; }
+    #main .Order_Complete #complete {
+      position: absolute;
+      right: 35px;
+      width: 81px; }
+
+.button {
+  width: 105px;
+  height: 40px;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+  background-color: #22363F;
+  font-family: "Noto Sans TC";
+  font-size: 17px;
+  font-weight: 300;
+  padding-top: 6px; }
+
+/*# sourceMappingURL=style.css.map */

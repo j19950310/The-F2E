@@ -55,3 +55,49 @@ if ( SUM1%10 != 0) {console.log(6);return false}
 }
 }
 }
+
+NameTest = function(Name){
+
+NameL = String(Name).split('');
+for (var i = 0; i < NameL.length; i++) {
+
+       NameL[i] =  parseInt(NameL[i]);
+       if (!isNaN(NameL[i])) {
+        console.log(NameL[i]+','+i)
+        return false
+       }else if(i == NameL.length-1){
+        return true
+       }
+
+
+}
+
+}
+
+
+dateTest = function(MM,YY){
+
+if ((MM!=undefined)&(YY!=undefined)) {
+
+    mm = String(MM);
+    yy = String(YY);
+
+    if ((mm.length!=2)|(yy.length!=2)) {console.log(mm); return false}
+    else{
+    Month = parseInt(mm.split('')[0])*10 + parseInt(mm.split('')[1]);
+
+    if ((Month > 12)|(Month < 1)) {console.log(Month); return false}
+        else{
+            return true}
+
+    }
+}
+else{return false}
+
+}
+
+cvvTest = function(cvv){
+    if (String(cvv).split("").length != 3){return false}
+        else{return true;}
+}
+

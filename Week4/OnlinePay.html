@@ -16,7 +16,10 @@
     <body>
         <div id="main">
             <div id="nav">
-                <div class="nav_icon_off" id="Shipping_icon">
+                <div
+                 v-bind:class="{
+                 nav_icon_off: step!='shipping' ,
+                 nav_icon_active: step =='shipping'}" id="Shipping_icon">
                     <div class="nav_icon_num">
                         1
                     </div>
@@ -27,7 +30,9 @@
                         Shipping
                     </div>
                 </div>
-                <div class="nav_icon_off" id="Payment_icon">
+                <div v-bind:class="{
+                nav_icon_off: step!='payment' ,nav_icon_active: step =='payment'
+                 }" id="Payment_icon">
                     <div class="nav_icon_num">
                         2
                     </div>
@@ -38,7 +43,9 @@
                         Payment
                     </div>
                 </div>
-                <div class="nav_icon_off" id="OrderComplete_icon">
+                <div v-bind:class="{
+                nav_icon_off: step!='ordercomplete' ,nav_icon_active: step =='ordercomplete'
+                 }" id="OrderComplete_icon">
                     <div class="nav_icon_num">
                         3
                     </div>
@@ -227,24 +234,25 @@
                         </div>
 
                         <div class="input_block"><label for="" id="card_owner">持卡人</label>
-                        <input type="" id="card_owner_input">
-                            <img class="alert_icon" src="icons/alert_owner.svg">
+                        <input v-model="NameValue" type="" id="card_owner_input">
+                            <img v-show="!NameTest" class="alert_icon" src="icons/alert_owner.svg">
 
                         </div>
                         <div class="input_block"><label for="" id="card_date">卡片效期(MM/YY)</label>
-                        <input type="text" class="input_time" size="2" maxlength="2">/ <input type="text" class="input_time" size="2" maxlength="2">
-                        <img class="alert_icon" src="icons/alert_date.svg">
+                        <input v-model="dateValue[0]"  type="text" id="date_MM" class="input_time" size="2" maxlength="2">/
+                        <input v-model="dateValue[1]" type="text" id="date_YY" class="input_time" size="2" maxlength="2">
+                        <img v-show='!dateTest' class="alert_icon" src="icons/alert_date.svg">
                         </div>
 
                         <div class="input_block"><label for="" id="card_num_sc_text">安全碼</label>
-                        <input type="text" id="card_num_sc" class="card_num" size="3" maxlength="3">
-                        <img class="alert_icon" src="icons/alert_safe.svg">
+                        <input v-model='cvvValue' type="text" id="card_num_sc" class="card_num" size="3" maxlength="3">
+                        <img v-show='!cvvTest' class="alert_icon" src="icons/alert_safe.svg">
                         </div>
                         <div class="input_block">
                         <div class="checkbox"></div>
                         <div class="input_text">儲存卡片資訊</div></div>
                         <div class="input_block">
-                        <div class="checkbox"></div>
+                        <div id="acceptCheck" class="checkbox"></div>
                         <div class="input_text">我同意接受商家名稱服務條款及隱私權政策</div></div>
 
                         <div id="ssl"><img id="icon_ssl" src="icons/SSL.svg">
@@ -252,15 +260,24 @@
                         </div>
                     </div>
                         <div id="how_pay_icon">
-                            <div class="how_pay_block">
+                            <div v-bind:class="
+                            {filter: HowPay == 'how_pay1'}
+                            "
+                             id='how_pay1' class="how_pay_block">
                                 <img src="icons/how_pay_credit.svg" alt="">
                                 <p class="how_pay_text">使用信用卡付款</p>
                             </div>
-                            <div class="how_pay_block">
+                            <div v-bind:class="
+                            {filter: HowPay == 'how_pay2'}
+                            "
+                             id='how_pay2' class="how_pay_block">
                                 <img src="icons/how_pay_atm.svg" alt="">
                                 <p class="how_pay_text">使用ATM付款</p>
                             </div>
-                            <div class="how_pay_block">
+                            <div v-bind:class="
+                            {filter: HowPay == 'how_pay3'}
+                            "
+                             id='how_pay3' class="how_pay_block">
                                 <img src="icons/how_pay_shop.svg" alt="">
                                 <p class="how_pay_text">使用超商代碼付款</p>
                             </div>

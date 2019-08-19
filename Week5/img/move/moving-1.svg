@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_108" data-name="Rectangle 108" width="120" height="120" transform="translate(1536 288)" fill="none" stroke="red" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="moving-1" transform="translate(-1536 -288)" clip-path="url(#clip-path)">
+    <g id="Group_23" data-name="Group 23" transform="translate(1005.598 -23.03)">
+      <path id="Path_36" data-name="Path 36" d="M5478,363l40,4.725,2.274,13.859L5534,395l-8.094,36.365L5486,443l-40-24,8-24-4.034-11.646Z" transform="translate(-4891.598 -43.97)" fill="#ffc440" opacity="0.897"/>
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="7.957" cy="7.957" r="7.957" transform="translate(538.402 407.116)" fill="#fff"/>
+      <line id="Line_3" data-name="Line 3" y2="63.652" transform="translate(596.993 364.438) rotate(45)" fill="none" stroke="#fff" stroke-width="2"/>
+      <line id="Line_4" data-name="Line 4" x2="47.739" transform="translate(580.115 347.56) rotate(45)" fill="none" stroke="#fff" stroke-width="2"/>
+      <line id="Line_5" data-name="Line 5" x1="17.902" y1="17.902" transform="translate(596.993 339.121) rotate(45)" fill="none" stroke="#fff" stroke-width="2"/>
+      <line id="Line_6" data-name="Line 6" x1="17.902" y2="17.902" transform="translate(609.652 351.779) rotate(45)" fill="none" stroke="#fff" stroke-width="2"/>
+      <line id="Line_7" data-name="Line 7" y2="23.869" transform="translate(613.872 347.56) rotate(45)" fill="none" stroke="#fff" stroke-width="2"/>
+      <path id="Path_37" data-name="Path 37" d="M5.5,0,11,9H0Z" transform="translate(558.289 348.895) rotate(100)" fill="#ffc440" opacity="0.903"/>
+      <path id="Path_38" data-name="Path 38" d="M3.5,0,7,6H0Z" transform="translate(638.313 328.744) rotate(73)" fill="#ffc440" opacity="0.903"/>
+      <path id="Path_39" data-name="Path 39" d="M3.5,0,7,6H0Z" transform="translate(584.175 406.65) rotate(-62)" fill="#ffc440" opacity="0.903"/>
+    </g>
+  </g>
+</svg>

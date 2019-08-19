@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_126" data-name="Rectangle 126" width="64" height="64" transform="translate(1624 440)" fill="none" stroke="red" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="skill_ball3" transform="translate(-1624 -440)" clip-path="url(#clip-path)">
+    <g id="Group_43" data-name="Group 43" transform="translate(587 90)">
+      <g id="Ellipse_59" data-name="Ellipse 59" transform="translate(1057 370)" fill="#ffce00" stroke="#fff" stroke-width="4">
+        <circle cx="12" cy="12" r="12" stroke="none"/>
+        <circle cx="12" cy="12" r="10" fill="none"/>
+      </g>
+      <circle id="Ellipse_60" data-name="Ellipse 60" cx="2" cy="2" r="2" transform="translate(1045 390)" fill="#fff"/>
+      <circle id="Ellipse_61" data-name="Ellipse 61" cx="2" cy="2" r="2" transform="translate(1069 358)" fill="#fff"/>
+      <circle id="Ellipse_62" data-name="Ellipse 62" cx="2" cy="2" r="2" transform="translate(1083 404)" fill="#fff"/>
+      <circle id="Ellipse_63" data-name="Ellipse 63" cx="2" cy="2" r="2" transform="translate(1091 372)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

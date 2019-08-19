@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="169.706" height="169.706" viewBox="0 0 169.706 169.706">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_121" data-name="Rectangle 121" width="144" height="96" transform="translate(1776 432)" fill="none" stroke="red" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffc440"/>
+      <stop offset="1" stop-color="#ffc440" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="super2" transform="translate(-1561.292 1052.175) rotate(-45)" clip-path="url(#clip-path)">
+    <path id="Path_69" data-name="Path 69" d="M0,0H96a48,48,0,0,1,48,48h0A48,48,0,0,1,96,96H0Z" transform="translate(1776 432)" opacity="0.15" fill="url(#linear-gradient)"/>
+    <path id="Path_70" data-name="Path 70" d="M0,0H34a4,4,0,0,1,4,4h0a4,4,0,0,1-4,4H0Z" transform="translate(1786 440)" opacity="0.23" fill="url(#linear-gradient)"/>
+    <path id="Path_71" data-name="Path 71" d="M0,0H20a4,4,0,0,1,4,4h0a4,4,0,0,1-4,4H0Z" transform="translate(1808 456)" opacity="0.23" fill="url(#linear-gradient)"/>
+    <path id="Path_72" data-name="Path 72" d="M0,0H34a4,4,0,0,1,4,4h0a4,4,0,0,1-4,4H0Z" transform="translate(1816 504)" opacity="0.23" fill="url(#linear-gradient)"/>
+    <path id="Path_73" data-name="Path 73" d="M0,0H20a4,4,0,0,1,4,4h0a4,4,0,0,1-4,4H0Z" transform="translate(1792 496)" opacity="0.23" fill="url(#linear-gradient)"/>
+    <path id="Path_74" data-name="Path 74" d="M0,0H20a4,4,0,0,1,4,4h0a4,4,0,0,1-4,4H0Z" transform="translate(1776 512)" opacity="0.23" fill="url(#linear-gradient)"/>
+    <circle id="Ellipse_42" data-name="Ellipse 42" cx="39.783" cy="39.783" r="39.783" transform="translate(1911.521 518.244) rotate(180)" fill="#ffc440" opacity="0.904"/>
+    <circle id="Ellipse_43" data-name="Ellipse 43" cx="7.957" cy="7.957" r="7.957" transform="translate(1800.13 470.504) rotate(90)" fill="#fff"/>
+    <line id="Line_88" data-name="Line 88" y2="63.652" transform="translate(1863.782 478.461) rotate(90)" fill="none" stroke="#fff" stroke-width="2"/>
+    <line id="Line_89" data-name="Line 89" x2="47.739" transform="translate(1863.782 454.591) rotate(90)" fill="none" stroke="#fff" stroke-width="2"/>
+    <line id="Line_90" data-name="Line 90" x1="17.902" y1="17.902" transform="translate(1881.685 460.559) rotate(90)" fill="none" stroke="#fff" stroke-width="2"/>
+    <line id="Line_91" data-name="Line 91" x1="17.902" y2="17.902" transform="translate(1881.685 478.461) rotate(90)" fill="none" stroke="#fff" stroke-width="2"/>
+    <line id="Line_92" data-name="Line 92" y2="23.869" transform="translate(1887.652 478.461) rotate(90)" fill="none" stroke="#fff" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_111" data-name="Rectangle 111" width="120" height="120" transform="translate(1680 288)" fill="none" stroke="red" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="moving3" transform="translate(-1680 -288)" clip-path="url(#clip-path)">
+    <g id="Group_26" data-name="Group 26" transform="translate(1149.912 -22.701) rotate(0.008)">
+      <circle id="Ellipse_10" data-name="Ellipse 10" cx="39.783" cy="39.783" r="39.783" transform="translate(562.837 319.029)" fill="#ffc440" opacity="0.904"/>
+      <circle id="Ellipse_11" data-name="Ellipse 11" cx="7.957" cy="7.957" r="7.957" transform="translate(538.402 407.116)" fill="#fff"/>
+      <line id="Line_13" data-name="Line 13" y2="63.652" transform="translate(596.993 364.438) rotate(45)" fill="none" stroke="#fff" stroke-width="2"/>
+      <line id="Line_14" data-name="Line 14" x2="47.739" transform="translate(580.115 347.56) rotate(45)" fill="none" stroke="#fff" stroke-width="2"/>
+      <line id="Line_15" data-name="Line 15" x1="17.902" y1="17.902" transform="translate(596.993 339.121) rotate(45)" fill="none" stroke="#fff" stroke-width="2"/>
+      <line id="Line_16" data-name="Line 16" x1="17.902" y2="17.902" transform="translate(609.652 351.779) rotate(45)" fill="none" stroke="#fff" stroke-width="2"/>
+      <line id="Line_17" data-name="Line 17" y2="23.869" transform="translate(613.872 347.56) rotate(45)" fill="none" stroke="#fff" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

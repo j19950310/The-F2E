@@ -1,0 +1,378 @@
+*
+    margin: 0
+    padding: 0
+
+#main
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 1280px
+    height: 800px
+    background: #7EBE8D 0% 0% no-repeat padding-box
+    opacity: 1
+    z-index: 7
+    #flowerAt_main
+        position: absolute
+        top: 39px
+        left: -105px
+        width: 1015px
+        height: 761px
+    #play
+        position: absolute
+        top: 32px
+        left: 750px
+        width: 445px
+        height: 736px
+        background: #FFFFFF 0% 0% no-repeat padding-box
+        border-radius: 8px
+        opacity: 1
+    #main_title
+        position: absolute
+        top: 198px
+        left: 792px
+        width: 359px
+        height: 239px
+        background: transparent url('../img/main/txt-title.svg') 0% 0% no-repeat padding-box
+        opacity: 1
+    #main_subtitle
+        position: absolute
+        top: 481px
+        left: 846px
+        width: 272px
+        height: 24px
+        background: transparent url('../img/main/txt-subtitle.svg') 0% 0% no-repeat padding-box
+        opacity: 1
+    #main_button
+        position: absolute
+        top: 562px
+        left: 804px
+        width: 350px
+        height: 60px
+        background: transparent url('../img/main/btn-press-start.svg') 0% 0% no-repeat padding-box
+        opacity: 1
+
+
+#game
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 1280px
+    height: 800px
+    background-color: #20552C
+    overflow: hidden
+    transition-duration: 3s
+    filter: brightness(1)
+    #topgradient
+        position: absolute
+        top: 0px
+        left: 0px
+        width: 1280px
+        height: 200px
+        background: transparent linear-gradient(0deg, rgba(32, 85, 44, 0) , rgba(0, 0, 0, 0.65)) 0% 0% no-repeat padding-box
+        opacity: 1
+        z-index: 4
+    #game_ground
+        position: absolute
+        top: 600px
+        left: 0px
+        width: 1280px
+        height: 200px
+        background: url('../img/start/bg-ground.svg')
+        opacity: 1
+        z-index: 3
+    #game_ground_top
+        position: absolute
+        top: 600px
+        left: 0px
+        width: 1280px
+        height: 32px
+        background: #CBFFB4 0% 0% no-repeat padding-box
+        opacity: 1
+        z-index: 3
+    #game_how
+        position: absolute
+        top: 745px
+        left: 85px
+        width: 173px
+        height: 30px
+        background: transparent url('../img/start/txt-countdown.svg') 0% 0% no-repeat padding-box
+        opacity: 1
+        z-index: 4
+    #game_time
+        position: absolute
+        top: 745px
+        left: 1081px
+        width: 115px
+        height: 24px
+        opacity: 1
+        z-index: 4
+        color: white
+        font-family: 'Roboto' , sans-serif
+        font-weight: bold
+        font-size: 32px
+
+    #BG-z3
+        position: absolute
+        width: 1280px
+        top: 0
+        z-index: 3
+        overflow: hidden
+        #bg-front_move
+            animation-name: BGTOP_move
+            animation-duration: 5s
+            animation-iteration-count: infinite
+            animation-timing-function: linear
+            animation-play-state: paused
+    #BG-z2
+        position: absolute
+        width: 1280px
+        top: 0
+        z-index: 2
+        overflow: hidden
+        #bg-middle
+            animation-name: BGMID_move
+            animation-duration: 5s
+            animation-iteration-count: infinite
+            animation-timing-function: linear
+            animation-play-state: paused
+
+    #BG-z1
+        position: absolute
+        width: 1280px
+        top: 100px
+        z-index: 1
+        overflow: hidden
+        #bg-back_move
+            animation-name: BGBACK_move
+            animation-duration: 5s
+            animation-iteration-count: infinite
+            animation-timing-function: linear
+            animation-play-state: paused
+    #level_cover
+        position: absolute
+        width: 100%
+        height: 100%
+        z-index: 4
+        background-color: #FF0000
+        opacity: 0
+        transition-duration: 5s
+    #lose
+        position: absolute
+        top: 0px
+        left: 1280px
+        width: 1280px
+        height: 800px
+        z-index: 6
+        background: transparent linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 1)) 0% 0% no-repeat padding-box
+        opacity: 1
+        transition-duration: 1.2s
+        #tryagain
+            position: absolute
+            top: 453px
+            left: 845px
+            width: 350px
+            height: 60px
+            opacity: 1
+        #gameover
+            position: absolute
+            top: 305px
+            left: 841px
+            width: 356px
+            height: 124px
+            opacity: 1
+    #winSpot
+        position: absolute
+        left: 484px
+        width: 338px
+        height: 600px
+        z-index: 8
+        .light
+            display: none
+            position: absolute
+            background-color: white
+            opacity: 0.2
+            height: 600px
+            left: 50%
+            transform: translateX(-50%)
+        #light1
+            width: 338px
+            .spot
+                position: absolute
+                width: 8px
+                background: transparent linear-gradient(180deg, white 0%, white 100%)
+            #spot1
+                height: 48px
+            #spot2
+            #spot3
+            #spot4
+            #spot5
+            #spot6
+            #spot7
+        #light2
+            width: 287px
+        #light3
+            width: 240px
+    #winflower
+        position: absolute
+        z-index: 8
+        left: 416px
+        width: 500px
+        height: 500px
+        display: none
+        opacity: 0.3
+        #winF
+            position: absolute
+            width: 256px
+            top: 50%
+            left: 50%
+            z-index: 9
+            transform: translateX(-50%) translateY(-50%)
+        .circle
+            top: 50%
+            left: 50%
+            transform: translateX(-50%) translateY(-50%)
+            position: absolute
+            opacity: 0.2
+            background-color: white
+            animation-name: circleScale
+            animation-duration: 3s
+            animation-iteration-count: infinite
+            animation-timing-function: linear
+            animation-direction: alternate
+        #circle1
+            width: 360px
+            height: 360px
+            border-radius: 180px
+        #circle2
+            width: 330px
+            height: 330px
+            border-radius: 165px
+        #circle3
+            width: 300px
+            height: 300px
+            border-radius: 150px
+    #winText
+        position: absolute
+        display: none
+        z-index: 9
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        #playagain
+            position: absolute
+            top: 236px
+            left: 465px
+            width: 350px
+            height: 60px
+            opacity: 1
+        #congratulations
+            position: absolute
+            top: 88px
+            left: 403px
+            width: 474px
+            height: 121px
+            opacity: 1
+        .sunlight
+            position: absolute
+            display: none
+            top: 0
+            height: 300px
+            width: 200px
+            background: transparent linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))
+            transform: skewX(-19deg)
+            opacity: 0.25
+        #sunlight1
+            animation-name: sun1
+            animation-duration: 10s
+            animation-iteration-count: infinite
+            animation-timing-function: linear
+        #sunlight2
+            animation-name: sun2
+            animation-duration: 10s
+            animation-iteration-count: infinite
+            animation-timing-function: linear
+        #sunlight3
+            animation-name: sun3
+            animation-duration: 10s
+            animation-iteration-count: infinite
+            animation-timing-function: linear
+        #sunlight4
+            animation-name: sun4
+            animation-duration: 10s
+            animation-iteration-count: infinite
+            animation-timing-function: linear
+
+#play_layer
+    #moving
+        position: absolute
+        top: 600px
+        left: 116px
+        transform: translateY(-100%)
+        z-index: 5
+        transition-duration: 0.4s
+        transition-timing-function: linear
+        #supermode
+            transform: translateX(-27px) translateY(31px)
+
+    #monster
+        position: absolute
+        z-index: 4
+        img
+            position: absolute
+        #superball
+            animation-name: rotate
+            animation-duration: 2s
+            animation-iteration-count: infinite
+            animation-timing-function: linear
+@keyframes rotate
+    0%
+        transform: rotate(0deg)
+        opacity: 1
+    50%
+        transform: rotate(90deg)
+        opacity: 0.3
+    100%
+        transform: rotate(180deg)
+        opacity: 1
+@keyframes BGTOP_move
+    from
+        transform: translateX(0px)
+    to
+        transform: translateX(-592px)
+@keyframes BGMID_move
+    from
+        transform: translateX(0px)
+    to
+        transform: translateX(-444px)
+@keyframes BGBACK_move
+    from
+        transform: translateX(0px)
+    to
+        transform: translateX(-222px)
+
+@keyframes sun1
+    from
+        left: 100%
+    to
+        left: 50%
+@keyframes sun2
+    from
+        left: 70%
+    to
+        left: 20%
+@keyframes sun3
+    from
+        left: 30%
+    to
+        left: -20%
+@keyframes sun4
+    from
+        left: 10%
+    to
+        left: -40%
+@keyframes circleScale
+    from
+        transform: scale(1) translateX(-50%) translateY(-50%)
+    to
+        transform: scale(1.02) translateX(-50%) translateY(-50%)

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1776" height="200" viewBox="0 0 1776 200">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_153" data-name="Rectangle 153" width="1776" height="200" transform="translate(0 598)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="bg-ground" transform="translate(0 -598)">
+    <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path)">
+      <rect id="Rectangle_137" data-name="Rectangle 137" width="1776" height="200" transform="translate(0 598)" fill="#20552c"/>
+      <rect id="Rectangle_138" data-name="Rectangle 138" width="1920" height="32" transform="translate(0 600)" fill="#cbffb4"/>
+      <rect id="Rectangle_139" data-name="Rectangle 139" width="72" height="40" rx="8" transform="translate(104 672)" fill="#2b6438"/>
+      <rect id="Rectangle_140" data-name="Rectangle 140" width="72" height="40" rx="8" transform="translate(136 688)" fill="#2b6438"/>
+      <rect id="Rectangle_141" data-name="Rectangle 141" width="72" height="40" rx="8" transform="translate(296 728)" fill="#2b6438"/>
+      <rect id="Rectangle_142" data-name="Rectangle 142" width="72" height="40" rx="8" transform="translate(352 720)" fill="#2b6438"/>
+      <rect id="Rectangle_143" data-name="Rectangle 143" width="72" height="40" rx="8" transform="translate(880 700)" fill="#2b6438"/>
+      <rect id="Rectangle_144" data-name="Rectangle 144" width="72" height="40" rx="8" transform="translate(616 672)" fill="#2b6438"/>
+      <rect id="Rectangle_145" data-name="Rectangle 145" width="72" height="40" rx="8" transform="translate(1280 780)" fill="#2b6438"/>
+      <rect id="Rectangle_146" data-name="Rectangle 146" width="72" height="40" rx="8" transform="translate(920 720)" fill="#2b6438"/>
+      <rect id="Rectangle_147" data-name="Rectangle 147" width="72" height="40" rx="8" transform="translate(1557 680)" fill="#2b6438"/>
+      <rect id="Rectangle_148" data-name="Rectangle 148" width="72" height="40" rx="8" transform="translate(1128 680)" fill="#2b6438"/>
+      <rect id="Rectangle_149" data-name="Rectangle 149" width="72" height="40" rx="8" transform="translate(1184 672)" fill="#2b6438"/>
+      <rect id="Rectangle_150" data-name="Rectangle 150" width="72" height="40" rx="8" transform="translate(1510 700)" fill="#2b6438"/>
+      <rect id="Rectangle_151" data-name="Rectangle 151" width="72" height="40" rx="8" transform="translate(1686 728)" fill="#2b6438"/>
+      <rect id="Rectangle_152" data-name="Rectangle 152" width="72" height="40" rx="8" transform="translate(48 784)" fill="#2b6438"/>
+    </g>
+  </g>
+</svg>

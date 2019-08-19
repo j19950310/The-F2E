@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#main {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 800px;
+  background: #7EBE8D 0% 0% no-repeat padding-box;
+  opacity: 1;
+  z-index: 7; }
+  #main #flowerAt_main {
+    position: absolute;
+    top: 39px;
+    left: -105px;
+    width: 1015px;
+    height: 761px; }
+  #main #play {
+    position: absolute;
+    top: 32px;
+    left: 750px;
+    width: 445px;
+    height: 736px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1; }
+  #main #main_title {
+    position: absolute;
+    top: 198px;
+    left: 792px;
+    width: 359px;
+    height: 239px;
+    background: transparent url("../img/main/txt-title.svg") 0% 0% no-repeat padding-box;
+    opacity: 1; }
+  #main #main_subtitle {
+    position: absolute;
+    top: 481px;
+    left: 846px;
+    width: 272px;
+    height: 24px;
+    background: transparent url("../img/main/txt-subtitle.svg") 0% 0% no-repeat padding-box;
+    opacity: 1; }
+  #main #main_button {
+    position: absolute;
+    top: 562px;
+    left: 804px;
+    width: 350px;
+    height: 60px;
+    background: transparent url("../img/main/btn-press-start.svg") 0% 0% no-repeat padding-box;
+    opacity: 1; }
+
+#game {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 800px;
+  background-color: #20552C;
+  overflow: hidden;
+  transition-duration: 3s;
+  filter: brightness(1); }
+  #game #topgradient {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1280px;
+    height: 200px;
+    background: transparent linear-gradient(0deg, rgba(32, 85, 44, 0), rgba(0, 0, 0, 0.65)) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 4; }
+  #game #game_ground {
+    position: absolute;
+    top: 600px;
+    left: 0px;
+    width: 1280px;
+    height: 200px;
+    background: url("../img/start/bg-ground.svg");
+    opacity: 1;
+    z-index: 3; }
+  #game #game_ground_top {
+    position: absolute;
+    top: 600px;
+    left: 0px;
+    width: 1280px;
+    height: 32px;
+    background: #CBFFB4 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 3; }
+  #game #game_how {
+    position: absolute;
+    top: 745px;
+    left: 85px;
+    width: 173px;
+    height: 30px;
+    background: transparent url("../img/start/txt-countdown.svg") 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 4; }
+  #game #game_time {
+    position: absolute;
+    top: 745px;
+    left: 1081px;
+    width: 115px;
+    height: 24px;
+    opacity: 1;
+    z-index: 4;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 32px; }
+  #game #BG-z3 {
+    position: absolute;
+    width: 1280px;
+    top: 0;
+    z-index: 3;
+    overflow: hidden; }
+    #game #BG-z3 #bg-front_move {
+      animation-name: BGTOP_move;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-play-state: paused; }
+  #game #BG-z2 {
+    position: absolute;
+    width: 1280px;
+    top: 0;
+    z-index: 2;
+    overflow: hidden; }
+    #game #BG-z2 #bg-middle {
+      animation-name: BGMID_move;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-play-state: paused; }
+  #game #BG-z1 {
+    position: absolute;
+    width: 1280px;
+    top: 100px;
+    z-index: 1;
+    overflow: hidden; }
+    #game #BG-z1 #bg-back_move {
+      animation-name: BGBACK_move;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-play-state: paused; }
+  #game #level_cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background-color: #FF0000;
+    opacity: 0;
+    transition-duration: 5s; }
+  #game #lose {
+    position: absolute;
+    top: 0px;
+    left: 1280px;
+    width: 1280px;
+    height: 800px;
+    z-index: 6;
+    background: transparent linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9), black) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    transition-duration: 1.2s; }
+    #game #lose #tryagain {
+      position: absolute;
+      top: 453px;
+      left: 845px;
+      width: 350px;
+      height: 60px;
+      opacity: 1; }
+    #game #lose #gameover {
+      position: absolute;
+      top: 305px;
+      left: 841px;
+      width: 356px;
+      height: 124px;
+      opacity: 1; }
+  #game #winSpot {
+    position: absolute;
+    left: 484px;
+    width: 338px;
+    height: 600px;
+    z-index: 8; }
+    #game #winSpot .light {
+      display: none;
+      position: absolute;
+      background-color: white;
+      opacity: 0.2;
+      height: 600px;
+      left: 50%;
+      transform: translateX(-50%); }
+    #game #winSpot #light1 {
+      width: 338px; }
+      #game #winSpot #light1 .spot {
+        position: absolute;
+        width: 8px;
+        background: transparent linear-gradient(180deg, white 0%, white 100%); }
+      #game #winSpot #light1 #spot1 {
+        height: 48px; }
+    #game #winSpot #light2 {
+      width: 287px; }
+    #game #winSpot #light3 {
+      width: 240px; }
+  #game #winflower {
+    position: absolute;
+    z-index: 8;
+    left: 416px;
+    width: 500px;
+    height: 500px;
+    display: none;
+    opacity: 0.3; }
+    #game #winflower #winF {
+      position: absolute;
+      width: 256px;
+      top: 50%;
+      left: 50%;
+      z-index: 9;
+      transform: translateX(-50%) translateY(-50%); }
+    #game #winflower .circle {
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      position: absolute;
+      opacity: 0.2;
+      background-color: white;
+      animation-name: circleScale;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-direction: alternate; }
+    #game #winflower #circle1 {
+      width: 360px;
+      height: 360px;
+      border-radius: 180px; }
+    #game #winflower #circle2 {
+      width: 330px;
+      height: 330px;
+      border-radius: 165px; }
+    #game #winflower #circle3 {
+      width: 300px;
+      height: 300px;
+      border-radius: 150px; }
+  #game #winText {
+    position: absolute;
+    display: none;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    #game #winText #playagain {
+      position: absolute;
+      top: 236px;
+      left: 465px;
+      width: 350px;
+      height: 60px;
+      opacity: 1; }
+    #game #winText #congratulations {
+      position: absolute;
+      top: 88px;
+      left: 403px;
+      width: 474px;
+      height: 121px;
+      opacity: 1; }
+    #game #winText .sunlight {
+      position: absolute;
+      display: none;
+      top: 0;
+      height: 300px;
+      width: 200px;
+      background: transparent linear-gradient(180deg, white, rgba(255, 255, 255, 0));
+      transform: skewX(-19deg);
+      opacity: 0.25; }
+    #game #winText #sunlight1 {
+      animation-name: sun1;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+    #game #winText #sunlight2 {
+      animation-name: sun2;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+    #game #winText #sunlight3 {
+      animation-name: sun3;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+    #game #winText #sunlight4 {
+      animation-name: sun4;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+
+#play_layer #moving {
+  position: absolute;
+  top: 600px;
+  left: 116px;
+  transform: translateY(-100%);
+  z-index: 5;
+  transition-duration: 0.4s;
+  transition-timing-function: linear; }
+  #play_layer #moving #supermode {
+    transform: translateX(-27px) translateY(31px); }
+#play_layer #monster {
+  position: absolute;
+  z-index: 4; }
+  #play_layer #monster img {
+    position: absolute; }
+  #play_layer #monster #superball {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1; }
+  50% {
+    transform: rotate(90deg);
+    opacity: 0.3; }
+  100% {
+    transform: rotate(180deg);
+    opacity: 1; } }
+@keyframes BGTOP_move {
+  from {
+    transform: translateX(0px); }
+  to {
+    transform: translateX(-592px); } }
+@keyframes BGMID_move {
+  from {
+    transform: translateX(0px); }
+  to {
+    transform: translateX(-444px); } }
+@keyframes BGBACK_move {
+  from {
+    transform: translateX(0px); }
+  to {
+    transform: translateX(-222px); } }
+@keyframes sun1 {
+  from {
+    left: 100%; }
+  to {
+    left: 50%; } }
+@keyframes sun2 {
+  from {
+    left: 70%; }
+  to {
+    left: 20%; } }
+@keyframes sun3 {
+  from {
+    left: 30%; }
+  to {
+    left: -20%; } }
+@keyframes sun4 {
+  from {
+    left: 10%; }
+  to {
+    left: -40%; } }
+@keyframes circleScale {
+  from {
+    transform: scale(1) translateX(-50%) translateY(-50%); }
+  to {
+    transform: scale(1.02) translateX(-50%) translateY(-50%); } }
+
+/*# sourceMappingURL=main.css.map */

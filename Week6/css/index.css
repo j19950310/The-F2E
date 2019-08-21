@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  -webkit-user-select: none; }
+
+html {
+  min-width: 600px; }
+  html::-webkit-scrollbar {
+    display: none; }
+
+#all {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.logo {
+  cursor: pointer;
+  position: absolute;
+  font-family: "Barlow", sans-serif;
+  font-size: 30px;
+  width: 105px;
+  height: 72px;
+  border-left: 1px solid black;
+  top: 14px;
+  left: 28px;
+  padding: 2px 24px; }
+
+#header {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 2;
+  background-color: white; }
+  #header #navigation {
+    display: flex;
+    width: 700px;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 15px; }
+    #header #navigation div {
+      cursor: pointer;
+      height: fit-content;
+      font-family: "Barlow", "Noto Sans TC", sans-serif;
+      font-size: 22px; }
+      #header #navigation div:hover {
+        border-bottom: 1px solid black; }
+    #header #navigation #bookbtn {
+      border: 1px solid black;
+      padding: 8px 25px;
+      white-space: nowrap; }
+      #header #navigation #bookbtn:hover {
+        background-color: #F8F1EA; }
+    #header #navigation select {
+      font-family: "Noto Sans TC", sans-serif;
+      height: 30px;
+      font-size: 14px;
+      font-weight: lighter; }
+      #header #navigation select option {
+        font-family: "Noto Sans TC", sans-serif; }
+  #header #menu {
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid black; }
+    #header #menu:hover {
+      background-color: #F8F1EA; }
+    #header #menu hr {
+      margin: 6px 0px;
+      background-color: black;
+      border: 1px solid black; }
+
+#booking {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 100px;
+  width: 100%;
+  height: 0px;
+  z-index: 1;
+  background-color: #D1C8C3;
+  transition-duration: 0.3s;
+  overflow: hidden; }
+  #booking.show {
+    height: 72px; }
+  #booking input {
+    padding: 8px 20px;
+    font-size: 14px;
+    width: 100%; }
+  #booking #CheckOut, #booking #CheckIn {
+    margin: 0 10px;
+    width: 244px;
+    height: 36px;
+    position: relative; }
+    #booking #CheckOut img, #booking #CheckIn img {
+      position: absolute;
+      right: 13px;
+      top: 9px; }
+  #booking #HowManyAdult, #booking #HowManyKid {
+    margin: 0 10px;
+    width: 180px;
+    height: 36px;
+    position: relative;
+    background-color: white; }
+    #booking #HowManyAdult .add, #booking #HowManyKid .add {
+      position: absolute;
+      right: 0;
+      color: white;
+      background-color: black;
+      height: 100%;
+      font-weight: 100;
+      font-size: 28px;
+      width: 36px;
+      padding: 0 12px; }
+    #booking #HowManyAdult .minus, #booking #HowManyKid .minus {
+      position: absolute;
+      left: 0;
+      color: white;
+      background-color: black;
+      height: 100%;
+      font-weight: 100;
+      font-size: 28px;
+      width: 36px;
+      padding: 0 12px; }
+  #booking #search {
+    margin: 0 10px;
+    width: 136px;
+    height: 36px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 7px 35px; }
+
+iframe {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  height: 1480px;
+  border: none; }
+
+#footer {
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  height: 238px;
+  padding: 49px 75px;
+  background-color: #F8F1EA;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: end; }
+  #footer #footer_logo {
+    position: relative;
+    top: 0;
+    left: 0; }
+  #footer #icon {
+    display: flex;
+    margin-top: 30px;
+    width: 270px; }
+    #footer #icon img {
+      margin-right: 10px; }
+  #footer #info p {
+    line-height: 32px;
+    font-size: 16px;
+    font-family: "Barlow", "Noto Sans TC", sans-serif;
+    font-weight: 100; }
+  #footer #copyright {
+    color: #8E8E8E;
+    position: absolute;
+    right: 75px;
+    bottom: 45px; }
+
+@media only screen and (max-width: 900px) {
+  #header #navigation {
+    position: absolute;
+    right: -175px;
+    top: 0;
+    width: 160px;
+    height: 700px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    background-color: #D1C8C3;
+    justify-content: flex-end; }
+    #header #navigation.show {
+      right: 0px; }
+    #header #navigation div {
+      margin-top: 25px; }
+      #header #navigation div:hover {
+        border-bottom: 1px solid black;
+        background-color: rgba(248, 241, 234, 0.3); }
+  #header #menu {
+    cursor: pointer;
+    visibility: visible;
+    margin-right: 25px; }
+
+  #booking {
+    height: 0px;
+    flex-flow: wrap;
+    flex-direction: column; }
+    #booking.show {
+      height: 100px; }
+
+  #footer {
+    height: 175px; }
+    #footer #icon {
+      margin: 20px;
+      width: 180px; }
+    #footer #info p {
+      line-height: 20px;
+      font-size: 12px; }
+    #footer #copyright {
+      visibility: hidden; } }
+
+/*# sourceMappingURL=index.css.map */

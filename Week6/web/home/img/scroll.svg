@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="57.272" viewBox="0 0 46 57.272">
+  <g id="scroll" transform="translate(-617 -712.7)">
+    <g id="down-arrow" transform="translate(664.5 717.3) rotate(90)">
+      <path id="Path_1" data-name="Path 1" d="M35.572,42.128a1.274,1.274,0,0,1-1.8,0,1.274,1.274,0,0,1,0-1.8L49.6,24.5,33.772,8.672a1.273,1.273,0,0,1,1.8-1.8L52.3,23.6a1.274,1.274,0,0,1,0,1.8Z" fill="#fff"/>
+    </g>
+    <text id="scroll-2" data-name="scroll" transform="translate(640 731.7)" fill="#fff" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.03em"><tspan x="-22.088" y="0">scroll</tspan></text>
+  </g>
+</svg>

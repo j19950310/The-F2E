@@ -1,0 +1,182 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: "Barlow", "Noto Sans TC", sans-serif
+    -webkit-user-select: none
+body
+    &::-webkit-scrollbar
+        display: none
+    display: flex
+    flex-flow: wrap
+    justify-content: center
+#Carousel
+    width: 1280px
+    overflow: hidden
+    position: relative
+    #ImgRow
+        position: relative
+        display: flex
+        height: 700px
+        overflow: hidden
+        img
+            width: 100%
+            position: absolute
+            transition-duration: 0.7s
+
+    .display0
+        left: -100%
+        z-index: -1
+    .display1
+        left: 0
+    .display2
+        left: 100%
+    .display3
+        left: 100%
+    .display4
+        left: 100%
+    .display5
+        left: 100%
+
+
+    #roll
+        position: absolute
+        cursor: pointer
+        width: 50px !important
+        top: 50%
+        right: 40px
+        transform: translateY(-50%)
+    #scroll
+        position: absolute
+        width: 40px !important
+        bottom: 40px
+        left: 50%
+        transform: translateX(-50%)
+    #booking
+        position: absolute
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-direction: column
+        top: 0px
+        left: 76px
+        width: 300px
+        height: 392px
+        z-index: 1
+        background-color: rgba(255, 255, 255, 0.8)
+
+        input
+            padding: 8px 20px
+            font-size: 14px
+            width: 100%
+            border: none
+            margin-top: 7px
+        #CheckOut,#CheckIn
+            margin: 0 10px
+            width: 244px
+            height: 36px
+            position: relative
+            img
+                position: absolute
+                right: 13px
+                top: 34px
+        #how
+            display: flex
+            #HowManyAdult,#HowManyKid
+                margin: 0 10px
+                width: 112px
+                height: 36px
+                position: relative
+                line-height: 35px
+                .add
+                    position: absolute
+                    right: 0
+                    color: white
+                    background-color: black
+                    height: 100%
+                    font-weight: 100
+                    font-size: 28px
+                    width: 36px
+                    padding: 1px 11px
+                .minus
+                    position: absolute
+                    left: 0
+                    color: white
+                    background-color: black
+                    height: 100%
+                    font-weight: 100
+                    font-size: 28px
+                    width: 36px
+                    padding: 1px 11px
+        #search
+            width: 132px
+            height: 50px
+            color: black
+            border: 1px solid black
+            font-size: 22px
+            padding: 7px 23px
+#each
+    position: relative
+    width: 1280px
+    height: 780px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-content: center
+    #each_text
+        position: absolute
+        top: 30px
+        left: 76px
+        font-size: 30px
+    .block
+        position: relative
+        cursor: pointer
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 1px
+        width: 383px
+        height: 300px
+        overflow: hidden
+        .shadow
+            position: absolute
+            top: 0
+            width: 100%
+            height: 100%
+            background-color: black
+            opacity: 0.3
+            z-index: 1
+        img
+            position: absolute
+            width: 100%
+        .text
+            position: absolute
+            z-index: 2
+            text-align: center
+            color: white
+            font-weight: 700
+            font-size: 24px
+            display: flex
+            flex-direction: column
+            align-items: center
+            letter-spacing: 1px
+            hr
+                width: 40px
+                border: 0.5px solid white
+                margin-top: 20px
+        .hover
+            opacity: 0
+            transition-duration: 0.2s
+
+@media only screen and (max-width: 1160px)
+    #each
+        height: 1150px
+        .block
+            margin: 20px 30px !important
+            width: 400px !important
+            height: 300px !important
+            transition-duration: 0.3s
+@media only screen and (max-width: 920px)
+    #each
+        height: 2180px
+

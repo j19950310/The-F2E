@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="36" viewBox="0 0 132 36">
+  <g id="btn_search_small" transform="translate(-960 -31)">
+    <g id="btn_search_small-2" data-name="btn_search_small" transform="translate(960 31)" stroke="#000" stroke-width="1">
+      <rect width="132" height="36" stroke="none"/>
+      <rect x="0.5" y="0.5" width="131" height="35" fill="none"/>
+    </g>
+    <text id="Book_now" data-name="Book now" transform="translate(1026 56)" fill="#fff" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.03em"><tspan x="-50.01" y="0">Book now</tspan></text>
+  </g>
+</svg>

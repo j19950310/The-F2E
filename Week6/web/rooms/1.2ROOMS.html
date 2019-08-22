@@ -1,1 +1,51 @@
-1.3CONTACT.html
+<script type="text/javascript" src="../../js/vue.js"></script>
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Barlow:200,400,700|Noto+Sans+TC:100,400,700&display=swap" rel="stylesheet">
+<div id="ROOM">
+
+    <div class="room" v-for="(item, index) in room">
+        <div class="img_block">
+            <div class="shadow" :title="item.name" ></div>
+            <img :src="item.imageUrl[0]" >
+            <div class="text">{{item.name}}<hr></div>
+        </div>
+        <div class="info_block">
+            <div class="info_text">
+                <div class="title">{{item.name}}</div>
+                <div class="detail">
+                人數:&nbsp{{item.descriptionShort.GuestMax}}
+                </div>
+                <div class="detail">
+                坪數:&nbsp{{item.descriptionShort.Footage}}平方公尺
+                </div>
+                <div class="detail">床型:&nbsp</div>
+                <div class="detail">餐點:&nbsp</div>
+            </div>
+            <div class="info_img">
+                <img
+                     v-for="(value, name) in item.amenities"
+                     :src="'img/'+ name + '.svg'"
+                     :title="name"
+                     v-show='value'
+                     >
+            </div>
+        </div>
+        <div class="money">
+            <div class="normal">
+                平日每晚
+                <div class="big">${{thousand(item.normalDayPrice)}}</div>
+            </div>
+            <div class="holiday">
+                假日每晚
+                <div class="big">${{thousand(item.holidayPrice)}}</div>
+            </div>
+            <img class="more" src="img/more.svg">
+            <img class="search" src="img/search.svg">
+        </div>
+    </div>
+
+
+</div>
+<script type="text/javascript" src="rooms.js"></script>
+

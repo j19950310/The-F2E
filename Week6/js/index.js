@@ -35,3 +35,7 @@ $('body').click(function(event) {
     }
 });
 
+$('#nav_ABOUT').click(function(event) {
+    /* Act on the event */
+    window.scrollTo(0,2000);
+});

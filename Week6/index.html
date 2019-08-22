@@ -31,9 +31,10 @@
             v-bind:class="{show: navShow}"
         >
             <div id="nav_ABOUT"
-                @click='web.url = web.nav_ABOUT'
+
             >ABOUT US</div>
-            <div id="nav_ROOMS">ROOMS</div>
+            <div id="nav_ROOMS"
+            @click='web.url = web.nav_ROOMS'>ROOMS</div>
             <div id="nav_CONTACT">CONTACT</div>
             <div id="bookbtn">BOOK NOW</div>
             <select id="lang">

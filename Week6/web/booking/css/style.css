@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+  display: flex;
+  position: relative;
+  font-family: "Barlow", "Noto Sans TC", sans-serif; }
+
+input {
+  padding: 8px 20px;
+  font-size: 14px;
+  width: 100%; }
+
+#CheckOut, #CheckIn {
+  margin: 0 10px;
+  width: 244px;
+  height: 36px;
+  position: relative; }
+  #CheckOut img, #CheckIn img {
+    position: absolute;
+    right: 13px;
+    top: 9px; }
+
+#booking {
+  width: 1050px;
+  height: 300px;
+  flex-wrap: wrap; }
+  #booking #info_title {
+    height: 144px;
+    width: 100%; }
+  #booking #check {
+    height: 160px;
+    width: 100%;
+    justify-content: space-between; }
+    #booking #check #input {
+      width: 550px;
+      height: 160px; }
+    #booking #check #reciept {
+      width: 300px;
+      height: 160px; }
+
+/*# sourceMappingURL=style.css.map */

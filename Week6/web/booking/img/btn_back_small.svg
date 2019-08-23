@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="36" viewBox="0 0 132 36">
+  <g id="btn_back_small" transform="translate(-960 -31)">
+    <g id="btn_back_small-2" data-name="btn_back_small" transform="translate(960 31)" fill="none" stroke="#000" stroke-width="1">
+      <rect width="132" height="36" stroke="none"/>
+      <rect x="0.5" y="0.5" width="131" height="35" fill="none"/>
+    </g>
+    <text id="Back_" data-name="Back ＜" transform="translate(1026 56)" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.03em"><tspan x="-34.397" y="0">Back </tspan><tspan y="0" font-family="YuGothicUI-Regular, Yu Gothic UI">＜</tspan></text>
+  </g>
+</svg>

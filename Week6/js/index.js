@@ -16,7 +16,9 @@ var page = new Vue({
         test6:"web/deluxe twin room/2.6Deluxe Twin Room.html" ,
         test7:"web/booking/3.1Booking.html"
         },
-        delay: false
+        delay: false,
+        checkin:"",
+        checkout:"",
     }
 })
 

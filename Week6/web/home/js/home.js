@@ -93,3 +93,33 @@ $('#DTR').hover(function() {
     /* Act on the event */
     document.location.href = '../deluxe twin room/2.6Deluxe Twin Room.html'
 });
+
+$(function() {
+
+    var array = ["2019-08-25","2019-08-29","2019-08-30"];
+
+
+
+    $('#CheckInDate,#CheckOutDate')
+    .datepicker({
+        minDate: 0,
+        maxDate: "+90D" ,
+        beforeShowDay: function(date){
+        //轉換日期格式
+        var string = jQuery.datepicker.formatDate('yy-mm-dd', date);
+        return [ array.indexOf(string) == -1 ]
+       }
+    });
+
+    $('#CheckInDate,#CheckOutDate')
+    .blur(function(event) {
+        /* Act on the event */
+         var id = this.id;
+
+        setTimeout(function(){
+         test = new Date($('#'+id)[0].value);
+        },1000);
+
+    })
+    ;
+});

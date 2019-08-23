@@ -4,6 +4,119 @@
 <link href="https://fonts.googleapis.com/css?family=Barlow:200,400,700|Noto+Sans+TC:100,400,700&display=swap" rel="stylesheet">
 <div id="ROOM">
 
+      <!-- normal invisible booking part\|/ -->
+    <div id="booking" class="collap">
+        <div id="scroll">
+        <!-- showpart -->
+        <div id="showpart">
+            <div id="photo">
+                <div id="title"></div>
+                <div id="img"></div>
+                <div id="money">
+                    <div class="normal">
+                        平日每晚
+                        <div class="big">$</div>
+                    </div>
+                    <div class="holiday">
+                        假日每晚
+                        <div class="big">$</div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="index">
+                <div class="index_block"></div>
+                <div class="index_block"></div>
+                <div class="index_block"></div>
+            </div>
+        </div>
+
+        <!-- infopart -->
+        <div id="infopart">
+            <div id="settings" class="setblock">
+                <div class="title">房間設備</div>
+                <div class="img">
+                    <div class="imgblock">
+                        <img src="" alt="" class="icon">
+                    </div>
+                    <div class="imgblock">
+                        <img src="" alt="" class="icon">
+                    </div>
+                    <div class="imgblock">
+                        <img src="" alt="" class="icon">
+                    </div>
+                    <div class="imgblock">
+                        <img src="" alt="" class="icon">
+                    </div>
+                    <div class="imgblock">
+                        <img src="" alt="" class="icon">
+                    </div>
+                    <div class="imgblock">
+                        <img src="" alt="" class="icon">
+                    </div>
+                </div>
+            </div>
+            <div id="others" class="setblock">
+                <div class="title">其他</div>
+                <div class="img">
+                    <div class="imgblock">
+                        <img src="" alt="" class="icon">
+                    </div>
+                    <div class="imgblock">
+                        <img src="" alt="" class="icon">
+                    </div>
+                    <div class="imgblock">
+                        <img src="" alt="" class="icon">
+                    </div>
+                    <div class="imgblock">
+                        <img src="" alt="" class="icon">
+                    </div>
+                    <div class="imgblock">
+                        <img src="" alt="" class="icon">
+                    </div>
+                    <div class="imgblock">
+                        <img src="" alt="" class="icon">
+                    </div>
+                </div>
+            </div>
+            <div id="info">
+                <div class="title">簡介</div>
+            </div>
+            <div id="detail">
+                <div class="info_detail d1"></div>
+                <div class="info_detail d2"></div>
+                <div class="info_detail d3"></div>
+                <div class="info_detail d1"></div>
+                <div class="info_detail d2"></div>
+                <div class="info_detail d3"></div>
+            </div>
+
+        </div>
+
+        <!-- bookpart -->
+        <div id="bookpart">
+            <div id="CheckIn">
+                <input type="text" placeholder="Check in" id="CheckInDate">
+                <img src="img/calendar.svg" class="calendar">
+            </div>
+            <div id="CheckOut">
+                <input type="text"  placeholder="Check out" id="CheckOutDate">
+                <img src="img/calendar.svg" class="calendar">
+            </div>
+            <div id="HowManyAdult">
+                <div class="add">+</div>
+                <div class="minus">-</div>
+            </div>
+            <div id="HowManyKid">
+                <div class="add">+</div>
+                <div class="minus">-</div>
+            </div>
+            <div id='search'>SEARCH</div>
+        </div>
+        </div>
+    </div>
+<!-- ^^^normal invisible booking part ^^^^^^^-->
+
     <div class="room" v-for="(item, index) in room">
         <div class="img_block">
             <div class="shadow" :title="item.name" ></div>

@@ -1,5 +1,8 @@
 <script type="text/javascript" src="../../js/vue.js"></script>
 <script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
+
+<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Barlow:200,400,700|Noto+Sans+TC:100,400,700&display=swap" rel="stylesheet">
 <div id="ROOM">
@@ -10,24 +13,40 @@
         <!-- showpart -->
         <div id="showpart">
             <div id="photo">
-                <div id="title"></div>
-                <div id="img"></div>
+                <div id="title">{{room[bookingWhich].name}}</div>
+                <div id="img">
+                    <img :src="room[bookingWhich].imageUrl[indexpic]">
+                </div>
                 <div id="money">
                     <div class="normal">
                         平日每晚
-                        <div class="big">$</div>
+                        <div class="big">${{thousand(room[bookingWhich].normalDayPrice)}}</div>
                     </div>
                     <div class="holiday">
                         假日每晚
-                        <div class="big">$</div>
+                        <div class="big">${{thousand(room[bookingWhich].holidayPrice)}}</div>
                     </div>
                 </div>
-
+                <div id="close">
+                    <img src="img/btn_close_normal.svg" alt="">
+                </div>
             </div>
             <div id="index">
-                <div class="index_block"></div>
-                <div class="index_block"></div>
-                <div class="index_block"></div>
+                <div
+                @click='indexpic = 0'
+                class="index_block">
+                    <img :src="room[bookingWhich].imageUrl[0]">
+                </div>
+                <div
+                @click='indexpic = 1'
+                class="index_block">
+                    <img :src="room[bookingWhich].imageUrl[1]">
+                </div>
+                <div
+                @click='indexpic = 2'
+                class="index_block">
+                    <img :src="room[bookingWhich].imageUrl[2]">
+                </div>
             </div>
         </div>
 
@@ -36,59 +55,97 @@
             <div id="settings" class="setblock">
                 <div class="title">房間設備</div>
                 <div class="img">
-                    <div class="imgblock">
-                        <img src="" alt="" class="icon">
+                    <div v-show="room[bookingWhich].amenities['Wi-Fi']"
+                    class="imgblock">
+                        <img
+                         src="img/Wi-Fi.svg" alt="" class="icon">
+                        Wi-Fi
                     </div>
-                    <div class="imgblock">
-                        <img src="" alt="" class="icon">
+                    <div v-show="room[bookingWhich].amenities['Television']"
+                    class="imgblock">
+                        <img
+                         src="img/Television.svg" alt="" class="icon">
+                        Television
                     </div>
-                    <div class="imgblock">
-                        <img src="" alt="" class="icon">
+                    <div v-show="room[bookingWhich].amenities['Air-Conditioner']"
+                    class="imgblock">
+                        <img
+                         src="img/Air-Conditioner.svg" alt="" class="icon">
+                        Air-Conditioner
                     </div>
-                    <div class="imgblock">
-                        <img src="" alt="" class="icon">
+                    <div v-show="room[bookingWhich].amenities['Refrigerator']"
+                    class="imgblock">
+                        <img
+                         src="img/Refrigerator.svg" alt="" class="icon">
+                        Refrigerator
                     </div>
-                    <div class="imgblock">
-                        <img src="" alt="" class="icon">
-                    </div>
-                    <div class="imgblock">
-                        <img src="" alt="" class="icon">
+                    <div v-show="room[bookingWhich].amenities['Sofa']"
+                    class="imgblock">
+                        <img
+                         src="img/Sofa.svg" alt="" class="icon">
+                        Sofa
                     </div>
                 </div>
             </div>
             <div id="others" class="setblock">
                 <div class="title">其他</div>
                 <div class="img">
-                    <div class="imgblock">
-                        <img src="" alt="" class="icon">
+                    <div v-show="room[bookingWhich].amenities['Breakfast']"
+                    class="imgblock">
+                        <img
+                         src="img/Breakfast.svg" alt="" class="icon">
+                        Breakfast
                     </div>
-                    <div class="imgblock">
-                        <img src="" alt="" class="icon">
+                    <div v-show="room[bookingWhich].amenities['Mini-Bar']"
+                    class="imgblock">
+                        <img
+                         src="img/Mini-Bar.svg" alt="" class="icon">
+                        Mini-Bar
                     </div>
-                    <div class="imgblock">
-                        <img src="" alt="" class="icon">
+                    <div v-show="room[bookingWhich].amenities['Room-Service']"
+                    class="imgblock">
+                        <img
+                         src="img/Room-Service.svg" alt="" class="icon">
+                        Room-Service
                     </div>
-                    <div class="imgblock">
-                        <img src="" alt="" class="icon">
+                    <div v-show="room[bookingWhich].amenities['Great-View']"
+                    class="imgblock">
+                        <img
+                         src="img/Great-View.svg" alt="" class="icon">
+                        Great-View
                     </div>
-                    <div class="imgblock">
-                        <img src="" alt="" class="icon">
+                    <div v-show="room[bookingWhich].amenities['Smoke-Free']"
+                    class="imgblock">
+                        <img
+                         src="img/Smoke-Free.svg" alt="" class="icon">
+                        Smoke-Free
                     </div>
-                    <div class="imgblock">
-                        <img src="" alt="" class="icon">
+                    <div v-show="room[bookingWhich].amenities['Pet-Friendly']"
+                    class="imgblock">
+                        <img
+                         src="img/Pet-Friendly.svg" alt="" class="icon">
+                        Pet-Friendly
                     </div>
                 </div>
             </div>
+
             <div id="info">
                 <div class="title">簡介</div>
+                {{room[bookingWhich].description}}
             </div>
+
             <div id="detail">
-                <div class="info_detail d1"></div>
-                <div class="info_detail d2"></div>
-                <div class="info_detail d3"></div>
-                <div class="info_detail d1"></div>
-                <div class="info_detail d2"></div>
-                <div class="info_detail d3"></div>
+                <div class="info_detail d1">人數：{{room[bookingWhich].descriptionShort.GuestMax}}</div>
+                <div class="info_detail d2">坪數：{{footMeter(room[bookingWhich].descriptionShort.Footage)}}平方公尺</div>
+                <div class="info_detail d3">
+                checkIn 時間：
+            最早{{room[bookingWhich].checkInAndOut.checkInEarly}}、
+        最晚{{room[bookingWhich].checkInAndOut.checkInLate}}</div>
+                <div class="info_detail d1">床型：</div>
+                <div class="info_detail d2">餐點：</div>
+                <div class="info_detail d3">chenkOut 時間：
+                {{room[bookingWhich].checkInAndOut.checkOut}}
+                </div>
             </div>
 
         </div>
@@ -104,20 +161,23 @@
                 <img src="img/calendar.svg" class="calendar">
             </div>
             <div id="HowManyAdult">
-                <div class="add">+</div>
-                <div class="minus">-</div>
+                <div class="add"  @click='adult++'>+</div>
+                <div class="num">{{adult}}Adult{{adult>1?'s':''}}</div>
+                <div class="minus" @click='adult= (adult<=0)?0:adult-1'>-</div>
             </div>
             <div id="HowManyKid">
-                <div class="add">+</div>
-                <div class="minus">-</div>
+                <div class="add" @click='kid++'>+</div>
+                <div class="num">{{kid}}Kid{{kid>1?'s':''}}</div>
+                <div class="minus" @click='kid=(kid<=0)?0:kid-1'>-</div>
             </div>
-            <div id='search'>SEARCH</div>
+            <div id='search' @click='searching'>SEARCH</div>
         </div>
         </div>
     </div>
 <!-- ^^^normal invisible booking part ^^^^^^^-->
 
-    <div class="room" v-for="(item, index) in room">
+    <div id="Searching"></div>
+    <div class="room" v-for="(item, index) in room" v-show="searchShow[index]">
         <div class="img_block">
             <div class="shadow" :title="item.name" ></div>
             <img :src="item.imageUrl[0]" >
@@ -130,7 +190,7 @@
                 人數:&nbsp{{item.descriptionShort.GuestMax}}
                 </div>
                 <div class="detail">
-                坪數:&nbsp{{item.descriptionShort.Footage}}平方公尺
+                坪數:&nbsp{{footMeter(item.descriptionShort.Footage)}}平方公尺
                 </div>
                 <div class="detail">床型:&nbsp</div>
                 <div class="detail">餐點:&nbsp</div>
@@ -153,8 +213,11 @@
                 假日每晚
                 <div class="big">${{thousand(item.holidayPrice)}}</div>
             </div>
-            <img class="more" src="img/more.svg">
-            <img class="search" src="img/search.svg">
+            <img class="more" @click="bookingWhich = index" src="img/more.svg">
+            <img class="search"
+            src="img/search.svg"
+
+             >
         </div>
     </div>
 

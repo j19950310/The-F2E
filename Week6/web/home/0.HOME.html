@@ -2,6 +2,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript" src="../../js/jquery.js"></script>
 <script type="text/javascript" src="../../jquery-ui/jquery-ui.js"></script>
+<script type="text/javascript" src="../../js/vue.js"></script>
 <link rel="stylesheet" type="text/css" href="../../jquery-ui/jquery-ui.css">
 
 <div id="Carousel">
@@ -23,24 +24,28 @@
     <div id="booking">
         <div id="CheckIn">
             Check In
-            <input type="text" placeholder="Check in" id="CheckInDate">
+            <input type="text" placeholder="Check in" id="CheckInDate"
+            >
             <img src="../../img/calendar.svg" class="calendar">
         </div>
         <div id="CheckOut">
             Check Out
-            <input type="text"  placeholder="Check out" id="CheckOutDate">
+            <input type="text"  placeholder="Check out" id="CheckOutDate"
+            >
             <img src="../../img/calendar.svg" class="calendar">
         </div>
         <div id="how">
             <div id="HowManyAdult">
                 Adults
-                <div class="add">+</div>
-                <div class="minus">-</div>
+                <div class="add"  @click='adult++'>+</div>
+                <div class="num">{{adult}}</div>
+                <div class="minus" @click='adult= (adult<=0)?0:adult-1'>-</div>
             </div>
             <div id="HowManyKid">
                 Kids
-                <div class="add">+</div>
-                <div class="minus">-</div>
+                <div class="add" @click='kid++'>+</div>
+                <div class="num">{{kid}}</div>
+                <div class="minus" @click='kid= (kid<=0)?0:kid-1'>-</div>
             </div>
         </div>
         <div id='search'>SEARCH</div>

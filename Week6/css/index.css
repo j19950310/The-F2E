@@ -96,6 +96,8 @@ html {
     padding: 8px 20px;
     font-size: 14px;
     width: 100%; }
+  #booking .alert {
+    border: 1px solid red; }
   #booking #CheckOut, #booking #CheckIn {
     margin: 0 10px;
     width: 244px;
@@ -144,7 +146,7 @@ iframe {
   position: relative;
   top: 100px;
   width: 100%;
-  height: 1480px;
+  height: 2160px;
   border: none; }
 
 #footer {
@@ -179,7 +181,7 @@ iframe {
     right: 75px;
     bottom: 45px; }
 
-@media only screen and (max-width: 900px) {
+@media (max-width: 900px) {
   #header #navigation {
     position: absolute;
     right: -175px;

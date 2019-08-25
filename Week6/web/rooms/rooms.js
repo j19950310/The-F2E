@@ -3,6 +3,14 @@
         data:{
             item:{},
             room:[],
+            bookingWhich:0,
+            indexpic:0,
+            kid:0,
+            adult:0,
+            bookindex:0,
+            CheckInDate:'',
+            CheckOutDate:'',
+            searchShow:[true,true,true,true,true,true],
         },
         methods:{
             thousand: function(num){
@@ -13,73 +21,66 @@
                 test = test.join("");
                 return test
 
+            },
+            footMeter: function(foot){
+                var meter = Math.round(foot*0.3048)
+                return meter
+            },
+            searching: function(){
+                        console.log('test')
+
+
+
             }
         }
 });
 
+// 從父元素取
+
+    rooms.room = window.parent.page.room;
+    var page = window.parent.page;
+    rooms.kid = page.kid;
+    rooms.adult = page.adult;
+    rooms.CheckInDate = page.CheckInDate;
+    rooms.CheckOutDate = page.CheckOutDate;
+$(function() {
 
 
 
-
-
-var requestURL = '../../json/all.json'
-var response;
-var request = new XMLHttpRequest();
-request.addEventListener("loadend", transferComplete);
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
-request.onload = function() {
-    rooms.item = request.response;
-};
-
-
-function transferComplete(evt) {
-    NAME = [];
-    DATA = [];
-
-    for (var i = 0; i < 6; i++) {
-        NAME.push(rooms.item.items[i].name);
-        };
-
-  RQURL = [];
-
-    for (var i = 0; i < 6; i++) {
-        RQURL.push('../../json/'+NAME[i]+'.json');
-        }
-    RSP = [];
-
-    RQ = [];
-
-    for (var i = 0; i < 6; i++) {
-        RQ.push(request = new XMLHttpRequest());
-        RQ[i].open('GET', RQURL[i]);
-        RQ[i].responseType = 'json';
-        RQ[i].send();
-        };
-        RQ[5].addEventListener("loadend", RSPUSH);
-}
-
-
-function RSPUSH(i) {
-    for (var i = 0; i < 6; i++) {
-        RSP.push(RQ[i].response);
-    }
-    for (var i = 0; i < 6; i++) {
-        rooms.room.push( RSP[i].room[0] );
-    }
-}
-
-
-setTimeout(function(){
-
-    $(".more,.search").hover(function() {
-        /* Stuff to do when the mouse enters the element */
-        $(this).css('transform',' scale(1.05)');
-    }, function() {
-        /* Stuff to do when the mouse leaves the element */
-        $(this).css('transform',' scale(1)');
+    $('.more,#close').click(function(event) {
+        /* Act on the event */
+        $('#booking').toggleClass('collap');
     });
-},1000);
+
+    BanDate = page.BanDate;
+
+    $('#CheckInDate,#CheckOutDate')
+    .datepicker({
+        minDate: 0,
+        maxDate: "+90D" ,
+        beforeShowDay: function(date){
+        //轉換日期格式
+        var string = jQuery.datepicker.formatDate('yy-mm-dd', date);
+        return [ BanDate.indexOf(string) == -1 ]
+       }
+    });
+
+    $('#CheckInDate,#CheckOutDate')
+    .blur(function(event) {
+        /* Act on the event */
+         var id = this.id;
+
+        setTimeout(function(){
+         rooms[id] = new Date($('#'+id)[0].value);
+         if ($('#CheckInDate')[0].value>$('#CheckOutDate')[0].value) {
+            $('#CheckInDate,#CheckOutDate').addClass('alert');
+         }else{$('#CheckInDate,#CheckOutDate').removeClass('alert')}
+
+        },500);
+
+    })
 
 
+
+
+});

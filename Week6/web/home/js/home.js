@@ -1,3 +1,12 @@
+var page = window.parent.page;
+var home = new Vue({
+    el:"#Carousel",
+    data:{
+        adult:0,
+        kid:0
+    }
+})
+
 rolldelay = true
 $('#roll').click(function(event) {
     /* Act on the event */
@@ -25,8 +34,8 @@ $('#SR').hover(function() {
     $(this.children[0]).animate({top: '0%'},100);
     $(this.children[2]).toggleClass('hover');
 }).click(function(event) {
-    /* Act on the event */
-    document.location.href = '../single room/2.1Single Room.html'
+    page.web.url = page.web.nav_ROOMS
+    page.toRoom(0);
 });
 
 $('#DSR').hover(function() {
@@ -39,7 +48,8 @@ $('#DSR').hover(function() {
     $(this.children[2]).toggleClass('hover');
 }).click(function(event) {
     /* Act on the event */
-    document.location.href = '../duluxe single room/2.2Deluxe Single Room.html'
+    page.web.url = page.web.nav_ROOMS
+    page.toRoom(1);
 });
 
 $('#DR').hover(function() {
@@ -52,7 +62,8 @@ $('#DR').hover(function() {
     $(this.children[2]).toggleClass('hover');
 }).click(function(event) {
     /* Act on the event */
-    document.location.href = '../double room/2.3Double Room.html'
+    page.web.url = page.web.nav_ROOMS
+    page.toRoom(2);
 });
 
 $('#DDR').hover(function() {
@@ -65,7 +76,8 @@ $('#DDR').hover(function() {
     $(this.children[2]).toggleClass('hover');
 }).click(function(event) {
     /* Act on the event */
-    document.location.href = '../deluxe double room/2.4Deluxe Double Room.html'
+    page.web.url = page.web.nav_ROOMS
+    page.toRoom(3);
 });
 
 $('#TR').hover(function() {
@@ -78,7 +90,8 @@ $('#TR').hover(function() {
     $(this.children[2]).toggleClass('hover');
 }).click(function(event) {
     /* Act on the event */
-    document.location.href = '../twin room/2.5Twin Room.html'
+    page.web.url = page.web.nav_ROOMS
+    page.toRoom(4);
 });
 
 $('#DTR').hover(function() {
@@ -91,12 +104,15 @@ $('#DTR').hover(function() {
     $(this.children[2]).toggleClass('hover');
 }).click(function(event) {
     /* Act on the event */
-    document.location.href = '../deluxe twin room/2.6Deluxe Twin Room.html'
+    page.web.url = page.web.nav_ROOMS
+    page.toRoom(5);
 });
 
 $(function() {
 
-    var array = ["2019-08-25","2019-08-29","2019-08-30"];
+    BanDate = page.BanDate;
+    home.adult = page.adult
+    home.kid = page.kid;
 
 
 
@@ -107,7 +123,7 @@ $(function() {
         beforeShowDay: function(date){
         //轉換日期格式
         var string = jQuery.datepicker.formatDate('yy-mm-dd', date);
-        return [ array.indexOf(string) == -1 ]
+        return [ BanDate.indexOf(string) == -1 ]
        }
     });
 
@@ -117,9 +133,21 @@ $(function() {
          var id = this.id;
 
         setTimeout(function(){
-         test = new Date($('#'+id)[0].value);
-        },1000);
+         window.parent.page[id] = new Date($('#'+id)[0].value);
+         if ($('#CheckInDate')[0].value>$('#CheckOutDate')[0].value) {
+            $('#CheckInDate,#CheckOutDate').addClass('alert');
+         }else{$('#CheckInDate,#CheckOutDate').removeClass('alert')}
+
+        },100);
 
     })
-    ;
+
+    $('#search').click(function(event) {
+        /* Act on the event */
+        BanDate = page.BanDate;
+        page.adult = home.adult
+        page.kid = home.kid;
+        page.web.url = page.web.nav_ROOMS;
+    });
+
 });

@@ -69,6 +69,11 @@ body {
       width: 100%;
       border: none;
       margin-top: 7px; }
+    #Carousel #booking .alert {
+      border: 1px solid red; }
+    #Carousel #booking .num {
+      position: absolute;
+      left: 50px; }
     #Carousel #booking #CheckOut, #Carousel #booking #CheckIn {
       margin: 0 10px;
       width: 244px;
@@ -112,7 +117,12 @@ body {
       color: black;
       border: 1px solid black;
       font-size: 22px;
-      padding: 7px 23px; }
+      padding: 7px 23px;
+      cursor: pointer; }
+      #Carousel #booking #search:hover {
+        background-color: black;
+        color: white;
+        font-weight: 100; }
 
 #each {
   position: relative;

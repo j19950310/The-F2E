@@ -19,6 +19,7 @@ var page = new Vue({
         indexpic:0,
         // 最後選擇
         bookindex:0,
+        test:{},
     },
     methods:{
         toRoom: function(num){
@@ -52,13 +53,16 @@ $('#nav_ABOUT').click(function(event) {
     window.scrollTo(0,2000);
 });
 
+
 // myHeaders = {
 // 'Accept':'application/json',
 // 'Authorization':'Bearer qX5ptgkF1hDKy8I4UKdo42SDwsqZCNAKoi1cOUMFy8Njc8Fg4H7mH4l21oQ7',
 // 'Content-Type': 'application/json'
 // };
 // file = fetch('https://challenge.thef2e.com/api/thef2e2019/stage6/rooms',{headers:myHeaders}).then(response => response.json())
-// file.then(function (result) { file = result.items })
+// file.then(function (result) { window.page.room = result.items })
+
+
 
 
 var requestURL = '../json/all.json'
@@ -66,48 +70,81 @@ var response;
 var request = new XMLHttpRequest();
 request.addEventListener("loadend", transferComplete);
 request.open('GET', requestURL);
+
 request.responseType = 'json';
 request.send();
 request.onload = function() {
     page.item = request.response;
+
 };
 
 
+var url = [];
+var file = [];
+myHeaders = {
+'Accept':'application/json',
+'Authorization':'Bearer qX5ptgkF1hDKy8I4UKdo42SDwsqZCNAKoi1cOUMFy8Njc8Fg4H7mH4l21oQ7',
+'Content-Type': 'application/json'
+};
+
 function transferComplete(evt) {
-    NAME = [];
-    DATA = [];
 
     for (var i = 0; i < 6; i++) {
-        NAME.push(page.item.items[i].name);
-        };
-
-  RQURL = [];
-
-    for (var i = 0; i < 6; i++) {
-        RQURL.push('../../json/'+NAME[i]+'.json');
+         url.push('https://challenge.thef2e.com/api/thef2e2019/stage6/room/' + page.item.items[i].id);
+         file.push(
+            fetch(url[i],{headers:myHeaders})
+            .then(response => response.json())
+            );
+         file[i].then(function (result) {
+          window.page.room.push(result)
+          });
         }
-    RSP = [];
 
-    RQ = [];
-
-    for (var i = 0; i < 6; i++) {
-        RQ.push(request = new XMLHttpRequest());
-        RQ[i].open('GET', RQURL[i]);
-        RQ[i].responseType = 'json';
-        RQ[i].send();
-        };
-        RQ[5].addEventListener("loadend", RSPUSH);
 }
 
 
-function RSPUSH(i) {
-    for (var i = 0; i < 6; i++) {
-        RSP.push(RQ[i].response);
-    }
-    for (var i = 0; i < 6; i++) {
-        page.room.push( RSP[i].room[0] );
-    }
-}
+
+    // url = 'https://challenge.thef2e.com/api/thef2e2019/stage6/room/3Elqe8kfMxdZv5xFLV4OUeN6jhmxIvQSTyj4eTgIowfIRvF4rerA2Nuegzc2Rgwu';
+    // file = fetch(url,{headers:myHeaders}).then(response => response.json())
+    // file.then(function (result) { file = result })
+
+
+
+// function transferComplete(evt) {
+//     NAME = [];
+//     DATA = [];
+
+//     for (var i = 0; i < 6; i++) {
+//         NAME.push(page.item.items[i].name);
+//         };
+
+//   RQURL = [];
+
+//     for (var i = 0; i < 6; i++) {
+//         RQURL.push('../../json/'+NAME[i]+'.json');
+//         }
+//     RSP = [];
+
+//     RQ = [];
+
+//     for (var i = 0; i < 6; i++) {
+//         RQ.push(request = new XMLHttpRequest());
+//         RQ[i].open('GET', RQURL[i]);
+//         RQ[i].responseType = 'json';
+//         RQ[i].send();
+//         };
+//         RQ[5].addEventListener("loadend", RSPUSH);
+// }
+
+
+// function RSPUSH(i) {
+//     for (var i = 0; i < 6; i++) {
+//         RSP.push(RQ[i].response);
+//     }
+//     for (var i = 0; i < 6; i++) {
+//         page.room.push( RSP[i].room[0] );
+//     }
+// }
 
 
 setTimeout(function(){
@@ -122,4 +159,10 @@ setTimeout(function(){
 },1000);
 
 
+setTimeout(function(){
 
+    for (var i = 0; i < 6; i++) {
+    page.room[i] = page.room[i].room[0]
+    }
+
+},5000);

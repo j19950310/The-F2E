@@ -5,10 +5,10 @@
 <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Barlow:200,400,700|Noto+Sans+TC:100,400,700&display=swap" rel="stylesheet">
-<div id="ROOM">
 
+<div id="ROOM">
       <!-- normal invisible booking part\|/ -->
-    <div id="booking" class="collap">
+    <div id="booking" v-bind:class="{collap: toggleCollap==1 }">
         <div id="scroll">
         <!-- showpart -->
         <div id="showpart">
@@ -27,7 +27,7 @@
                         <div class="big">${{thousand(room[bookingWhich].holidayPrice)}}</div>
                     </div>
                 </div>
-                <div id="close">
+                <div @click='toggleCollap*=-1' id="close">
                     <img src="img/btn_close_normal.svg" alt="">
                 </div>
             </div>
@@ -213,7 +213,7 @@
                 假日每晚
                 <div class="big">${{thousand(item.holidayPrice)}}</div>
             </div>
-            <img class="more" @click="bookingWhich = index" src="img/more.svg">
+            <img class="more" @click="bookingWhich = index; toggleCollap*=-1" src="img/more.svg">
             <img class="search"
             src="img/search.svg"
 

@@ -1,4 +1,4 @@
-    var rooms = new Vue({
+var rooms = new Vue({
         el:'#ROOM',
         data:{
             item:{},
@@ -7,6 +7,7 @@
             indexpic:0,
             kid:0,
             adult:0,
+            toggleCollap:1,
             bookindex:0,
             CheckInDate:'',
             CheckOutDate:'',
@@ -35,15 +36,16 @@
         }
 });
 
-// 從父元素取
+jQuery(document).ready(function($) {
 
+
+// 從父元素取
     rooms.room = window.parent.page.room;
     var page = window.parent.page;
     rooms.kid = page.kid;
     rooms.adult = page.adult;
     rooms.CheckInDate = page.CheckInDate;
     rooms.CheckOutDate = page.CheckOutDate;
-$(function() {
 
 
 
@@ -83,4 +85,4 @@ $(function() {
 
 
 
-});
+    });

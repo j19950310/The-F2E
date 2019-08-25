@@ -65,7 +65,7 @@ $('#nav_ABOUT').click(function(event) {
 
 
 
-var requestURL = '../json/all.json'
+var requestURL = 'json/all.json'
 var response;
 var request = new XMLHttpRequest();
 request.addEventListener("loadend", transferComplete);

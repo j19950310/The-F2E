@@ -1,0 +1,321 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url(font/NotoSans-Thin.ttf) format("truetype");
+  font-weight: 100; }
+@font-face {
+  font-family: "Noto Sans";
+  src: url(font/NotoSans-Light.ttf) format("truetype");
+  font-weight: 300; }
+@font-face {
+  font-family: "Noto Sans";
+  src: url(font/NotoSans-ExtraLight.ttf) format("truetype");
+  font-weight: 200; }
+@font-face {
+  font-family: "Noto Sans";
+  src: url(font/NotoSans-Medium.ttf) format("truetype");
+  font-weight: 400; }
+@font-face {
+  font-family: "Noto Sans";
+  src: url(font/NotoSans-Medium.ttf) format("truetype");
+  font-weight: 500; }
+@font-face {
+  font-family: "Noto Sans";
+  src: url(font/NotoSans-Bold.ttf) format("truetype");
+  font-weight: 600; }
+@font-face {
+  font-family: "Noto Sans";
+  src: url(font/NotoSans-ExtraBold.ttf) format("truetype");
+  font-weight: 700; }
+@font-face {
+  font-family: "Futwora Pro";
+  src: url(font/FutworaProTrial-Bold.otf) format("opentype");
+  font-weight: bolder; }
+@font-face {
+  font-family: "Futwora Pro";
+  src: url(font/FutworaProTrial-Medium.otf) format("opentype");
+  font-weight: bold; }
+@font-face {
+  font-family: "Futwora Pro";
+  src: url(font/FutworaProTrial-Regular.otf) format("opentype");
+  font-weight: normal; }
+* {
+  font-family: "Futwora Pro", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 1280px;
+  height: 800px; }
+
+.home {
+  width: 1280px;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; }
+  .home .home_text_top {
+    color: #EFEFEF;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Noto Sans";
+    font-weight: 300;
+    letter-spacing: 24px;
+    padding: 30px;
+    transition-duration: 3s; }
+    .home .home_text_top.explore {
+      opacity: 0; }
+  .home .home_text_mid {
+    color: #F9BFCB;
+    font-size: 38px;
+    font-weight: 400;
+    font-family: "Noto Sans";
+    font-weight: 200;
+    letter-spacing: 67px;
+    text-align: center;
+    line-height: 90px;
+    transition-duration: 3s; }
+    .home .home_text_mid.explore {
+      opacity: 0; }
+    .home .home_text_mid p {
+      font-family: "Noto Sans";
+      font-weight: 200; }
+  .home .home_enter {
+    color: #EFEFEF;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans";
+    font-weight: 200;
+    z-index: 1;
+    position: absolute;
+    bottom: 35px;
+    width: 250px; }
+    .home .home_enter #btn {
+      padding: 0px 0px;
+      transition-duration: 0.3s;
+      height: 0px;
+      overflow: hidden; }
+      .home .home_enter #btn.show {
+        position: relative;
+        font-family: "Noto Sans";
+        font-weight: 200;
+        margin: 20px;
+        height: 20px;
+        border: 1px solid #F9BFCB;
+        padding: 10px 50px; }
+    .home .home_enter hr {
+      width: 100%;
+      border: 0.25px solid #F9BFCB; }
+    .home .home_enter h3 {
+      color: #EFEFEF;
+      opacity: 1;
+      font-family: "Noto Sans";
+      font-weight: 200;
+      margin: 15px;
+      font-size: 16px; }
+  .home input {
+    position: relative;
+    background: transparent;
+    border: none;
+    text-align: center;
+    margin: 15px;
+    font-size: 16px;
+    color: #EFEFEF;
+    opacity: 1;
+    font-family: "Noto Sans";
+    font-weight: 200; }
+    .home input::placeholder {
+      color: #EFEFEF;
+      opacity: 1;
+      font-family: "Noto Sans";
+      font-weight: 200; }
+  .home .FrontMask {
+    transition-duration: 3s;
+    position: absolute;
+    left: 0;
+    top: 0; }
+    .home .FrontMask img {
+      position: absolute;
+      width: 1280px; }
+    .home .FrontMask #astronaut {
+      z-index: 1; }
+    .home .FrontMask.explore {
+      top: 70%; }
+  .home #SpaceBackground, .home #ChatChat {
+    width: 1280px;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0%;
+    transition-duration: 5s; }
+  .home #SpaceBackground.explore {
+    top: -100%; }
+  .home #ChatChat.explore {
+    top: -30%; }
+
+.chat_slid_title {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 24px; }
+
+.chat_slid_name {
+  color: white;
+  font-size: 20px;
+  font-weight: 400; }
+
+.chat_message_title {
+  color: white;
+  font-size: 20px;
+  font-weight: 400; }
+
+.chat_message_time {
+  color: #666666;
+  font-size: 12px;
+  font-weight: 400; }
+
+.chat_name {
+  font-size: 16px; }
+  .chat_name .name1 {
+    color: #AA0445; }
+  .chat_name .name2 {
+    color: #04AA9D; }
+
+.chat_text {
+  color: black;
+  font-size: 16px;
+  font-weight: 300; }
+
+.chat_deliver {
+  color: black;
+  font-size: 12px; }
+
+.chat_small_sub {
+  color: #666666;
+  font-size: 12px; }
+
+#path {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  z-index: 2;
+  transition-duration: 0.7s;
+  transition-delay: 1.5s; }
+  #path .profile {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: "Noto Sans";
+    color: white;
+    z-index: 3;
+    cursor: pointer; }
+  #path.explore {
+    opacity: 0; }
+  #path .p1 {
+    top: 54px; }
+  #path .p2 {
+    top: 150px;
+    left: 1200px; }
+  #path .p3 {
+    top: 17px;
+    left: 200px; }
+  #path .p4 {
+    top: 40px;
+    left: 900px; }
+  #path .p5 {
+    top: 110px;
+    left: 400px; }
+  #path .p6 {
+    top: 80px;
+    left: 500px; }
+  #path .p7 {
+    top: 20px;
+    left: 600px; }
+  #path .p8 {
+    top: -30px;
+    left: 700px; }
+
+.SlideBar {
+  position: absolute;
+  left: 0;
+  width: 340px;
+  height: 800px; }
+  .SlideBar .btn {
+    border: 0.5px solid #F9BFCB;
+    position: absolute;
+    color: white;
+    padding: 15px 45px;
+    bottom: 57px;
+    left: 70px;
+    font-family: "Noto Sans";
+    font-weight: 200; }
+
+.room {
+  position: absolute;
+  flex-direction: column;
+  left: 340px;
+  display: flex;
+  width: 980px; }
+  .room .nav {
+    height: 60px;
+    font-family: "Noto Sans";
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .room .nav img {
+      position: absolute; }
+    .room .nav #phone {
+      right: 85px; }
+    .room .nav #video {
+      right: 30px; }
+  .room .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    height: 655px;
+    width: 980px;
+    background: #EDEDED; }
+    .room .text .topimg {
+      margin: 30px;
+      width: 200px; }
+    .room .text .ChatSlid {
+      width: 100%;
+      height: 720px;
+      border-top: 0.5px solid rgba(40, 28, 60, 0.3);
+      position: relative; }
+      .room .text .ChatSlid .timenow {
+        font-family: "Noto Sans";
+        font-weight: 100;
+        font-size: 12px;
+        position: absolute;
+        top: -25px;
+        left: 15px; }
+      .room .text .ChatSlid .dialog {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 30px 20px;
+        position: relative; }
+        .room .text .ChatSlid .dialog .heart {
+          position: absolute;
+          left: 10px;
+          bottom: 10px; }
+        .room .text .ChatSlid .dialog .text_block {
+          padding: 15px 30px; }
+          .room .text .ChatSlid .dialog .text_block .context {
+            margin-top: 15px; }
+          .room .text .ChatSlid .dialog .text_block div {
+            font-family: "Noto Sans";
+            font-weight: 300;
+            font-size: 12px; }
+
+/*# sourceMappingURL=style.css.map */

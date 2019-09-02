@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Document
+            </title>
+            <link href="css/style.css" rel="stylesheet" type="text/css">
+            </link>
+                <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+                </link>
+        </meta>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="vue.js"></script>
+
+    </head>
+    <body>
+
+            <div class="SlideBar">
+                <img src="chat/Slide bar.svg">
+                <div class="btn">Back to Explore</div>
+            </div>
+            <div class="room">
+                <div class="nav">
+                    <div>Aaron</div>
+                    <img id="phone" src="icon/Phone.svg" alt="">
+                    <img id='video' src="icon/Video Camera.svg" alt="">
+                </div>
+                <div class="text">
+                    <img class="topimg" src="user photo/man_1.svg"></img>
+                    <div class="ChatSlid">
+                        <div class="timenow">{{today}}</div>
+
+                        <div class="dialog"
+                        v-for="dia in dialog"
+                        @mouseover='dia.heart = true'
+                        @mouseleave='dia.heart = false'
+                        >
+                            <img class="profile" :src="dia.profile">
+                            <img
+                            v-if="dia.heart & !dia.fill"
+                            @click="dia.fill = !dia.fill"
+                             class="heart" src="icon/Heart.svg">
+                            <img
+                            v-if="dia.heart & dia.fill"
+                            @click="dia.fill = !dia.fill"
+                            class="heart" src="icon/Heart_fill.svg">
+                            <div class="text_block">
+
+                                <div class="name" :style="{color: dia.Ncolor}">{{dia.name}}</div>
+                                <div class="context">{{dia.context}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="type">
+
+                </div>
+
+
+            </div>
+        <script type="text/javascript" src='main.js'></script>
+
+    </body>
+</html>

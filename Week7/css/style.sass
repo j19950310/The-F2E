@@ -1,0 +1,316 @@
+$brand: #AA0445
+$black: #281C3C
+$error: #C41800
+
+$sec: 38px
+$head: 28px
+$title: 24px
+NotoSans
+@font-face
+    font-family: 'Noto Sans'
+    src: url(font/NotoSans-Thin.ttf) format("truetype")
+    font-weight: 100
+@font-face
+    font-family: 'Noto Sans'
+    src: url(font/NotoSans-Light.ttf) format("truetype")
+    font-weight: 300
+@font-face
+    font-family: 'Noto Sans'
+    src: url(font/NotoSans-ExtraLight.ttf) format("truetype")
+    font-weight: 200
+@font-face
+    font-family: 'Noto Sans'
+    src: url(font/NotoSans-Medium.ttf) format("truetype")
+    font-weight: 400
+@font-face
+    font-family: 'Noto Sans'
+    src: url(font/NotoSans-Medium.ttf) format("truetype")
+    font-weight: 500
+@font-face
+    font-family: 'Noto Sans'
+    src: url(font/NotoSans-Bold.ttf) format("truetype")
+    font-weight: 600
+@font-face
+    font-family: 'Noto Sans'
+    src: url(font/NotoSans-ExtraBold.ttf) format("truetype")
+    font-weight: 700
+
+
+@font-face
+    font-family: 'Futwora Pro'
+    src: url(font/FutworaProTrial-Bold.otf) format("opentype")
+    font-weight: bolder
+@font-face
+    font-family: 'Futwora Pro'
+    src: url(font/FutworaProTrial-Medium.otf) format("opentype")
+    font-weight: bold
+@font-face
+    font-family: 'Futwora Pro'
+    src: url(font/FutworaProTrial-Regular.otf) format("opentype")
+    font-weight: normal
+@mixin ColorAndSize($color, $size, $weight:400)
+    color: $color
+    font-size: $size + px
+    font-weight: $weight
+@mixin sub($color)
+    color: $color
+    font-size: 20px
+@mixin cap($color)
+    color: $color
+    font-size: 16px
+@mixin small($color)
+    color: $color
+    font-size: 12px
+@mixin flex($dir:column,$x:center,$y:center)
+    display: flex
+    flex-direction: column
+    justify-content: $x
+    align-items: $y
+
+*
+    font-family: 'Futwora Pro', sans-serif
+    margin: 0
+    padding: 0
+
+body
+    width: 1280px
+    height: 800px
+.home
+    width: 1280px
+    height: 800px
+    overflow: hidden
+    position: relative
+    @include flex(column, start)
+    .home_text_top
+        @include ColorAndSize(#EFEFEF,16)
+        font-family: 'Noto Sans'
+        font-weight: 300
+        letter-spacing: 24px
+        padding: 30px
+        transition-duration: 3s
+        &.explore
+            opacity: 0
+    .home_text_mid
+        @include ColorAndSize(#F9BFCB,38)
+        font-family: 'Noto Sans'
+        font-weight: 200
+        letter-spacing: 67px
+        text-align: center
+        line-height: 90px
+        transition-duration: 3s
+        &.explore
+            opacity: 0
+        p
+            font-family: 'Noto Sans'
+            font-weight: 200
+    .home_enter
+        @include cap(#EFEFEF)
+        @include flex
+        font-family: 'Noto Sans'
+        font-weight: 200
+        z-index: 1
+        position: absolute
+        bottom: 35px
+        width: 250px
+        #btn
+            padding: 0px 0px
+            transition-duration: 0.3s
+            height: 0px
+            overflow: hidden
+            &.show
+                position: relative
+                font-family: 'Noto Sans'
+                font-weight: 200
+                margin: 20px
+                height: 20px
+                border: 1px solid #F9BFCB
+                padding: 10px 50px
+        hr
+            width: 100%
+            border: 0.25px solid #F9BFCB
+        h3
+            color: #EFEFEF
+            opacity: 1
+            font-family: "Noto Sans"
+            font-weight: 200
+            margin: 15px
+            font-size: 16px
+    input
+        position: relative
+        background: transparent
+        border: none
+        text-align: center
+        margin: 15px
+        font-size: 16px
+        color: #EFEFEF
+        opacity: 1
+        font-family: "Noto Sans"
+        font-weight: 200
+        &::placeholder
+            color: #EFEFEF
+            opacity: 1
+            font-family: "Noto Sans"
+            font-weight: 200
+
+    .FrontMask
+        transition-duration: 3s
+        position: absolute
+        left: 0
+        top: 0
+        img
+            position: absolute
+            width: 1280px
+        #astronaut
+            z-index: 1
+        &.explore
+            top: 70%
+    #SpaceBackground,#ChatChat
+        width: 1280px
+        position: absolute
+        z-index: -1
+        left: 0
+        top: 0%
+        transition-duration: 5s
+    #SpaceBackground
+        &.explore
+            top: -100%
+    #ChatChat
+        &.explore
+            top: -30%
+.chat_slid_title
+    @include ColorAndSize(white,24,600)
+    letter-spacing: 24px
+.chat_slid_name
+    @include ColorAndSize(white,20)
+.chat_message_title
+    @include ColorAndSize(white,20)
+.chat_message_time
+    @include ColorAndSize(#666666,12)
+.chat_name
+    font-size: 16px
+    .name1
+        color: $brand
+    .name2
+        color: #04AA9D
+.chat_text
+    @include ColorAndSize(black,16,300)
+.chat_deliver
+    @include small(black)
+.chat_small_sub
+    @include small(#666666)
+
+
+
+#path
+    position: absolute
+    top: 50%
+    left: 0%
+    z-index: 2
+    transition-duration: 0.7s
+    transition-delay: 1.5s
+    .profile
+        position: absolute
+        top: 0px
+        left: 0px
+        font-family: 'Noto Sans'
+        color: white
+        z-index: 3
+        cursor: pointer
+    &.explore
+        opacity: 0
+    .p1
+        top: 54px
+    .p2
+        top: 150px
+        left: 1200px
+    .p3
+        top: 17px
+        left: 200px
+    .p4
+        top: 40px
+        left: 900px
+    .p5
+        top: 110px
+        left: 400px
+    .p6
+        top: 80px
+        left: 500px
+    .p7
+        top: 20px
+        left: 600px
+    .p8
+        top: -30px
+        left: 700px
+
+
+.SlideBar
+    position: absolute
+    left: 0
+    width: 340px
+    height: 800px
+    .btn
+        border: 0.5px solid #F9BFCB
+        position: absolute
+        color: white
+        padding: 15px 45px
+        bottom: 57px
+        left: 70px
+        font-family: 'Noto Sans'
+        font-weight: 200
+.room
+    position: absolute
+    flex-direction: column
+    left: 340px
+    display: flex
+    width: 980px
+    .nav
+        height: 60px
+        font-family: 'Noto Sans'
+        font-weight: 200
+        @include flex
+        img
+            position: absolute
+        #phone
+            right: 85px
+        #video
+            right: 30px
+    .text
+        @include flex
+        justify-content: flex-start
+        height: 655px
+        width: 980px
+        background: #EDEDED
+        .topimg
+            margin: 30px
+            width: 200px
+        .ChatSlid
+            width: 100%
+            height: 720px
+            border-top: 0.5px solid rgba(40, 28, 60, 0.3)
+            position: relative
+            .timenow
+                font-family: 'Noto Sans'
+                font-weight: 100
+                font-size: 12px
+                position: absolute
+                top: -25px
+                left: 15px
+            .dialog
+                display: flex
+                align-items: flex-start
+                flex-wrap: wrap
+                margin: 30px 20px
+                position: relative
+                .heart
+                    position: absolute
+                    left: 10px
+                    bottom: 10px
+                .text_block
+                    padding: 15px 30px
+                    .context
+                        margin-top: 15px
+                    div
+                        font-family: 'Noto Sans'
+                        font-weight: 300
+                        font-size: 12px
+

@@ -296,7 +296,12 @@
         letter-spacing: 2.5px;
         color: #EFEFEF;
         margin-bottom: 20px;
-        text-align: left; }
+        text-align: left;
+        display: flex;
+        align-items: center;
+        cursor: pointer; }
+        .main .ToDoArea ul li img {
+          margin-right: 10px; }
       .main .ToDoArea ul .selectMission {
         display: inline-block;
         content: url("../../UIdata/PlayButtonLittle.svg");

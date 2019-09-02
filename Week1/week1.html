@@ -10,6 +10,8 @@
       crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="lib/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
 </head>
 <body>
 <div class="main">
@@ -68,19 +70,19 @@
             <img id="ToDoImg" src="UIdata/ToDo.svg">
             <div class="Date">2019 / 07 / 10</div>
             <ul id="ToDoForm">
-                <li>Prepare the presentation</li>
-                <li>Complete the keynote</li>
-                <li>Complete the Studio logo</li>
-                <li>Learn German</li>
-                <li>Learn Adobe XD</li>
+                <li v-for="todo in todolist" @click="todo.active = !todo.active">
+                    <img src="UIdata/PlayButtonLittle.png" v-if="todo.active">
+                    <img src="UIdata/pause button.svg" v-if="!todo.active">
+                    {{todo.text}}
+                </li>
             </ul>
         </div>
 
 
 </div>
-
+<script type="text/javascript" src="vuemode.js"></script>
 <script type="text/javascript" src="lib/js/main.js"></script>
-<script type="text/javascript" src="lib/js/animate.js"></script>
+<!-- <script type="text/javascript" src="lib/js/animate.js"></script> -->
 
 </body>
 </html>

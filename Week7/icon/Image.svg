@@ -1,0 +1,16 @@
+<svg id="Image" xmlns="http://www.w3.org/2000/svg" width="29.76" height="24.362" viewBox="0 0 29.76 24.362">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #281c3c;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_2-2" data-name="Layer 2">
+      <path id="Path_7" data-name="Path 7" class="cls-1" d="M27.363,24.362H2.4a2.4,2.4,0,0,1-2.4-2.4V2.4A2.4,2.4,0,0,1,2.4,0H27.363a2.4,2.4,0,0,1,2.4,2.4V21.965a2.4,2.4,0,0,1-2.4,2.4ZM2.4,1.869a.528.528,0,0,0-.528.528V21.965a.528.528,0,0,0,.528.528H27.363a.528.528,0,0,0,.523-.528V2.4a.528.528,0,0,0-.523-.528Z"/>
+      <path id="Path_8" data-name="Path 8" class="cls-1" d="M11.157,31.038H29.622a.79.79,0,0,0,.659-1.257l-2.547-3.458a.79.79,0,0,0-1.192-.1l-2.617,2.491-6.075-8.248a.79.79,0,0,0-1.3.037l-6.075,9.319a.79.79,0,0,0,.682,1.22Z" transform="translate(-5.512 -10.728)"/>
+      <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-1" cx="2.771" cy="2.771" r="2.771" transform="translate(17.852 4.295)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Document
+            </title>
+            <link href="css/style.css" rel="stylesheet" type="text/css">
+            </link>
+                <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+                </link>
+        </meta>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="vue.js"></script>
+    </head>
+    <body>
+        <div class="home">
+            <div class="home_text_top" :class="{explore: pair}">
+                You Send a Message Out
+            </div>
+            <div class="home_text_mid" :class="{explore: pair}">
+                To The
+                <p>
+                    Universe
+                </p>
+            </div>
+            <div class="FrontMask" :class="{explore: pair}">
+                <img id="astronaut" src="Homepage background/man.png">
+                    <img id="Spaceground" src="Homepage background/space2.png">
+                    </img>
+                </img>
+            </div>
+            <img id="SpaceBackground" src="Homepage background/space0_hx2.png" :class="{explore: pair}">
+                <img id="ChatChat" src="Homepage background/Title.png" :class="{explore: pair}">
+                    <div class="home_enter explore">
+                        <input placeholder="Enter a username" v-model="myName" type="text" v-if='!pair'>
+                        <h3 v-if='pair'>{{myName}} -  {{pairName}}</h3>
+                        <hr>
+                            <div id="btn" class="show" @click='btnClick'>{{pair?'Star Chat':'Explore'}}</div>
+                        </input>
+                    </div>
+                </img>
+            </img>
+            <div id="path" :class="{explore: !pair}">
+                <img src="user photo/Path.svg" id="path">
+                <div @click='pairName = "Aaron"' class="profile p1">Aaron<img src="user photo/man_1.svg"></div>
+                <div @click='pairName = "Jack"' class="profile p2">Jack<img src="user photo/man_2.svg"></div>
+                <div @click='pairName = "Jonas"' class="profile p3">Jonas<img src="user photo/man_3.svg"></div>
+                <div @click='pairName = "Marry"' class="profile p4">Marry<img src="user photo/woman_1.svg"></div>
+                <div @click='pairName = "July"' class="profile p5">July<img src="user photo/woman_2.svg"></div>
+                <div @click='pairName = "Julia"' class="profile p6">Julia<img src="user photo/woman_3.svg"></div>
+                <div @click='pairName = "Mag.W"' class="profile p7">Mag.W<img src="user photo/woman_4.svg"></div>
+                <div @click='pairName = "Cindy"' class="profile p8">Cindy<img src="user photo/woman_5.svg"></div>
+            </div>
+
+
+        </div>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

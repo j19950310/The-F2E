@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="17.576" viewBox="0 0 20 17.576">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #aa0445;
+      }
+    </style>
+  </defs>
+  <g id="Heart_fill" transform="translate(-17 -21)">
+    <g id="Group_5" data-name="Group 5" transform="translate(17 21)">
+      <path id="Path_6" data-name="Path 6" class="cls-1" d="M22.476,973.362c-3.263,0-5.476,2.938-5.476,6.175,0,5.55,4.39,7.838,10,11.4,5.61-3.563,10-5.85,10-11.4,0-3.238-2.213-6.175-5.476-6.175A6.848,6.848,0,0,0,27,975.212,6.848,6.848,0,0,0,22.476,973.362Z" transform="translate(-17 -973.362)"/>
+    </g>
+  </g>
+</svg>

@@ -19,6 +19,7 @@ home = new Vue({
 room = new Vue({
     el:'.room',
     data:{
+        typtext:'',
         dialog:[
         {
             profile:'user photo/woman_1.svg',
@@ -53,6 +54,24 @@ room = new Vue({
             fill: false,
         },
         ]},
+        methods:{
+            typin(){
+            var text ={
+                profile:'user photo/woman_1.svg',
+                name:'Julia',
+                Ncolor:'#AA0445',
+                context: this.typtext,
+                heart: false,
+                fill: false,
+                };
+
+                this.dialog.push(text);
+                this.typtext = '';
+                setTimeout(()=>{
+                $(".ChatSlid").scrollTop(room.dialog.length*100);
+                },100)
+            },
+        },
     computed:{
         today(){
             var day = new Date();

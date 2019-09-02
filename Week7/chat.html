@@ -54,7 +54,15 @@
                     </div>
                 </div>
                 <div class="type">
-
+                    <form  @submit.prevent="typin">
+                        <input class="typeText"
+                        type="text" placeholder="Type a message" v-model='typtext'
+                        >
+                    </form>
+                    <img src="icon/Face.svg" alt="">
+                    <img src="icon/Time.svg" alt="">
+                    <img src="icon/Image.svg" alt="">
+                    <img src="icon/Attach.svg" alt="">
                 </div>
 
 

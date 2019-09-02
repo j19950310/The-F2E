@@ -146,6 +146,7 @@ body
         opacity: 1
         font-family: "Noto Sans"
         font-weight: 200
+        outline: none
         &::placeholder
             color: #EFEFEF
             opacity: 1
@@ -288,6 +289,9 @@ body
             height: 720px
             border-top: 0.5px solid rgba(40, 28, 60, 0.3)
             position: relative
+            overflow: scroll
+            &::-webkit-scrollbar
+                display: none
             .timenow
                 font-family: 'Noto Sans'
                 font-weight: 100
@@ -313,4 +317,24 @@ body
                         font-family: 'Noto Sans'
                         font-weight: 300
                         font-size: 12px
+    .type
+        width: 100%
+        height: 80px
+        display: flex
+        align-items: center
+        form
+            flex-grow: 1
+            overflow: hidden
+        input
+            padding: 20px
+            width: 100%
+            border: none
+            outline: none
+            &::placeholder
+                color: #666666
+                opacity: 1
+                font-family: "Noto Sans"
+                font-weight: 100
+        img
+            margin: 15px
 

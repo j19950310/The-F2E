@@ -2,6 +2,7 @@ home = new Vue({
     el:'.home',
     data:{
         myName:'',
+        type:false,
         pair: false,
         pairName: '',
 
@@ -105,3 +106,21 @@ room = new Vue({
         }
     },
 })
+
+
+    var y ;
+    var x ;
+
+$('#astronaut').mousemove(function(event) {
+    /* Act on the event */
+     y = event.clientY
+     x = event.clientX
+     moveX = x/600;
+     moveY = y/300;
+
+    $('#astronaut').stop(true,true)
+                    .css('top',+ moveY*10 +'px')
+                    .css('left',+moveX*10 +'px')
+
+
+});

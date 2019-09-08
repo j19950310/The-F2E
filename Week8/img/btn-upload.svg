@@ -1,0 +1,8 @@
+<svg id="btn-upload" xmlns="http://www.w3.org/2000/svg" width="150" height="44" viewBox="0 0 150 44">
+  <g id="Rectangle_9" data-name="Rectangle 9" fill="#7e6fb0" stroke="#7e6fb0" stroke-width="1">
+    <rect width="150" height="44" rx="4" stroke="none"/>
+    <rect x="0.5" y="0.5" width="149" height="43" rx="3.5" fill="none"/>
+  </g>
+  <text id="Upload_Files" data-name="Upload Files" transform="translate(47 29)" fill="#fff" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Upload Files</tspan></text>
+  <path id="Icon_awesome-file-upload" data-name="Icon awesome-file-upload" d="M9.333,5.667V0H1A1,1,0,0,0,0,1V20.333a1,1,0,0,0,1,1H15a1,1,0,0,0,1-1V6.667H10.333A1,1,0,0,1,9.333,5.667Zm2.716,9H9.333V18a.666.666,0,0,1-.667.667H7.333A.666.666,0,0,1,6.667,18V14.667H3.951a.667.667,0,0,1-.47-1.14L7.5,9.54a.71.71,0,0,1,1,0l4.018,3.988A.666.666,0,0,1,12.049,14.667ZM15.708,4.375,11.629.292A1,1,0,0,0,10.921,0h-.254V5.333H16V5.079A1,1,0,0,0,15.708,4.375Z" transform="translate(16 11)" fill="#fff"/>
+</svg>

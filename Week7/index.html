@@ -32,11 +32,17 @@
             </div>
             <img id="SpaceBackground" src="Homepage background/space0_hx2.png" :class="{explore: pair}">
                 <img id="ChatChat" src="Homepage background/Title.png" :class="{explore: pair}">
-                    <div class="home_enter explore">
-                        <input placeholder="Enter a username" v-model="myName" type="text" v-if='!pair'>
+                    <div class="home_enter explore" >
+                        <input
+                        placeholder="Enter a username" v-model="myName"
+                        type="text"
+                        v-if='!pair'
+                        @focus="type = true"
+                        @blur="myName?(type = true):(type = false)"
+                        >
                         <h3 v-if='pair'>{{myName}} -  {{pairName}}</h3>
                         <hr>
-                            <div id="btn" class="show" @click='btnClick'>{{pair?'Star Chat':'Explore'}}</div>
+                            <div id="btn" :class="{show:type}" @click='btnClick'>{{pair?'Star Chat':'Explore'}}</div>
                         </input>
                     </div>
                 </img>

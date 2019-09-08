@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cloud Storage</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src='js/vue.js'></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+  <div class="main" >
+    <div class="slide" @click="updateShow = false">
+      <div class="brand">
+        <img src="img/logo.svg">
+        <h1>Cloud</h1>
+      </div>
+      <div class="stage recent"><img src="img/time.svg">Recent</div>
+      <div class="stage active">My Files</div>
+      <div class="stage">Shared Files</div>
+      <div class="stage">Start Files</div>
+      <div class="stage">Trash</div>
+      <progress id="data" max="5" value="1.2"> </progress>
+      <div class="storageHow">Storage  1.2G / 5G</div>
+      <img src="img/logo.svg" alt="" id="bg">
+    </div>
+    <div class="main_part">
+    <div class="function">
+      <div class="search">
+        <img src="img/Icon feather-search.svg">
+        <input type="text" placeholder="Search" name="">
+        <img id="profile" src="img/user.svg">
+      </div>
+      <div class="functionBar">
+        <div class="lpt">
+          <div class="update" @click="updateShow = true">
+            <img src="img/btn-upload.svg">
+            <div class="toggle" :class="{show:updateShow}">
+              <label class="files" for="file">Files</label>
+              <input type="file" id="file" v-on:change='UpData()'>
+              <label class="folder" for="folder">Folder</label>
+              <input type="file" id="folder" webkitdirectory>
+            </div>
+          </div>
+          <div class="create"><img src="img/btn-create folder.svg"></div>
+        </div>
+
+        <div class="rpt">
+          <div class="btn download"
+          @click='download()'
+          ><img src="img/btn-download.svg"></div>
+          <div class="btn delete" @click="DataDelete()"><img src="img/btn-delete.svg"></div>
+          <div class="btn share"><img src="img/btn-share.svg"></div>
+          <div class="mode"><img src="img/btn-grid.svg"></div>
+        </div>
+      </div>
+    </div>
+    <div class="file" @click="updateShow = false">
+      <div class="path">My Files > F2E Challenge ></div>
+
+      <div class="fileBlock">
+        <table>
+          <thead>
+            <tr>
+              <td><input type="checkbox" name=""></td>
+              <td>Name</td>
+              <td>Modified
+                  <img src="img/arrow.svg">
+              </td>
+              <td>Member</td>
+              <td>Size
+                <img src="img/arrow.svg">
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- folder -->
+            <tr v-for="(fold,index) in folder">
+              <td><input type="checkbox" v-model="folderCheck[index]"></td>
+              <td>{{fold.name}}</td>
+              <td>{{index}}</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+
+            <!-- file -->
+            <tr v-for="(file,index) in files">
+              <td><input type="checkbox" name="" v-model="filesCheck[index]"></td>
+              <td>{{file.name}}</td>
+              <td>{{index}}</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- Firebase 核心 -->
+  <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+
+  <!-- Firebase storage 模組檔案 -->
+  <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-storage.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#config-web-app -->
+<script type="text/javascript" src='js/key.js'></script>
+<script type="text/javascript" src='js/main.js'></script>
+</body>
+</html>

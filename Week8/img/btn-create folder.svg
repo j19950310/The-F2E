@@ -1,0 +1,13 @@
+<svg id="btn-create_folder" data-name="btn-create folder" xmlns="http://www.w3.org/2000/svg" width="159" height="44" viewBox="0 0 159 44">
+  <g id="Rectangle_9" data-name="Rectangle 9" fill="#f3f0fd" stroke="#7e6fb0" stroke-width="1">
+    <rect width="159" height="44" rx="4" stroke="none"/>
+    <rect x="0.5" y="0.5" width="158" height="43" rx="3.5" fill="none"/>
+  </g>
+  <text id="Create_Folder" data-name="Create Folder" transform="translate(52 29)" fill="#7e6fb0" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Create Folder</tspan></text>
+  <g id="_007-folder" data-name="007-folder" transform="translate(16.177 13)">
+    <path id="Path_1" data-name="Path 1" d="M17.571,33.052H.594a.585.585,0,0,1-.573-.735L3.877,21.931A.592.592,0,0,1,4.45,21.5H21.427c.391,0,.573.367.573.735L18.144,32.621A.592.592,0,0,1,17.571,33.052Z" transform="translate(0 -15.224)" fill="#7e6fb0"/>
+    <g id="Group_1" data-name="Group 1" transform="translate(0)">
+      <path id="Path_2" data-name="Path 2" d="M18.367,7.908H9.135L7.308,5.5H.633A.615.615,0,0,0,0,6.1v14.7l.075,0,3.659-9.4a.566.566,0,0,1,.552-.4H19V8.5A.615.615,0,0,0,18.367,7.908Z" transform="translate(0 -5.5)" fill="#7e6fb0"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="97.413" height="21" viewBox="0 0 97.413 21">
+  <g id="btn-download" transform="translate(0.75)">
+    <g id="Icon_feather-download" data-name="Icon feather-download" transform="translate(0 2)">
+      <path id="Path_7" data-name="Path 7" d="M20.5,22.5v6c0,1.657-.8,3-1.778,3H6.278c-.982,0-1.778-1.343-1.778-3v-6" transform="translate(-4.5 -13.5)" fill="none" stroke="#7e6fb0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8" data-name="Path 8" d="M10.5,15l4.323,5.077L19.147,15" transform="translate(-6.5 -6)" fill="none" stroke="#7e6fb0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_9" data-name="Path 9" d="M18,18V4.5" transform="translate(-9.5 -4.5)" fill="none" stroke="#7e6fb0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+    <text id="Download" transform="translate(23.663 17)" fill="#7e6fb0" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Download</tspan></text>
+  </g>
+</svg>

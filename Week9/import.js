@@ -39,7 +39,7 @@ var main = new Vue({
         compile:false,
 
         // 篩選模式 star all trash tag
-
+        selectMode: 'all',
         // 乘載data
         notes:[
         ],
@@ -52,9 +52,11 @@ var main = new Vue({
                 break;
                 case 'all':
                 main.compile = false;
+                main.selectMode = 'all';
                 break;
                 case 'star':
-                main.compile = true;
+                main.compile = false;
+                main.selectMode = 'star';
                 break;
                 case 'trash':
                 console.log(main.noteNow)
@@ -104,7 +106,10 @@ var main = new Vue({
             main.nightMode = torf;
         },
         show:(index)=>{
-            return true;
+           var A = main.notes[index].show.star;
+           var B = main.selectMode == 'star';
+           var C = main.selectMode == 'all';
+            return (A&&B)||C
         },
     },
 

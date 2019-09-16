@@ -21,7 +21,7 @@
 
     <div class="main">
 
-        <div id="addNoteBlock" :class="{show:AddBlockShow}">
+        <div id="addNoteBlock" :class="{show:AddBlockShow, nightMode:nightMode}">
             <input type="text" id="title" name=""
             v-model="title"
              placeholder="標題">
@@ -38,9 +38,10 @@
             <index
             @btn-click="btnClick($event)"
             :night-mode="nightMode"
+            :class="{nightMode:nightMode}"
             ></index>
-        <div class="Notes">
-            <div class="pages" :class="{toggle:compile}">
+        <div class="Notes" :class="{nightMode:nightMode}">
+            <div class="pages" :class="{toggle:compile, nightMode:nightMode}">
                 <div class="tagToggle"></div>
                 <div class="timeToggle"></div>
                 <div class="viewMode">
@@ -64,7 +65,7 @@
                 ></note>
             </div>
        <!-- Create the editor container -->
-            <div class="write" :class="{toggle:!compile}">
+            <div class="write" :class="{toggle:!compile, nightMode:nightMode}">
                 <div id="example">
                     <p>
                         Hello World!

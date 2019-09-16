@@ -1,6 +1,6 @@
 var port = Vue.component('note',{
    // 声明 props
-   props: ['noteTitle','date','tag','star','trashed','tagged','data'],
+   props: ['noteTitle','date','tag','star','trashed','tagged','data','nightMode'],
    // prop 可以用在模板内
    // 可以用 `this.msg` 设置
    template: ' \

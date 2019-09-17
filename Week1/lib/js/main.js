@@ -1,14 +1,6 @@
 $(document).ready(function() {
-  min = 25;
-  sec = 0;
-  Min = 25;
-  Sec = 0;
-  StartOff = true;
-
-
-
-// TimeCountdownArea
-
+  time = 25*60;
+  StartOff = true
 // 點擊開始
 $('.TCAPlay').click(function(event) {
 
@@ -33,20 +25,27 @@ $('.TCAPlay').click(function(event) {
 
 // 開始計時，可重複
   Start = function() {if ( StartOff ) {
-
+    app.filter = 0;
     timeCount = window.setInterval(
           function(){
             // 每秒執行一次的函數
-              sec -= 1;
-              // 減少一分鐘
-              if (sec==-1){ sec = 59; min -= 1}
-              // 轉型成可讀文字
-              Sec = sec
-              Min = min
-              if (sec < 10){ Sec = "0" + sec}
-              if (Min < 10){ Min = "0" + min}
+              time -= 1;
 
-            $('#TCACount').text(Min+":"+Sec);
+
+             var min = Math.floor(time/60);
+             var sec = time%60
+
+
+              if (sec < 10){ sec = "0" + sec}
+              if (min < 10){ min = "0" + min}
+
+            $('#TCACount').text(min+":"+sec);
+
+              if(time==0){
+                app.filter = 1;
+                TimeStop();
+                app.rest();
+              }
 
             }, 1000);
 

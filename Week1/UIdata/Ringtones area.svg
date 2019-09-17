@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="768" height="502" viewBox="0 0 768 502">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="279" height="355" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect width="25" height="362" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Ringtones_area" data-name="Ringtones area" transform="translate(266 -370)">
+    <g id="Ringtones_area-2" data-name="Ringtones area" transform="translate(-266 370)" fill="none" stroke="#efefef" stroke-width="4" opacity="0.95">
+      <rect width="768" height="502" stroke="none"/>
+      <rect x="2" y="2" width="764" height="498" fill="none"/>
+    </g>
+    <text id="Break" transform="translate(112 417)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em" opacity="0.9"><tspan x="0" y="0">Break</tspan></text>
+    <text id="Work" transform="translate(-224 417)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em" opacity="0.9"><tspan x="0" y="0">Work</tspan></text>
+    <g id="Rintones_list" data-name="Rintones list" transform="translate(-295 2)">
+      <g id="Repeat_Grid_2" data-name="Repeat Grid 2" transform="translate(111 458)" clip-path="url(#clip-path)">
+        <g transform="translate(-111 -458)">
+          <text id="None" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">None</tspan></text>
+        </g>
+        <g transform="translate(-111 -416)">
+          <text id="Default" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Default</tspan></text>
+        </g>
+        <g transform="translate(-111 -374)">
+          <text id="Bell" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Bell</tspan></text>
+        </g>
+        <g transform="translate(-111 -332)">
+          <text id="Horn" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Horn</tspan></text>
+        </g>
+        <g transform="translate(-111 -290)">
+          <text id="Drop" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Drop</tspan></text>
+        </g>
+        <g transform="translate(-111 -248)">
+          <text id="Bird" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Bird</tspan></text>
+        </g>
+        <g transform="translate(-111 -206)">
+          <text id="Music" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Music</tspan></text>
+        </g>
+        <g transform="translate(-111 -164)">
+          <text id="Digital" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Digital</tspan></text>
+        </g>
+        <g transform="translate(-111 -122)">
+          <text id="Warning" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Warning</tspan></text>
+        </g>
+      </g>
+      <g id="Repeat_Grid_2-2" data-name="Repeat Grid 2" transform="translate(447 458)" clip-path="url(#clip-path)">
+        <g transform="translate(-111 -458)">
+          <text id="None-2" data-name="None" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">None</tspan></text>
+        </g>
+        <g transform="translate(-111 -416)">
+          <text id="Default-2" data-name="Default" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Default</tspan></text>
+        </g>
+        <g transform="translate(-111 -374)">
+          <text id="Bell-2" data-name="Bell" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Bell</tspan></text>
+        </g>
+        <g transform="translate(-111 -332)">
+          <text id="Horn-2" data-name="Horn" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Horn</tspan></text>
+        </g>
+        <g transform="translate(-111 -290)">
+          <text id="Drop-2" data-name="Drop" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Drop</tspan></text>
+        </g>
+        <g transform="translate(-111 -248)">
+          <text id="Bird-2" data-name="Bird" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Bird</tspan></text>
+        </g>
+        <g transform="translate(-111 -206)">
+          <text id="Music-2" data-name="Music" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Music</tspan></text>
+        </g>
+        <g transform="translate(-111 -164)">
+          <text id="Digital-2" data-name="Digital" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Digital</tspan></text>
+        </g>
+        <g transform="translate(-111 -122)">
+          <text id="Warning-2" data-name="Warning" transform="translate(112 475)" fill="#efefef" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Warning</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g id="choose_button" data-name="choose button" transform="translate(-706 120)">
+      <g id="choose_button-2" data-name="choose button" transform="translate(482 339)" clip-path="url(#clip-path-3)">
+        <g id="Group_14" data-name="Group 14" transform="translate(-112 -452)">
+          <g id="Ellipse_34" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-2" data-name="Group 14" transform="translate(-112 -410)">
+          <g id="Ellipse_34-2" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-3" data-name="Group 14" transform="translate(-112 -368)">
+          <g id="Ellipse_34-3" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-4" data-name="Group 14" transform="translate(-112 -326)">
+          <g id="Ellipse_34-4" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-5" data-name="Group 14" transform="translate(-112 -284)">
+          <g id="Ellipse_34-5" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-6" data-name="Group 14" transform="translate(-112 -242)">
+          <g id="Ellipse_34-6" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-7" data-name="Group 14" transform="translate(-112 -200)">
+          <g id="Ellipse_34-7" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-8" data-name="Group 14" transform="translate(-112 -158)">
+          <g id="Ellipse_34-8" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-9" data-name="Group 14" transform="translate(-112 -116)">
+          <g id="Ellipse_34-9" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="choose_button-3" data-name="choose button" transform="translate(818 339)" clip-path="url(#clip-path-3)">
+        <g id="Group_14-10" data-name="Group 14" transform="translate(-112 -452)">
+          <g id="Ellipse_34-10" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-11" data-name="Group 14" transform="translate(-112 -410)">
+          <g id="Ellipse_34-11" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-12" data-name="Group 14" transform="translate(-112 -368)">
+          <g id="Ellipse_34-12" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-13" data-name="Group 14" transform="translate(-112 -326)">
+          <g id="Ellipse_34-13" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-14" data-name="Group 14" transform="translate(-112 -284)">
+          <g id="Ellipse_34-14" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-15" data-name="Group 14" transform="translate(-112 -242)">
+          <g id="Ellipse_34-15" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-16" data-name="Group 14" transform="translate(-112 -200)">
+          <g id="Ellipse_34-16" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-17" data-name="Group 14" transform="translate(-112 -158)">
+          <g id="Ellipse_34-17" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_14-18" data-name="Group 14" transform="translate(-112 -116)">
+          <g id="Ellipse_34-18" data-name="Ellipse 34" transform="translate(112 452)" fill="none" stroke="#efefef" stroke-width="2" opacity="0.9">
+            <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+            <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <circle id="choose" cx="12.5" cy="12.5" r="12.5" transform="translate(482 381)" fill="#efefef" opacity="0.9"/>
+      <circle id="choose-2" data-name="choose" cx="12.5" cy="12.5" r="12.5" transform="translate(818 549)" fill="#efefef" opacity="0.9"/>
+    </g>
+  </g>
+</svg>

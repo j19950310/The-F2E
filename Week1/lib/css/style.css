@@ -1,36 +1,41 @@
+body {
+  width: 100%;
+  min-width: 1280px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black; }
+
 .main {
   width: 1280px;
   height: 800px;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   margin: 0;
   padding: 0;
-  background-color: #000000; }
+  background-color: #000000;
+  transition-duration: 1s; }
   .main .LA_ToDo {
     width: 710px !important;
-    height: 204px !important;
-    transition-delay: 0s !important; }
+    height: 204px !important; }
     .main .LA_ToDo #AddMission {
       top: 109px !important;
-      left: 287px !important;
-      transition-delay: 0s !important; }
+      left: 287px !important; }
   .main .LA_Ring {
     width: 710px !important;
-    height: 204px !important;
-    transition-delay: 0s !important; }
+    height: 204px !important; }
     .main .LA_Ring #AddMission {
       top: 109px !important;
-      left: 287px !important;
-      transition-delay: 0s !important; }
+      left: 287px !important; }
   .main .LA_Anal {
     width: 710px !important;
-    height: 204px !important;
-    transition-delay: 0s !important; }
+    height: 204px !important; }
     .main .LA_Anal #AddMission {
       top: 109px !important;
-      left: 287px !important;
-      transition-delay: 0s !important; }
+      left: 287px !important; }
   .main .LogoArea {
     width: 710px;
     height: 350px;
@@ -40,8 +45,7 @@
     left: 72px;
     border: 4px solid #EFEFEF;
     opacity: 0.95;
-    transition-duration: 0.5s;
-    transition-delay: 0.5s; }
+    transition-duration: 0.5s; }
     .main .LogoArea #logo {
       position: absolute;
       top: 30px;
@@ -50,13 +54,16 @@
       font-size: 30px;
       text-align: left;
       color: #EFEFEF; }
+      .main .LogoArea #logo.center {
+        top: 75px;
+        left: 250px;
+        transition-duration: 0.5s; }
     .main .LogoArea #AddMission {
       box-sizing: border-box;
       position: absolute;
       top: 178px;
       left: 181px;
-      transition-duration: 0.5s;
-      transition-delay: 0.5s; }
+      transition-duration: 0.5s; }
       .main .LogoArea #AddMission #AddMissionMid {
         box-sizing: border-box;
         position: absolute;
@@ -104,8 +111,7 @@
     .main .TCA_ToDo #TCADot {
       left: 205px !important;
       top: 113px !important;
-      transition-duration: 0.5s;
-      transition-delay: 0.1s; }
+      transition-duration: 0.5s; }
     .main .TCA_ToDo #TCACount {
       font-size: 30px !important;
       font-weight: 700 !important;
@@ -119,8 +125,7 @@
     .main .TCA_Anal #TCADot {
       left: 205px !important;
       top: 113px !important;
-      transition-duration: 0.5s;
-      transition-delay: 0.1s; }
+      transition-duration: 0.5s; }
     .main .TCA_Anal #TCACount {
       font-size: 30px !important;
       font-weight: 700 !important;
@@ -134,8 +139,7 @@
     .main .TCA_Ring #TCADot {
       left: 205px !important;
       top: 113px !important;
-      transition-duration: 0.5s;
-      transition-delay: 0.1s; }
+      transition-duration: 0.5s; }
     .main .TCA_Ring #TCACount {
       font-size: 30px !important;
       font-weight: 700 !important;
@@ -243,14 +247,11 @@
       .main .PageButtonArea .img #Ring {
         margin-right: 0px; }
   .main .TD_ToDo {
-    width: 768px !important;
-    transition-delay: 0.5s !important; }
+    width: 768px !important; }
   .main .TD_Anal {
-    width: 768px !important;
-    transition-delay: 0.5s !important; }
+    width: 768px !important; }
   .main .TD_Ring {
-    width: 768px !important;
-    transition-delay: 0.5s !important; }
+    width: 768px !important; }
   .main .ToDoArea {
     width: 430px;
     height: 502px;
@@ -259,9 +260,12 @@
     top: 250px;
     right: 72px;
     border: 4px solid #EFEFEF;
+    border-top: none;
+    border-left: none;
     opacity: 0.95;
-    transition-duration: 0.5s;
-    transition-delay: 0s; }
+    transition-duration: 0.5s; }
+    .main .ToDoArea .nouse img {
+      position: absolute; }
     .main .ToDoArea .Date {
       padding: 0;
       margin: 0;
@@ -273,11 +277,12 @@
       font-size: 18px;
       letter-spacing: 2.5px;
       color: #EFEFEF; }
-    .main .ToDoArea #ToDoImg {
+    .main .ToDoArea .ToDoImg {
       padding: 0;
       margin: 0;
       box-sizing: border-box;
       position: absolute;
+      z-index: 1;
       right: -4px;
       top: 14px;
       transform: translateY(-50%); }

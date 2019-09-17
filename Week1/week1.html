@@ -4,28 +4,40 @@
     <meta charset="UTF-8">
     <title>Week 1</title>
     <!-- 修改中 -->
+
+    <!-- jquery -->
     <script type="text/javascript" src="lib/js/jquery-3.4.1.min.js"></script>
-    <script     src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-      integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-      crossorigin="anonymous"></script>
+    <!-- google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <!-- style -->
     <link rel="stylesheet" type="text/css" href="lib/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- vue -->
+    <script type="text/javascript" src="lib/js/vue.js"></script>
 
 </head>
 <body>
-<div class="main">
-        <div class="LogoArea">
-            <div id="logo">
+<div class="main" :style="{filter: 'invert('+filter+')'}">
+        <div class="LogoArea" :class="{
+        LA_Ring:(mode=='ring'),
+        LA_Anal:(mode=='anal'),
+        LA_ToDo:(mode=='todo')
+                }">
+            <div id="logo" :class="{center:(mode!='normal')}" @click="mode='normal'">
                 Pomodoro.
             </div>
-            <div id="AddMission">
+            <div id="AddMission" v-show="mode=='normal'">
 
                 <img src="UIdata/AddMissionBot.svg">
 
                     <div id="AddMissionMid">
                         <div id="AddMissionTop">
-                         <input type="text" placeholder="Add a new mission" id="missionInput" name="">
+                         <input type="text"
+                         placeholder="Add a new mission"
+                         id="missionInput"
+                         @click="sendPlan"
+                         @keyup.enter="sendPlan"
+                         v-model="PlanText"
+                         >
 
                         </div>
 
@@ -40,13 +52,21 @@
 
         <!-- ********************************************** -->
 
-        <div class="TimeCountdownArea">
+        <div class="TimeCountdownArea"
+        :class="{
+        TCA_Ring:(mode=='ring'),
+        TCA_Anal:(mode=='anal'),
+        TCA_ToDo:(mode=='todo')
+                }">
 
-                <p id="TCAText">Prepare the presentation
+                <p id="TCAText">{{todolist[todoIndex].text}}
                 </p>
                     <hr id="TCAHr">
             <p id="TCACount">25:00</p>
-            <img src="UIdata/Time button - play.svg" class="TCAPlay">
+            <img src="UIdata/Time button - play.svg"
+                 class="TCAPlay"
+                 @click="todolist[todoIndex].active =!todolist[todoIndex].active"
+                 >
 
             <div id="TCADot">
                 <img src="UIdata/Ellipse 35.png" alt="">
@@ -57,32 +77,52 @@
             </div>
         </div>
         <!-- *********************************************** -->
-        <div class="PageButtonArea">
+        <div class="PageButtonArea" >
             <div class="img">
 
-                        <img src="UIdata/To-do  button.svg" id="TodoList"  title="To do list">
-                        <img src="UIdata/Analysis button.svg"  id="Analysis" title="Analysis">
-                        <img src="UIdata/Ringtones button.svg" id="Ring"  title="Ring">
+                        <img @click="mode='todo'" src="UIdata/To-do  button.svg" id="TodoList"  title="To do list">
+                        <img @click="mode='anal'" src="UIdata/Analysis button.svg"  id="Analysis" title="Analysis">
+                        <img @click="mode='ring'" src="UIdata/Ringtones button.svg" id="Ring"  title="Ring">
             </div>
        </div>
        <!-- ************************************************* -->
-        <div class="ToDoArea">
-            <img id="ToDoImg" src="UIdata/ToDo.svg">
-            <div class="Date">2019 / 07 / 10</div>
-            <ul id="ToDoForm">
-                <li v-for="todo in todolist" @click="todo.active = !todo.active">
-                    <img src="UIdata/PlayButtonLittle.png" v-if="todo.active">
-                    <img src="UIdata/pause button.svg" v-if="!todo.active">
+        <div class="ToDoArea"
+        :class="{TD_Ring:(mode=='ring'),
+                 TD_Anal:(mode=='anal'),
+                 TD_ToDo:(mode=='todo')
+                }">
+
+            <!-- logo -->
+            <img class="ToDoImg" v-if="mode=='todo'" src="UIdata/ToDo.svg">
+            <img class="ToDoImg" v-if="mode=='anal'" src="UIdata/Analysis-logo.svg">
+            <img class="ToDoImg" v-if="mode=='ring'" src="UIdata/Ring-logo.svg">
+
+            <div class="nouse">
+                <img src="UIdata/Analytics area.svg" v-show="mode=='anal'" alt="">
+                <img src="UIdata/Ringtones area.svg" v-show="mode=='ring'" alt="">
+            </div>
+
+            <div class="Date" v-show="(mode=='normal')|(mode=='todo')" >2019 / 07 / 10</div>
+            <ul id="ToDoForm" v-show="(mode=='normal')|(mode=='todo')">
+                <li v-for="(todo,index) in todolist"
+                    @click="todoIndex = index"
+                    :class="{done:todo.done}"
+                    >
+                    <img src="UIdata/PlayButtonLittle.png" v-if="!todo.active">
+                    <img src="UIdata/pause button.svg" v-if="todo.active">
                     {{todo.text}}
                 </li>
             </ul>
+
+
         </div>
 
+        <script type="text/template">
 
+        </script>
 </div>
 <script type="text/javascript" src="vuemode.js"></script>
 <script type="text/javascript" src="lib/js/main.js"></script>
-<!-- <script type="text/javascript" src="lib/js/animate.js"></script> -->
 
 </body>
 </html>

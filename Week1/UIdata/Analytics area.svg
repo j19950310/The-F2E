@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="502" viewBox="0 0 768 502">
+  <g id="Analytics_area" data-name="Analytics area" transform="translate(266 -370)">
+    <g id="Rectangle_157" data-name="Rectangle 157" transform="translate(-266 370)" fill="none" stroke="#efefef" stroke-width="4" opacity="0.95">
+      <rect width="768" height="502" stroke="none"/>
+      <rect x="2" y="2" width="764" height="498" fill="none"/>
+    </g>
+    <g id="Today_I_got___tomato" data-name="Today I got___tomato">
+      <g id="Rectangle_174" data-name="Rectangle 174" transform="translate(-213 413)" fill="#efefef" stroke="#000" stroke-width="2">
+        <rect width="217" height="145" stroke="none"/>
+        <rect x="1" y="1" width="215" height="143" fill="none"/>
+      </g>
+      <g id="Rectangle_173" data-name="Rectangle 173" transform="translate(-218 408)" fill="#efefef" stroke="#000" stroke-width="2">
+        <rect width="217" height="145" stroke="none"/>
+        <rect x="1" y="1" width="215" height="143" fill="none"/>
+      </g>
+      <g id="Rectangle_172" data-name="Rectangle 172" transform="translate(-223 403)" fill="#efefef" stroke="#000" stroke-width="2">
+        <rect width="217" height="145" stroke="none"/>
+        <rect x="1" y="1" width="215" height="143" fill="none"/>
+      </g>
+      <g id="Rectangle_171" data-name="Rectangle 171" transform="translate(-228 398)" fill="#efefef" stroke="#000" stroke-width="2">
+        <rect width="217" height="145" stroke="none"/>
+        <rect x="1" y="1" width="215" height="143" fill="none"/>
+      </g>
+      <text id="Today_I_got" data-name="Today 
+I 
+got" transform="translate(-214 425)" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em"><tspan x="0" y="0">Today </tspan><tspan x="0" y="24">I </tspan><tspan x="0" y="48">got</tspan></text>
+      <text id="Tomato" transform="translate(-88 522)" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Tomato</tspan></text>
+      <text id="_8" data-name="8" transform="translate(-136 488)" font-size="50" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em" opacity="0.95"><tspan x="0" y="0">8</tspan></text>
+    </g>
+    <g id="Today_I_finished___mission" data-name="Today I&apos; finished___mission" transform="translate(-4 22)">
+      <g id="Rectangle_183" data-name="Rectangle 183" transform="translate(93 428)" fill="#efefef" stroke="#000" stroke-width="2">
+        <rect width="217" height="108" stroke="none"/>
+        <rect x="1" y="1" width="215" height="106" fill="none"/>
+      </g>
+      <g id="Rectangle_184" data-name="Rectangle 184" transform="translate(88 423)" fill="#efefef" stroke="#000" stroke-width="2">
+        <rect width="217" height="108" stroke="none"/>
+        <rect x="1" y="1" width="215" height="106" fill="none"/>
+      </g>
+      <text id="Today_I_m_finished" data-name="Today 
+I’m 
+finished" transform="translate(102 450)" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em" text-decoration="line-through"><tspan x="0" y="0" xml:space="preserve">Today </tspan><tspan x="0" y="24" xml:space="preserve">I’m </tspan><tspan x="0" y="48">finished</tspan></text>
+      <text id="Mission" transform="translate(225 510)" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Mission</tspan></text>
+      <text id="_2" data-name="2" transform="translate(240 484)" font-size="50" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em" opacity="0.95"><tspan x="0" y="0">2</tspan></text>
+    </g>
+    <g id="weekly" transform="translate(-18 23)">
+      <g id="Rectangle_186" data-name="Rectangle 186" transform="translate(-200 619)" fill="#efefef" stroke="#000" stroke-width="2">
+        <rect width="415" height="200" stroke="none"/>
+        <rect x="1" y="1" width="413" height="198" fill="none"/>
+      </g>
+      <g id="Rectangle_187" data-name="Rectangle 187" transform="translate(-205 614)" fill="#efefef" stroke="#000" stroke-width="2">
+        <rect width="415" height="200" stroke="none"/>
+        <rect x="1" y="1" width="413" height="198" fill="none"/>
+      </g>
+      <g id="Rectangle_188" data-name="Rectangle 188" transform="translate(-210 609)" fill="#efefef" stroke="#000" stroke-width="2">
+        <rect width="415" height="200" stroke="none"/>
+        <rect x="1" y="1" width="413" height="198" fill="none"/>
+      </g>
+      <text id="Tomatoes_I_got_this_week" data-name="Tomatoes
+I got
+this week" transform="translate(-196 636)" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em"><tspan x="0" y="0">Tomatoes</tspan><tspan x="0" y="24">I got</tspan><tspan x="0" y="48">this week</tspan></text>
+      <text id="week_choose" data-name="week choose" transform="translate(52 633)" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">July 6 - 12, 2019</tspan></text>
+      <g id="weekly_data" data-name="weekly data">
+        <line id="Line_14" data-name="Line 14" x2="391" transform="translate(-196 770)" fill="none" stroke="#000" stroke-width="4" opacity="0.9"/>
+        <rect id="Rectangle_189" data-name="Rectangle 189" width="55" height="30" transform="translate(-196 739)" opacity="0.3"/>
+        <rect id="Rectangle_190" data-name="Rectangle 190" width="55" height="15" transform="translate(-140 754)" opacity="0.3"/>
+        <rect id="Rectangle_192" data-name="Rectangle 192" width="55" height="50" transform="translate(-84 719)" opacity="0.3"/>
+        <rect id="Rectangle_193" data-name="Rectangle 193" width="55" height="24" transform="translate(-28 745)" opacity="0.3"/>
+        <rect id="Rectangle_194" data-name="Rectangle 194" width="55" height="20" transform="translate(28 749)" opacity="0.3"/>
+        <text id="_12" data-name="12" transform="translate(-178 765)" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em"><tspan x="0" y="0">12</tspan></text>
+        <text id="_26" data-name="26" transform="translate(-68 765)" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em"><tspan x="0" y="0">26</tspan></text>
+        <text id="_6" data-name="6" transform="translate(-118 765)" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em"><tspan x="0" y="0">6</tspan></text>
+        <text id="_10" data-name="10" transform="translate(-11 765)" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em"><tspan x="0" y="0">10</tspan></text>
+        <text id="_8-2" data-name="8" transform="translate(50 765)" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em"><tspan x="0" y="0">8</tspan></text>
+        <text id="_7_6" data-name="7/6" transform="translate(-176 790)" font-size="10" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em"><tspan x="0" y="0">7/6</tspan></text>
+        <text id="_7_7" data-name="7/7" transform="translate(-120 790)" font-size="10" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em"><tspan x="0" y="0">7/7</tspan></text>
+        <text id="_7_8" data-name="7/8" transform="translate(-64 790)" font-size="10" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em"><tspan x="0" y="0">7/8</tspan></text>
+        <text id="_7_9" data-name="7/9" transform="translate(-8 790)" font-size="10" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em"><tspan x="0" y="0">7/9</tspan></text>
+        <text id="_7_10" data-name="7/10" transform="translate(45 790)" font-size="10" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em"><tspan x="0" y="0">7/10</tspan></text>
+        <text id="_7_11" data-name="7/11" transform="translate(103 790)" font-size="10" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em"><tspan x="0" y="0">7/11</tspan></text>
+        <text id="_7_12" data-name="7/12" transform="translate(158 790)" font-size="10" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em"><tspan x="0" y="0">7/12</tspan></text>
+      </g>
+      <path id="right" d="M5.6.787a.5.5,0,0,1,.874,0l5.184,9.337a.5.5,0,0,1-.437.743H.85a.5.5,0,0,1-.437-.743Z" transform="translate(194.867 621.5) rotate(90)" opacity="0.9"/>
+      <path id="left" d="M5.6.787a.5.5,0,0,1,.874,0l5.184,9.337a.5.5,0,0,1-.437.743H.85a.5.5,0,0,1-.437-.743Z" transform="translate(31 633.567) rotate(-90)" opacity="0.9"/>
+    </g>
+    <g id="week_I_got___tomato" data-name="week I got___tomato" transform="translate(-4 18)">
+      <g id="Rectangle_195" data-name="Rectangle 195" transform="translate(259 629)" fill="#efefef" stroke="#000" stroke-width="2">
+        <rect width="217" height="145" stroke="none"/>
+        <rect x="1" y="1" width="215" height="143" fill="none"/>
+      </g>
+      <g id="Rectangle_196" data-name="Rectangle 196" transform="translate(254 624)" fill="#efefef" stroke="#000" stroke-width="2">
+        <rect width="217" height="145" stroke="none"/>
+        <rect x="1" y="1" width="215" height="143" fill="none"/>
+      </g>
+      <g id="Rectangle_197" data-name="Rectangle 197" transform="translate(249 619)" fill="#efefef" stroke="#000" stroke-width="2">
+        <rect width="217" height="145" stroke="none"/>
+        <rect x="1" y="1" width="215" height="143" fill="none"/>
+      </g>
+      <g id="Rectangle_198" data-name="Rectangle 198" transform="translate(244 614)" fill="#efefef" stroke="#000" stroke-width="2">
+        <rect width="217" height="145" stroke="none"/>
+        <rect x="1" y="1" width="215" height="143" fill="none"/>
+      </g>
+      <text id="Week_I_got" data-name="Week
+I
+got" transform="translate(258 641)" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em"><tspan x="0" y="0">Week</tspan><tspan x="0" y="24">I</tspan><tspan x="0" y="48">got</tspan></text>
+      <text id="Tomato-2" data-name="Tomato" transform="translate(384 738)" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="0.08em" opacity="0.9"><tspan x="0" y="0">Tomato</tspan></text>
+      <text id="_62" data-name="62" transform="translate(319 704)" font-size="50" font-family="SegoeUI, Segoe UI" letter-spacing="0.1em" opacity="0.95"><tspan x="0" y="0">62</tspan></text>
+    </g>
+  </g>
+</svg>
